@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog 3.0
+tagline: I make games.
 ---
 {% assign first_post = site.posts.first %}
 <div id="post">

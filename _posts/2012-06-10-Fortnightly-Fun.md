@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Heist
-tags : [heist,update]
+tags : [heist, update]
 tagline : In Which A Promise Is Made And Broken
 ---
 {% include JB/setup %}

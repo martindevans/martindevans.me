@@ -32,7 +32,7 @@ Setting up or joining a multiplayer session should be relatively simple. To host
 
 Click Multiplayer > Click Host > Enter a session Name > Click Host > Enjoy
 
-To join, click Multiplayer and there is a list of all currently running sessions, select one and click the name to join. When you're selecting a server, you can filter by name and location just by typing into the search boxes at the top. _Ping does not currently work, I'll fix that soon, ignore it for now_.
+To join, click Multiplayer and there is a list of all currently running sessions, select one and click the name to join. When you're selecting a server, you can filter by name and location just by typing into the search boxes at the top.
 
 #### Ports And Stuff
 

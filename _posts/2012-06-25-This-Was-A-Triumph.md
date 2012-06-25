@@ -29,4 +29,8 @@ It's common sense when rendering stuff not to render things which aren't on scre
 
 ## I Think I Prefer To Stay Inside.
 
-I still have some tidying up to do on this code, so I haven't released it yet. I will be pushing out this update as soon as possible (hopefully within a few hours). Hopefully once I release it you'll see the general performance of the game increase a huge amount - to me it feels a lot smoother on my high performance gaming PC, and it even runs smoothly on my laptop which before only managed ~10fps!
+<strike>I still have some tidying up to do on this code, so I haven't released it yet. I will be pushing out this update as soon as possible (hopefully within a few hours).<strike>
+
+Turns out I didn't have as much work to do on this as I thought I did, it is now uploaded and ready for you to try.
+
+Hopefully once I release it you'll see the general performance of the game increase a huge amount - to me it feels a lot smoother on my high performance gaming PC, and it even runs smoothly on my laptop which before only managed ~10fps!

@@ -27,7 +27,7 @@ Textures are applied to a model by supply "texture coordinates" to each vertex i
 
 ### Texture Coordinates
 
-A quick asides for a load of badly explained maths:
+A quick aside for a load of badly explained maths:
 
 This trick from quake is actually pretty simple. Every vertex has a 3D position in space, and I want to convert this to a 2D position on a texture, essentially I have to decide which coordinate axis is the "least important" and drop that. First I take the Normal vector of the plane of the face this vertex is part of, since the normal points out from a flat plane clearly I want to paint the texture across the normal, but which orientation do I want? To decide on orientation I walk through all the edges of the face and pick the edge which is most closely aligned to a vector pointing directly west, this gives me an arbitrary alignment for textures, and textures on similarly aligned surfaces will tend to be roughly aligned with one another. Now that I have 2 vectors, one defining alignment and one defining orientation of the texture I can simply project the vertex positions on this plane and the coordinates drop right out! Using my test texture (rainbow coloured bricks), this got me something like this:
 
@@ -41,7 +41,7 @@ Yes, it does. The texture fades into a horrible mess of random noise in the dist
 
 I've split the texture up into 3 parts: red is the high detail part, green is the medium detail part and blue is the low detail part. Multiplying by the original minimal style to get edges back again, we end up with something like this:
 
-![Texture Mapped With MipMapping(/assets/MipMapped-Texture_Mapping.jpg)
+![Texture Mapped With MipMapping](/assets/MipMapped-Texture_Mapping.jpg)
 
 Much better, the textures fadeout to a flat colour in the distance instead of crowding in too much detail and looking ugly.
 

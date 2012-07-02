@@ -41,7 +41,7 @@ Yes, it does. The texture fades into a horrible mess of random noise in the dist
 
 I've split the texture up into 3 parts: red is the high detail part, green is the medium detail part and blue is the low detail part. Multiplying by the original minimal style to get edges back again, we end up with something like this:
 
-![Texture Mapped With MipMapping](/assets/MipMapped-Texture_Mapping.jpg)
+![Texture Mapped With MipMapping](/assets/MipMapped-Texture-Mapping.jpg)
 
 Much better, the textures fadeout to a flat colour in the distance instead of crowding in too much detail and looking ugly.
 

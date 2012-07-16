@@ -27,11 +27,11 @@ Heist now actually supports custom texture packs, which is kinda cool (maybe a b
 
 ### Loading A Custom Texture Pack
 
-Right now there's no menu for selecting your custom texture pack, so if you want to use one you'll have to drop the pack into _C:\Users\USERNAME\AppData\Roaming\Heist\TexturePacks_ then go into _C:\Users\USERNAME\AppData\Roaming\Heist\Configuration.ini_ and change _TexturePack=_ to _TexturePack=PATH_TO_PACK.zip_, now the game will load in your texture pack (If the game can't find your texture pack, it will load the default one).
+Right now there's no menu for selecting your custom texture pack, so if you want to use one you'll have to drop the pack into _C:\Users\USERNAME\AppData\Roaming\Heist\TexturePacks_ then go into _C:\Users\USERNAME\AppData\Roaming\Heist\Configuration.ini_ and change _TexturePack=_ to _TexturePack=PATH-TO-PACK.zip_, now the game will load in your texture pack (If the game can't find your texture pack, it will load the default one).
 
 ### Creating A Custom Texture Pack
 
-A large part of my work this week has been making a tool to create texture packs from a set of source images. This tool takes a load of 512x512 images and packs them up into a single texture atlas for the game to use, it also optionally uses the incredible [pngcrush] (http://pmt.sourceforge.net/pngcrush/) program to crush the images down to a much smaller size so that texture packs don't get too big. The tool also generates normal maps off the input heightmaps, so you don't have to generate them yourself. You can download the TexturePackr tool *[here] (http://placeholder-software.co.uk/setup/TexturePackr.zip)*, there's an included readme with detailed instructions. If you make a texture pack, I'd love to see what you do! Send me pictures, or even just the pack itself so I can have a play :D
+A large part of my work this week has been making a tool to create texture packs from a set of source images. This tool takes a load of 512x512 images and packs them up into a single texture atlas for the game to use, it also optionally uses the incredible [pngcrush] (http://pmt.sourceforge.net/pngcrush/) program to crush the images down to a much smaller size so that texture packs don't get too big. The tool also generates normal maps off the input heightmaps, so you don't have to generate them yourself. You can download the TexturePackr tool [here] (http://placeholder-software.co.uk/setup/TexturePackr.zip), there's an included readme with detailed instructions. If you make a texture pack, I'd love to see what you do! Send me pictures, or even just the pack itself so I can have a play :D
 
 ## Greenlight
 

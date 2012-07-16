@@ -1,3 +1,5 @@
+---
+layout: post
 category : Heist
 tags : [heist, release]
 tagline : In Which I Decided Never Again To Indulge My Artistic Side

@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Heist
-tags : [heist, release]
+tags : [heist]
 tagline : In Which I Reveal An Intense Dislike
 ---
 {% include JB/setup %}

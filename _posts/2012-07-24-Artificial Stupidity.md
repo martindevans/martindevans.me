@@ -1,8 +1,8 @@
 ---
 layout: post
 category : Heist
-tags : [heist, release]
-tagline : In Which The Interconnectedness Of All Things Is Revealed
+tags : [heist, artificial-intelligence]
+tagline : In Which I Program Myself More Friends
 ---
 {% include JB/setup %}
 

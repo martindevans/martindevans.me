@@ -17,9 +17,22 @@ Greenlight needs a lot of work, but you should check it out anyway. Yes, _you_.
 
 For someone like me this is *really cool*. No longer do I have to gain community support myself, and then extract feedback from them, and then submit my game to an opaque steam submission process. Instead of all that I can put my games onto Greenlight early in their development, get instant exposure to the steam userbase (pretty much more exposure than I could ever hope to get otherwise), this will get me lots of feedback and the progress to getting enough votes to get into the steam store is right there on the front page for my game.
 
-### What's not totally awesome about this?
+### What's Not Totally Awesome About This?
 
 Right now greenlight is _not_ perfect, far from it! The only filtering available is by a limited selection of genres and there is no sorting available at all! The store is getting pretty crowded (right now there are 658 items waiting for my rating and it's only been open about 48 hours), combine such an incredible rate of games being added with no sorting and filtering and discoverability through the store is basically nil. That sucks but it's not the end of the world - I can view items my friends have rated and anyone can create a new collection to pick out a related set of games they feel people might like - it's not fantastic but it's a start on discoverability and [valve have more to come](http://steamcommunity.com/workshop/news/?appid=765) for greenlight.
+
+### A Little Something To Get You Started
+
+Since discoverability is the big problem with greenlight right now, here's a few games I discovered for you (I think you need to be logged in to steam to see these):
+
+* [The Impossible Game] (http://steamcommunity.com/sharedfiles/filedetails/?id=93339572) _I like a challenge_
+* [NEOTOKYO] (http://steamcommunity.com/sharedfiles/filedetails/?id=92931910) _First person Sci-Fi shooter_
+* [Receiver] (http://steamcommunity.com/sharedfiles/filedetails/?id=92927535) _First person shooter puzzler thing_
+* [No Time To Explain!] (http://steamcommunity.com/sharedfiles/filedetails/?id=92922559) _Platformer puzzler with time travel_
+* [Project Zomboid] (http://steamcommunity.com/sharedfiles/filedetails/?id=92916900) _Zombies survival RPG_
+* [The Intruder] (http://steamcommunity.com/sharedfiles/filedetails/?id=92910126) _First person horror game_
+* [Project Giana] (http://steamcommunity.com/sharedfiles/filedetails/?id=92852223) _Beautiful looking platformer puzzler_
+* [Dream] (http://steamcommunity.com/sharedfiles/filedetails/?id=92647949) _Atmospheric Exploration_
 
 ## Why aren't you on Greenlight then?
 

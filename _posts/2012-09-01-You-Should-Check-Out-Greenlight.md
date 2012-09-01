@@ -1,7 +1,7 @@
 ---
 layout: post
 category : General-Gaming
-tags : [general-gaming,heist,steam,greenlight]
+tags : [general-gaming, heist, steam, greenlight]
 tagline : In Which You Stop Reading This Blogpost To Check Out Greenlight
 ---
 {% include JB/setup %}

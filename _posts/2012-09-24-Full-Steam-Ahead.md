@@ -29,7 +29,7 @@ You get the idea, I would like to do some of the above. Preferably I would like 
 
 I haven't been completely idle these last three weeks, people who know me probably realise it is physically impossible for me to not write code for three entire weeks. Instead of writing new code, I've been reading code, in two ways.
 
-### ![Refuctoring](http://www.codinghorror.com/blog/2012/07/new-programming-jargon.html)
+### [Refuctoring](http://www.codinghorror.com/blog/2012/07/new-programming-jargon.html)
 
 I mentioned last time that I was going over the networking code, writing a few unit tests. I've gone a _little_ bit beyond that now, in the last week I've pulled out 6000 lines of code from Heist and moved them into a separate library (Called Placeholder.*) for building games - that's about 20% of the entire of Heist modified in a single week. During this time I have:
 

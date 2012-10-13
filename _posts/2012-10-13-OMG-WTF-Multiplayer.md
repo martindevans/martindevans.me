@@ -43,7 +43,7 @@ This document simply lists all the sources the host has enabled and then the joi
 
 The end result of all this work is this:
 
-![OMG! WTF? BBQ!](assets/omgwtfbbq.png)
+![OMG! WTF? BBQ!](/assets/omgwtfbbq.png)
 
 This screenshot is taken from my laptop, down there is a player running on my PC (waving a torch about). Top left you can see the chatbox, added entirely through scripts, working perfectly.
 

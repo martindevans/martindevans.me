@@ -32,7 +32,7 @@ There are two parts to session initiation:
 
 ### Global Server List
 
-When a peer starts a new game session it submits some information to a (central server list)[http://metaserver.placeholder-software.co.uk/serverlist/Game_Name/create-server] and gets back a JSON response which indicates that this server will be listed for the next 2 minutes, this response includes a special control key. While the game is still running the hosting peer can use the control key to "ping" the game and reset the timer, or it can specifically delete the game from the list.
+When a peer starts a new game session it submits some information to a [central server list](http://metaserver.placeholder-software.co.uk/serverlist/Game_Name/create-server) and gets back a JSON response which indicates that this server will be listed for the next 2 minutes, this response includes a special control key. While the game is still running the hosting peer can use the control key to "ping" the game and reset the timer, or it can specifically delete the game from the list.
 
 ### NAT Negotiation
 
@@ -52,7 +52,7 @@ So, we need some way to convince the router that it needs to send packets on a c
 
 ### Global Server List
 
-The hosting peer, as mentioned, lists it's game session on a global server list. Logically, the place to start to find a session to join is this list. If you submitted a server at (that link earlier)[http://metaserver.placeholder-software.co.uk/serverlist/Game_Name/create-server] try visiting (this link)[http://metaserver.placeholder-software.co.uk/serverlist/Game_Name.json] now - if you read all of the above in under 2 minutes then your fake server entry should still be listed. The server list returns 7 pieces of information:
+The hosting peer, as mentioned, lists it's game session on a global server list. Logically, the place to start to find a session to join is this list. If you submitted a server at (that link earlier)[http://metaserver.placeholder-software.co.uk/serverlist/Game_Name/create-server] try visiting [this link](http://metaserver.placeholder-software.co.uk/serverlist/Game_Name.json) now - if you read all of the above in under 2 minutes then your fake server entry should still be listed. The server list returns 7 pieces of information:
 
  - Name. The name of this session.
  - Game. The game which this session is part of, e.g. Heist

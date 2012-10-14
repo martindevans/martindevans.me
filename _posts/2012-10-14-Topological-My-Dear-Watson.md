@@ -20,7 +20,7 @@ Networking is a huge topic, and I'm going to be talking about a lot of technical
 There's a lot to talk about with networking, I'm going to try and cover all these topics:
 
  - Topology
- - Session Initiation
+ - [Session Initiation](/Heist/2012/10/15/Get-Up-And-Initiate-That-Session/)
  - Connection Initiation
  - Delivery Guarantees
  - Named Data Pipes

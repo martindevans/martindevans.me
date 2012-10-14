@@ -15,7 +15,7 @@ Part #2 in my series on how Heist does networking stuff. This time about setting
 
 In this series I'm covering 6 topics:
 
- - (Topology)[/Heist/2012/10/14/Topological-My-Dear-Watson/]
+ - [Topology](/Heist/2012/10/14/Topological-My-Dear-Watson/)
  - Session Initiation
  - Connection Initiation
  - Delivery Guarantees

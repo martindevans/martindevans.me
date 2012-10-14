@@ -9,15 +9,14 @@ tagline : In Which Great Technical Depth Is Discussed (Again)
 
 ## TL;DR
 
-Part #2 in my series on how Heist does networking stuff. This time about setting up a session.
+Part #2 in my series on how Heist does networking stuff. This time about setting up a session and initiating connections.
 
 ## Topics
 
-In this series I'm covering 6 topics:
+In this series I'm covering 5 topics:
 
  - [Topology](/Heist/2012/10/14/Topological-My-Dear-Watson/)
- - Session Initiation
- - Connection Initiation
+ - Session/Connection Initiation
  - Delivery Guarantees
  - Named Data Pipes
  - Packet Encoding In C#

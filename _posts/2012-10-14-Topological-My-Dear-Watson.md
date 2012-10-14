@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Heist
-tags : [heist]
+tags : [heist,networking-series]
 tagline : In Which Great Technical Depth Is Discussed
 ---
 {% include JB/setup %}

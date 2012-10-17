@@ -21,7 +21,7 @@ There's a lot to talk about with networking, I'm going to try and cover all thes
 
  - Topology
  - [Session/Connection Initiation](/Heist/2012/10/15/Get-Up-And-Initiate-That-Session/)
- - Delivery Guarantees
+ - [Delivery Guarantees](http://martindevans.me/General-Gaming/2012/10/17/Say-What/)
  - Named Data Pipes
  - Packet Encoding In C#
  

@@ -11,6 +11,10 @@ tagline : In Which You Stop Reading This Blogpost To Check Out Greenlight
 
 An new release of Heist.
 
+## Where Is It?
+
+If you've never played Heist before you can [get it from here](http://www.placeholder-software.co.uk/static-files/setup/heistgame/publish.htm). If you've played Heist before then just run it and it should offer to auto update (if it doesn't, just get it again and it'll write over the old version. Then [send me an email](mailto://martin@placeholder-software.co.uk) and tell me you had this problem).
+
 ## Major Features
 
  - Better multiplayer implementation

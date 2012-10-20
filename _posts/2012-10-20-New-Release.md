@@ -32,7 +32,7 @@ It's still not _entirely_ obvious how to play, I'll be working on fixing that fo
 
  - When you first spawn you'll drop out of the sky and die to fall damage then instantly respawn (long standing bug)
  - There's no indicator which weapons you have equipped (work in progress)
- - When you spawn you have weapon 0 equipped, but the only valid weapons are 1, 2, 3 and 4. Rolling the mouse wheel will move you off this invalid weapon to a valid one (long standing bug)
+ - When you spawn you have weapon 0 equipped, but the only valid weapons are 1, 2, 3 and 4. Rolling the mouse wheel will move you off this invalid weapon to a valid one (Fixed internally, release coming soon)
  - Number keys do _not_ toggle weapons (work in progress)
  - Sounds created by tools all emanate from the world origin (work in progress)
 

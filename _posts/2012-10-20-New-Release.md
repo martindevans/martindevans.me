@@ -2,7 +2,7 @@
 layout: post
 category : Heist
 tags : [heist, release]
-tagline : In Which You Stop Reading This Blogpost To Check Out Greenlight
+tagline : In Which You Stop Reading This Blogpost To Play My Game
 ---
 {% include JB/setup %}
 
@@ -32,7 +32,7 @@ It's still not _entirely_ obvious how to play, I'll be working on fixing that fo
 
  - When you first spawn you'll drop out of the sky and die to fall damage then instantly respawn (long standing bug)
  - There's no indicator which weapons you have equipped (work in progress)
- - When you spawn you have weapon 0 equipped, but the only valid weapons are 1, 2, 3 and 4. Rolling the mouse wheel will move you off this invalid weapon to a valid one (Fixed internally, release coming soon)
+ - When you spawn you have weapon 0 equipped, but the only valid weapons are 1, 2, 3 and 4. Rolling the mouse wheel will move you off this invalid weapon to a valid one (Fixed)
  - Number keys do _not_ toggle weapons (work in progress)
  - Sounds created by tools all emanate from the world origin (work in progress)
 

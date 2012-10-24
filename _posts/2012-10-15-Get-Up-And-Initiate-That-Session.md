@@ -17,7 +17,7 @@ In this series I'm covering 5 topics:
 
  - [Topology](/Heist/2012/10/14/Topological-My-Dear-Watson/)
  - Session/Connection Initiation
- - [Delivery Guarantees](http://martindevans.me/General-Gaming/2012/10/17/Say-What/)
+ - [Delivery Guarantees](/Heist/2012/10/17/Say-What/)
  - Named Data Pipes
  - Packet Encoding In C#
  

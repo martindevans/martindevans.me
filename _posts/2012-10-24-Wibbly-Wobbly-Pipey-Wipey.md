@@ -83,7 +83,7 @@ Once subscribed, any time any peer sends a message it will get sent across the n
 
 ## Strings are big, integers are not
 
-This is where it gets complicated, strings are really big so we can't just go sticking at string at the front of every packet in place of the single byte we were using as a flag before. A single character of a string is _at best_ one byte long, and at worst could be 4 bytes long - for a single character!
+This is where it gets complicated, strings are really big so we can't just go sticking a string at the front of every packet in place of the single byte we were using as a flag before. A single character of a string is _at best_ one byte long, and at worst could be 4 bytes long - for a single character!
 
 Heist solves this problem by turning string names into unique integer IDs which it negotiates as pipes are created, an integer is 4 bytes long (and with clever tricks Heist only ever needs to send 3 bytes of it). Each pipe really has several names, the string name which everything externally refers to it as and one or more integer ID(s) which the internal piping system refers to pipes as, when a peer sends out a pipe packet it can use the integer ID as the flag instead of the string name which is an awful lot smaller. So, the basic execution of this is:
 

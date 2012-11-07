@@ -28,7 +28,7 @@ In this series I'm covering 5 topics:
 Translators in Heist are just a class which extends the BasePipeTranslator&lt;T&gt; class, when the pipe system wants to find a translator it simply scans all of the loaded types available to it and finds the one where T is the type it wants. Of course, writing a translator is usually really trivial:
 
     class Vector3Translator
-        :BaseTranslator<Vector3 &gt;
+        :BaseTranslator<Vector3>
     {
         public override Vector3 FromBytes(BasePacketReader stream)
         {

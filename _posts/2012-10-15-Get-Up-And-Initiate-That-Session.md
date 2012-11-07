@@ -19,7 +19,7 @@ In this series I'm covering 5 topics:
  - Session/Connection Initiation
  - [Delivery Guarantees](/Heist/2012/10/17/Say-What/)
  - [Named Data Pipes](/Heist/2012/10/24/Wibbly-Wobbly-Pipey-Wipey/)
- - Packet Encoding In C#
+ - [Packet Encoding In C#](/Heist/2012/11/07/Packet-Encoding/)
  
 ## Making The First Move
 

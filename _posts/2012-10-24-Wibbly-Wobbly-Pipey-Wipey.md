@@ -19,7 +19,7 @@ In this series I'm covering 5 topics:
  - [Session/Connection Initiation](/Heist/2012/10/15/Get-Up-And-Initiate-That-Session/)
  - [Delivery Guarantees](/Heist/2012/10/17/Say-What/)
  - Named Data Pipes
- - Packet Encoding In C#
+ - [Packet Encoding In C#](/Heist/2012/11/07/Packet-Encoding/)
  
 ## My Worst Nightmare
 

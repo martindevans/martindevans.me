@@ -25,10 +25,10 @@ In this series I'm covering 5 topics:
 
 [Last time](/Heist/2012/10/24/Wibbly-Wobbly-Pipey-Wipey/) I talked about *how* packets get routed to the right place through pipes, the question remains *what* exactly gets sent? The obvious solution is just to say that all pipes send and receive byte arrays. That's a pretty terrible solution though, it means that every sender and receiver needs a load of logic for translating binary blobs into some type of data. It's obviously going to be better in the long term to encapsulate the translation somewhere else, so that's what Heist does. A pipe directly sends and receives types (in C# parlance, pipes are _generically typed_), the pipe system finds a translator which knows how to turn Type(T) into a binary blob and then back again.
 
-Translators in Heist are just a class which extends the BasePipeTranslator<T> class, when the pipe system wants to find a translator it simply scans all of the loaded types available to it and finds the one where T is the type it wants. Of course, writing a translator is usually really trivial:
+Translators in Heist are just a class which extends the BasePipeTranslator&lt;T&gt; class, when the pipe system wants to find a translator it simply scans all of the loaded types available to it and finds the one where T is the type it wants. Of course, writing a translator is usually really trivial:
 
     class Vector3Translator
-        :BaseTranslator<Vector3>
+        :BaseTranslator&lt;Vector3&gt;
     {
         public override Vector3 FromBytes(BasePacketReader stream)
         {
@@ -47,42 +47,42 @@ Translators in Heist are just a class which extends the BasePipeTranslator<T> cl
         }
     }
     
-What's going on here is fairly simple. The BaseTranslator<Vector3> class is abstract and requires that ToBytes and FromBytes are implemented, what each one does is (I hope) fairly obvious. The BasePacketWriter and BasePacketReader are convenience classes which implement reading and writing of all the basic primitive types (int, uint, short etc) which I'll talk about in more detail in a minute.
+What's going on here is fairly simple. The BaseTranslator&lt;Vector3&gt; class is abstract and requires that ToBytes and FromBytes are implemented, what each one does is (I hope) fairly obvious. The BasePacketWriter and BasePacketReader are convenience classes which implement reading and writing of all the basic primitive types (int, uint, short etc) which I'll talk about in more detail in a minute.
 
 So how is this used? Here's a basic example of a pipe which sends and receives Vector3's:
 
-    var pipe = GetPipe<Vector3>("Name Of This Pipe");
+    var pipe = GetPipe&lt;Vector3&gt;("Name Of This Pipe");
     pipe.Send(new Vector3(1, 2, 3));
     
 That's it! The system automatically finds a translator for Vector3, and every time Send is called it passes the value through the ToBytes method and sends the resulting blob of bytes across the network.
 
 ## Reusability is cool
 
-There's another cool use of this translator system which makes writing translators quite simple in many cases. The BasePacketWriter type has a generically typed method Write<T> which (similarly to pipes) finds a translator which knows how to translator type(T) into binary and back and then uses it. This means that translators can easily use other translators inside themselves, for example:
+There's another cool use of this translator system which makes writing translators quite simple in many cases. The BasePacketWriter type has a generically typed method Write&lt;T&gt; which (similarly to pipes) finds a translator which knows how to translator type(T) into binary and back and then uses it. This means that translators can easily use other translators inside themselves, for example:
 
     class PhysicsStateTranslator
-        :BaseTranslator<PhysicsState>
+        :BaseTranslator&lt;PhysicsState&gt;
     {
         public override void ToBytes(PhysicsState data, BasePacketWriter stream)
         {
-            stream.Write<Vector3>(data.Position);
-            stream.Write<Vector3>(data.Velocity);
-            stream.Write<Vector3>(data.Orientation);
-            stream.Write<Vector3>(data.AngularVelocity);
+            stream.Write&lt;Vector3&gt;(data.Position);
+            stream.Write&lt;Vector3&gt;(data.Velocity);
+            stream.Write&lt;Vector3&gt;(data.Orientation);
+            stream.Write&lt;Vector3&gt;(data.AngularVelocity);
         }
     
         public override PhysicsState FromBytes(BasePacketReader stream)
         {
             return new PhysicsState(
-                stream.Read<Vector3>(),
-                stream.Read<Vector3>(),
-                stream.Read<Vector3>(),
-                stream.Read<Vector3>()
+                stream.Read&lt;Vector3&gt;(),
+                stream.Read&lt;Vector3&gt;(),
+                stream.Read&lt;Vector3&gt;(),
+                stream.Read&lt;Vector3&gt;()
             );
         }
     }
     
-As you can see, PhysicsState wants to send 4 Vector3s, so instead of writing out all 12 floats one by one it uses the Write<Vector3> method to invoke the Vector3Translator. I think that's pretty cool!
+As you can see, PhysicsState wants to send 4 Vector3s, so instead of writing out all 12 floats one by one it uses the Write&lt;Vector3&gt; method to invoke the Vector3Translator. I think that's pretty cool!
 
 ## Clever Bit Twiddling Hacks
 

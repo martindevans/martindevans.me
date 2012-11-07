@@ -14,6 +14,7 @@
 <foaf:title>Mr</foaf:title>
 <foaf:givenname>Martin</foaf:givenname>
 <foaf:family_name>Evans</foaf:family_name>
+<foaf:nick>Nyarlathothep</foaf:nick>
 <foaf:mbox rdf:resource="mailto:martindevans@gmail.com"/>
 <foaf:homepage rdf:resource="http://martindevans.me"/></foaf:Person>
 </rdf:RDF>

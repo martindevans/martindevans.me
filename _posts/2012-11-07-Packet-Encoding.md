@@ -51,7 +51,7 @@ What's going on here is fairly simple. The BaseTranslator&lt;Vector3&gt; class i
 
 So how is this used? Here's a basic example of a pipe which sends and receives Vector3's:
 
-    var pipe = GetPipe&lt;Vector3&gt;("Name Of This Pipe");
+    var pipe = GetPipe<Vector3>("Name Of This Pipe");
     pipe.Send(new Vector3(1, 2, 3));
     
 That's it! The system automatically finds a translator for Vector3, and every time Send is called it passes the value through the ToBytes method and sends the resulting blob of bytes across the network.
@@ -61,23 +61,23 @@ That's it! The system automatically finds a translator for Vector3, and every ti
 There's another cool use of this translator system which makes writing translators quite simple in many cases. The BasePacketWriter type has a generically typed method Write&lt;T&gt; which (similarly to pipes) finds a translator which knows how to translator type(T) into binary and back and then uses it. This means that translators can easily use other translators inside themselves, for example:
 
     class PhysicsStateTranslator
-        :BaseTranslator &lt;PhysicsState &gt;
+        :BaseTranslator<PhysicsState>
     {
         public override void ToBytes(PhysicsState data, BasePacketWriter stream)
         {
-            stream.Write&lt;Vector3&gt;(data.Position);
-            stream.Write&lt;Vector3&gt;(data.Velocity);
-            stream.Write&lt;Vector3&gt;(data.Orientation);
-            stream.Write&lt;Vector3&gt;(data.AngularVelocity);
+            stream.Write<Vector3>(data.Position);
+            stream.Write<Vector3>(data.Velocity);
+            stream.Write<Vector3>(data.Orientation);
+            stream.Write<Vector3>(data.AngularVelocity);
         }
     
         public override PhysicsState FromBytes(BasePacketReader stream)
         {
             return new PhysicsState(
-                stream.Read&lt;Vector3&gt;(),
-                stream.Read&lt;Vector3&gt;(),
-                stream.Read&lt;Vector3&gt;(),
-                stream.Read&lt;Vector3&gt;()
+                stream.Read<Vector3>(),
+                stream.Read<Vector3>(),
+                stream.Read<Vector3>(),
+                stream.Read<Vector3>()
             );
         }
     }

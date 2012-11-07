@@ -28,7 +28,7 @@ In this series I'm covering 5 topics:
 Translators in Heist are just a class which extends the BasePipeTranslator&lt;T&gt; class, when the pipe system wants to find a translator it simply scans all of the loaded types available to it and finds the one where T is the type it wants. Of course, writing a translator is usually really trivial:
 
     class Vector3Translator
-        :BaseTranslator&lt;Vector3&gt;
+        :BaseTranslator &lt;Vector3 &gt;
     {
         public override Vector3 FromBytes(BasePacketReader stream)
         {
@@ -61,7 +61,7 @@ That's it! The system automatically finds a translator for Vector3, and every ti
 There's another cool use of this translator system which makes writing translators quite simple in many cases. The BasePacketWriter type has a generically typed method Write&lt;T&gt; which (similarly to pipes) finds a translator which knows how to translator type(T) into binary and back and then uses it. This means that translators can easily use other translators inside themselves, for example:
 
     class PhysicsStateTranslator
-        :BaseTranslator&lt;PhysicsState&gt;
+        :BaseTranslator &lt;PhysicsState &gt;
     {
         public override void ToBytes(PhysicsState data, BasePacketWriter stream)
         {

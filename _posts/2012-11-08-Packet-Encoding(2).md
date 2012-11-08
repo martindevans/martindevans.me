@@ -107,9 +107,9 @@ I lied, that's not simple! Here's an example using binary to represent the numbe
         
 So in this case we took a 16 bit integer (2 bytes) and saved ourselves... nothing, we still used two bytes. However if we had used a 64 bit integer (8 bytes) it would still have only taken 2 bytes, that's a 75% compression ratio (which is awesome).
 
-Hopefully it should be relatively obvious how this is decoded. YOu read byte by byte, and if the 8th bit in the byte is set it means there are more bytes to come, if it's unset it means we're done.
+Hopefully it should be relatively obvious how this is decoded. You read byte by byte, and if the 8th bit in the byte is set it means there are more bytes to come, if it's unset it means we're done.
 
-As I mentioned earlier, all compression makes some values bigger to make others smaller. Of course, the things that get here are the big numbers... the *really really* big numbers. a 64 bit integer can represent values up to 1.8446744*10^19. I can't think of any reason Heist is likely to send values this big, so we're good!
+As I mentioned earlier, all compression makes some values bigger to make others smaller. Of course, the things that get here are the big numbers... the *really really* big numbers. A 64 bit integer can represent values up to 1.8446744x10^19. I can't think of any reason Heist is likely to send values this big, so we're good!
 
 ## That Was Quite Long
 

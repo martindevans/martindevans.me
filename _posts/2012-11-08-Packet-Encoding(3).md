@@ -2,7 +2,7 @@
 layout: post
 category : Heist
 tags : [heist, networking-series]
-tagline : In Which There is Much Talk Of Bytes And Bits
+tagline : Praise Be To The Almighty Proof Reader
 ---
 {% include JB/setup %}
 
@@ -22,9 +22,9 @@ Last time I talked about the variable length encoding Heist uses for integers wh
  
 ### WriteRotationQuaternion64
 
-A _rotation quaternion_ is a way of storing rotations in 3D space, it's the way Heist uses because the [BEPU Physics](http://bepuphysics.codeplex.com/) engine prefers to represent rotations like this. A rotation Quaternion has 2 parts, an axis vector and an angle of rotation. As axis vector is a 3 dimensional vector which represents an axis, this means it's values will all be between 1 and -1 and that the total length of the vector will be 1. An angle of rotation is a rotation about this axis and will lie between -1 and 1. An interesting property of rotation quaternions is that if we have a quaternion which has SOME_AXIS and SOME_ROTATION it is equivalent to the quaternion with -SOME_AXIS and -SOME_VALUE.
+A _rotation quaternion_ is a way of storing rotations in 3D space, it's the way Heist uses because the [BEPU Physics](http://bepuphysics.codeplex.com/) engine prefers to represent rotations like this. A rotation Quaternion has 2 parts, an axis vector and an angle of rotation. As axis vector is a 3 dimensional vector which represents an axis, this means its values will all be between 1 and -1 and that the total length of the vector will be 1. An angle of rotation is a rotation about this axis and will lie between -1 and 1. An interesting property of rotation quaternions is that if we have a quaternion which has SOME_AXIS and SOME_ROTATION it is equivalent to the quaternion with -SOME_AXIS and -SOME_VALUE.
 
-Write rotation quaternion takes advantage of all but one of these constraints to pack a quaternion down. The first thing to do is to make sure the rotation component is positive, once it is we know it will definitely lie within the range of 0 to 1. XNA includes a system for encoding 16 bit floats *which are in the 0 to 1 range*, so the angle is written out using this. The axis is pretty similar, the best encoding method to use is the same one used for the rotation but we can't do that directly (remember the value is in the -1 to 1 range), instead we simply divide the number by 2 (now it's -0.5 to 0.5) and then add 0.5 (now it's 0 to 1) problem solved!
+Write rotation quaternion takes advantage of all but one of these constraints to pack a quaternion down. The first thing to do is to make sure the rotation component is positive, once it is we know it will definitely lie within the range of 0 to 1. XNA includes a system for encoding 16 bit floats *which are in the 0 to 1 range*, so the angle is written out using this. The axis is pretty similar, the best encoding method to use is the same one used for the rotation but we can't do that directly (remember the value is in the -1 to 1 range). Instead we simply divide the number by 2 (now it's -0.5 to 0.5) and then add 0.5 (now it's 0 to 1) problem solved!
 
     if (ANGLE < 0)
     {

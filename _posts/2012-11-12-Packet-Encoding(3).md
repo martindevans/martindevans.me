@@ -22,7 +22,7 @@ Last time I talked about the variable length encoding Heist uses for integers wh
  
 ### WriteRotationQuaternion64
 
-A _rotation quaternion_ is a way of storing rotations in 3D space. It's the way Heist uses because the [BEPU Physics](http://bepuphysics.codeplex.com/) engine prefers to represent rotations like this. A rotation Quaternion has 2 parts, an axis vector and an angle of rotation. As axis vector is a 3 dimensional vector which represents an axis – this means its values will all be between 1 and -1 and that the total length of the vector will be 1. An angle of rotation is a rotation about this axis and will lie between -1 and 1. An interesting property of rotation quaternions is that if we have a quaternion which has SOME_AXIS and SOME_ROTATION it is equivalent to the quaternion with -SOME_AXIS and -SOME_VALUE.
+A _rotation quaternion_ is a way of storing rotations in 3D space. It's the way Heist uses because the [BEPU Physics](http://bepuphysics.codeplex.com/) engine prefers to represent rotations like this. A rotation Quaternion has 2 parts, an axis vector and an angle of rotation. As axis vector is a 3 dimensional vector which represents an axis – this means its values will all be between 1 and -1 and that the total length of the vector will be 1. An angle of rotation is a rotation about this axis and will lie between -1 and 1. An interesting property of rotation quaternions is that if we have a quaternion which has SOME_AXIS and SOME_ROTATION it is equivalent to the quaternion with -SOME_AXIS and -SOME_ROTATION.
 
 WriteRotationQuaternion takes advantage of all but one of these constraints to pack a quaternion down. The first thing to do is to make sure the rotation component is positive, and once it is we know it will definitely lie within the range of 0 to 1. XNA includes a system for encoding 16 bit floats *which are in the 0 to 1 range*, so the angle is written out using this. The axis is pretty similar – the best encoding method to use is the same one used for the rotation but we can't do that directly (remember the value is in the -1 to 1 range). Instead we simply divide the number by 2 (now it's -0.5 to 0.5) and then add 0.5 (now it's 0 to 1). Problem solved!
 
@@ -45,7 +45,7 @@ These methods are pretty boring – they just directly write out the elements of
 
 ## Out With the Less Important Bits
 
-The lossy encoding options aren't actually very exciting, as all but 3 are trivial. Here are the trivial ones:
+The lossy encoding options aren't actually very exciting, they are all just variations on the theme of writing floating point numbers with less bits of precision. I am quite likely to add more methods in the future which will be much more interesting (e.g. I have some thoughts on variable length encoding floating point numbers). For now though, here's a summary of the lossy methods for completeness' sake:
 
  - WriteFloat16. Lose some precision and write out a float using 16 instead of 32 bits
  - WriteRotationQuaternion32. Same as write quaternion 64, except use half as many bits for everything

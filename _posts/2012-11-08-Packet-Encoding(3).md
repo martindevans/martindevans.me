@@ -13,7 +13,7 @@ Sometimes the best way to make something smaller is to throw half of it away.
 
 ## Don't Throw That Away!
 
-[Last time](/2012/11/08/Packet-Encoding(2\)/) I talked about the variable length encoding Heist uses for integers which are likely to be near zero. There were a few other lossless operations I listed which I should explain before moving on:
+<a href="/2012/11/08/Packet-Encoding(2)/">Last time</a> I talked about the variable length encoding Heist uses for integers which are likely to be near zero. There were a few other lossless operations I listed which I should explain before moving on:
 
  - WriteVariableUint64
  - WriteRotationQuaternion64

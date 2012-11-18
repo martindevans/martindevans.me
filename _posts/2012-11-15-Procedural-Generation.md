@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Heist
-tags : [heist, procedural-generation-series]
+tags : [heist, procedural-generation-series-tech, procedural-generation-series-airship]
 tagline : In Which A New Series Is Revealed
 ---
 {% include JB/setup %}
@@ -33,6 +33,18 @@ This series is going to have 2 parallel sets of entries.
 
 This is the main meat of the series – a set of posts on the subject of procedural generation with overviews of different ways of doing it, how other games do it, drawbacks of these techniques and some of the technical underpinnings of implementing procedural generation.
 
+<ul>
+    {% for page in site.tags.procedural-generation-series-tech %}
+    <li><a href="{{ post.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
+
 ### Steampunk Airships 
 
 These will be a series of posts about the new gamemode in Heist, with details on how it works, how to play it, where to get preview releases and what progress I am making on the steampunk airship world scripts.
+
+<ul>
+    {% for page in site.tags.procedural-generation-series-airship %}
+    <li><a href="{{ post.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>

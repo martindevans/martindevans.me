@@ -36,7 +36,7 @@ What's really needed is another entire approach to developing content. An approa
 
 That's what procedural generation is (no one saw that coming, right?). Procedural content generation (PCG) is simply the idea of getting the computer to create content for you instead of an artist. The key ideas within PCG are variety, size and replayability.
 
-#### Infinite Variety
+### Infinite Variety
 
 The quintessential example of an infinite variety PCG system is [SpeedTree](http://www.speedtree.com/). Ever wondered how games have such a [vast number of trees](http://www.youtube.com/watch?feature=player_detailpage&v=EhwZ7Sb0PHA), none looking exactly the same? It's a safe bet that SpeedTree was used.
 
@@ -48,7 +48,7 @@ Some other examples:
  * Strategy games usually come with the option to generate a random map (implying there are billions of maps)
  * Rhythm games procedurally generate their levels from a seed file (the music). Implying as many levels as there are possible music tracks
  
-#### Infinite Size
+### Infinite Size
 
 A natural consequence of infinite variety is that it becomes easy to generate really big worlds. Got an algorithm to create varied tiles of landscape? Keep applying it until you have a world of any size!
 

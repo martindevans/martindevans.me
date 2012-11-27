@@ -43,7 +43,7 @@ Procedural generation is basically the gift that keeps giving. If you're making 
 
 ### Procedural Generation Is For [Levels/Textures/Meshes/Sounds/Music/Stuff] Only And Cannot Be Used For [Levels/Textures/Meshes/Sounds/Music/Stuff]
 
-Procedural generation has been used for [Levels](http://images.wikia.com/justcause/images/9/9d/Just_Cause_(1)_map.png), [textures](http://powet.tv/powetblog/wp-content/uploads/2007/06/kreiger.jpg), [Meshes](http://www.esri.com/news/releases/11-4qtr/images/esri-releases-new-version-of-cityengine-lg.jpg), [Sounds](http://www.superflashbros.net/as3sfxr/), [Music](http://tones.wolfram.com/generate/) and [Other](http://left4dead.wikia.com/wiki/The_Director) [Stuff](http://www.youtube.com/watch?v=_xAYkPVOTbc).
+Procedural generation has been used for <a href="http://images.wikia.com/justcause/images/9/9d/Just_Cause_(1)_map.png">Levels</a>, [textures](http://powet.tv/powetblog/wp-content/uploads/2007/06/kreiger.jpg), [Meshes](http://www.esri.com/news/releases/11-4qtr/images/esri-releases-new-version-of-cityengine-lg.jpg), [Sounds](http://www.superflashbros.net/as3sfxr/), [Music](http://tones.wolfram.com/generate/) and [Other](http://left4dead.wikia.com/wiki/The_Director) [Stuff](http://www.youtube.com/watch?v=_xAYkPVOTbc).
 
 I'm pretty sure Procedural Generation can be applied to almost any area of content generation. Whatever it is that artists are doing there is some drudgery that could be automated for them.
 

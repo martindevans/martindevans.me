@@ -39,7 +39,7 @@ Procedural generation is quite regularly used in major games as part of the cont
 
 That all depends on your definition of hard work doesn't it? Personally I find spending a week or two writing an algorithm and then being supplied with trillions of bits of content easier than spending a week or two hand modelling 10 bits of content. A general rule of thumb that I have is that if I have to do a bit of extra work to make my future life 12 orders of magitude easier it's probably worth it ;)
 
-Procedural generation is basically the gift that keeps giving. If you're making a small, very focused game, which requires carefully designed things maybe procedural generation isn't so useful. For example, using random level generation like [X-Com](http://en.wikipedia.org/wiki/X-COM) to generate puzzles for [portal](http://en.wikipedia.org/wiki/Portal_(video_game)) would probably be completely disastrous. N.b. I totally want to see a portal procedural level generator, that would be awesome if it worked.
+Procedural generation is basically the gift that keeps giving. If you're making a small, very focused game, which requires carefully designed things maybe procedural generation isn't so useful. For example, using random level generation like [X-Com](http://en.wikipedia.org/wiki/X-COM) to generate puzzles for <a href="http://en.wikipedia.org/wiki/Portal_(video_game)">portal</a> would probably be completely disastrous. N.b. I totally want to see a portal procedural level generator, that would be awesome if it worked.
 
 ### Procedural Generation Is For [Levels/Textures/Meshes/Sounds/Music/Stuff] Only And Cannot Be Used For [Levels/Textures/Meshes/Sounds/Music/Stuff]
 

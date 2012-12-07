@@ -28,6 +28,8 @@ My point here is that Heist has a _lot_ of stuff that gets saved out to disk, an
 
 This is why Heist keeps breaking in almost the same way with every single version. I'm developing so rapidly at the moment that every time you play you're loading up a new _and incompatible_ version of the game. When the game starts it tries to load your configuration and mods from the last time and *BOOM* something somewhere chokes on the old data.
 
+To be clear the incompatibility isn't because I've changed the syntax. If that were the case I could easily just parse the file in the old way and the new way and use whichever one worked, then I could write out the data in the new format so that it would only ever be a problem once. The problem is that I'm frequently changing the _semantics_ of files. For example I occasionally change the name of arguments in the scripting interface, there's no good way to handle this.
+
 ## But You Could...
 
 I could handle this much better. The mod system could ignore incompatible mods and inform the user that they need to fix something. The configuration file could be ignored if it's badly formatted. I could publish a list of compatible versions and make the game delete all old configuration if it's from an incompatible version. For now though, these things require more effort than I think is really worth it.

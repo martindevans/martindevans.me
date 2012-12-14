@@ -63,7 +63,7 @@ var string = "X";
     setInterval(function()
     {
         var str = string;
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 4; i++) {
             str = produce(str);
         }
         draw(str);

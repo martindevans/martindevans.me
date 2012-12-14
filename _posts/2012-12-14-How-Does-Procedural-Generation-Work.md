@@ -106,8 +106,8 @@ If you're interested in how voronoi diagrams and noise can be used together chec
 
 ## L-Systems
 
-<!-- TEMPORARY
 <canvas id="lsystem" width="256" height="256"></canvas>
+
 <script>
     var string = "X";
     var rules = {
@@ -180,7 +180,6 @@ If you're interested in how voronoi diagrams and noise can be used together chec
         draw(str);
     }, 100);
 </script>
--->
 
 Noise and Voronoi regions are good ways to generate largely meaningless data, but what about when we want data which is in some way meaningful? L-Systems were originally invented by a biologist to simulate the growth of mould and it has turned out that they're good at generating many other patterns. An L-System can be imagined as a string rewriting system – you start off with some string and then, according to a set of rules, you replace all the letters in the string with other sequences of letters and you keep doing this as many times as you like.
 

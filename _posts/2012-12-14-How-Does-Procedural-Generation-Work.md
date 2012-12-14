@@ -104,7 +104,7 @@ If you're interested in how voronoi diagrams and noise can be used together chec
 
 ## L-Systems
 
-<canvas id="lsystem" width="256" height="256"></div>
+<canvas id="lsystem" width="256" height="256"></canvas>
 <script>
     var string = "X";
     var rules = {

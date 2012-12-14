@@ -67,4 +67,4 @@ var string = "X";
             str = produce(str);
         }
         draw(str);
-    }, 100);
+    }, 500);

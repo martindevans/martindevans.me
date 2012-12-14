@@ -60,11 +60,12 @@ var string = "X";
         }
     }
     
+    var iterated = string;
+    for (var i = 0; i < 3; i++) {
+        iterated = produce(iterated);
+    }
+    
     setInterval(function()
     {
-        var str = string;
-        for (var i = 0; i < 3; i++) {
-            str = produce(str);
-        }
-        draw(str);
+        draw(iterated);
     }, 1000);

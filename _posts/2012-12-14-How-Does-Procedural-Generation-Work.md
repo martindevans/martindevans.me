@@ -109,78 +109,7 @@ If you're interested in how voronoi diagrams and noise can be used together chec
 <canvas id="lsystem" width="256" height="256">
 </canvas>
 
-<script type="text/javascript">
-    var string = "X";
-    var rules = {
-        "X" : "F-[[X]+X]+F[+FX]-X",
-        "F" : "FF"
-    };
-    
-    function produce(input) {
-        var output = "";
-        for (var i = 0; i < input.length; i++) {
-            var rule = rules[input[i]];
-            if (rule) {
-                output += rule;
-            } else {
-                output += input[i];
-            }
-        }
-        return output;
-    }
-    
-    var canvas = document.getElementById("lsystem");
-    var context = canvas.getContext("2d");
-    
-    function draw(input) {
-        context.clearRect(0, 0, canvas.width, canvas.height);   //Doesn't work!
-        canvas.width = canvas.width;
-        context.strokeStyle = "green";
-        
-        var stack = [];
-        var state = {
-            X: canvas.offsetWidth / 2,
-            Y: canvas.offsetHeight,
-            Angle: -Math.PI / 2,
-        }
-        
-        function drawForward() {
-            context.moveTo(state.X, state.Y);
-            state.X = state.X + Math.cos(state.Angle) * 3;
-            state.Y = state.Y + Math.sin(state.Angle) * 3;
-            context.lineTo(state.X, state.Y);
-            context.stroke();
-        }
-        
-        for (var i = 0; i < input.length; i++) {
-            var c = input[i];
-            if (c == 'F') {
-                drawForward();
-            } else if (c == '-') {
-                state.Angle -= 1 * (0.2 + Math.random() * 0.8);   //Turn left 25 degrees
-            } else if (c == '+') {
-                state.Angle += 1 * (0.2 + Math.random() * 0.8);   //Turn right 25 degrees
-            } else if (c == '[') {
-                stack.push({
-                    X: state.X,
-                    Y: state.Y,
-                    Angle: state.Angle
-                });
-            } else if (c == ']') {
-                state = stack.pop();
-            }
-        }
-    }
-    
-    setInterval(function()
-    {
-        var str = string;
-        for (var i = 0; i < 5; i++) {
-            str = produce(str);
-        }
-        draw(str);
-    }, 100);
-    
+<script type="text/javascript" src="assets/lsystem-demo.js">
 </script>
 
 Noise and Voronoi regions are good ways to generate largely meaningless data, but what about when we want data which is in some way meaningful? L-Systems were originally invented by a biologist to simulate the growth of mould and it has turned out that they're good at generating many other patterns. An L-System can be imagined as a string rewriting system – you start off with some string and then, according to a set of rules, you replace all the letters in the string with other sequences of letters and you keep doing this as many times as you like.

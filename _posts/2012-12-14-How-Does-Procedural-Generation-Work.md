@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 category : Heist
 tags : [heist, procedural-generation-series-tech]

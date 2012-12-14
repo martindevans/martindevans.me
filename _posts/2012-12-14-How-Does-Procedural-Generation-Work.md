@@ -29,7 +29,7 @@ Noise is actually quite hard to define. Everyone understands noise from their da
 
 The most well known kind of noise (in the field of computer graphics anyway) is *Perlin Noise*
 
-[Perlin Noise](http://upload.wikimedia.org/wikipedia/commons/d/da/Perlin_noise.jpg)
+![Perlin Noise](http://upload.wikimedia.org/wikipedia/commons/d/da/Perlin_noise.jpg)
 
 The point of perlin noise is that it has pseudo random features _which are all the same size_. This is really useful for many things – if you know roughly how large the noise features are going to be, you can more carefully control the way in which you use the noise to create certain effects. For example if you're generating landscapes you could add together many layers of perlin noise with different scales. You use the layer with features a few feet wide to control little bumps in the landscape and you use the layer with features a few kilometres wide to control the overall geography of the landscape. This is actually how Minecraft generates a lot of the landscape: biomes are selected with overlaid heat and moisture maps, mountains are generated with large scale simplex noise added to small scale simplex noise for hills and finally caves are multiple levels of simplex noise _subtracted_ off the main landscape.
 

@@ -34,8 +34,8 @@ var string = "X";
         
         function drawForward() {
             context.moveTo(state.X, state.Y);
-            state.X = state.X + Math.cos(state.Angle) * 3;
-            state.Y = state.Y + Math.sin(state.Angle) * 3;
+            state.X = state.X + Math.cos(state.Angle) * 6;
+            state.Y = state.Y + Math.sin(state.Angle) * 6;
             context.lineTo(state.X, state.Y);
             context.stroke();
         }

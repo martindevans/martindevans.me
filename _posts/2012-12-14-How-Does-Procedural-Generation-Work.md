@@ -64,6 +64,7 @@ Since inventing perlin noise Ken Perlin has since created simplex noise, which h
 
 <script src="http://d3js.org/d3.v3.min.js">
 </script>
+
 <script type="text/javascript">
     var width = 960,
         height = 500;

@@ -65,7 +65,8 @@ var string = "X";
         iterated = produce(iterated);
     }
     
-    setInterval(function()
+    canvas.onclick = function()
     {
         draw(iterated);
-    }, 1000);
+    };
+    draw(iterated);

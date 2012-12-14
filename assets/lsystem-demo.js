@@ -61,7 +61,7 @@ var string = "X";
     }
     
     var iterated = string;
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 5; i++) {
         iterated = produce(iterated);
     }
     

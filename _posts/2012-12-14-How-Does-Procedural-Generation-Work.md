@@ -63,39 +63,37 @@ Since inventing perlin noise Ken Perlin has since created simplex noise, which h
 <a href="http://bl.ocks.org/4060366"><svg id="voronoi" width="960" height="500" class="PiYG"></svg></a>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
-    setTimeout(function() {
-        var width = 960,
-            height = 500;
-         
-        var vertices = d3.range(75).map(function(d) {
-          return [Math.random() * width, Math.random() * height];
-        });
-         
-        var svg = d3.select("#voronoi")
-            .on("mousemove", update);
-         
-        svg.selectAll("path")
-            .data(d3.geom.voronoi(vertices))
-          .enter().append("path")
-            .attr("class", function(d, i) { return i ? "q" + (i % 9) + "-9" : null; })
-            .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
-         
-        svg.selectAll("circle")
-            .data(vertices.slice(1))
-          .enter().append("circle")
-            .attr("transform", function(d) { return "translate(" + d + ")"; })
-            .attr("r", 2);
-         
-        function update() {
-          vertices[0] = d3.mouse(this);
-          svg.selectAll("path")
-              .data(d3.geom.voronoi(vertices)
-              .map(function(d) { return "M" + d.join("L") + "Z"; }))
-            .filter(function(d) { return this.getAttribute("d") != d; })
-              .attr("d", function(d) { return d; });
-        }
-    }, 100);
+<script type="text/javascript">
+    var width = 960,
+        height = 500;
+     
+    var vertices = d3.range(75).map(function(d) {
+      return [Math.random() * width, Math.random() * height];
+    });
+     
+    var svg = d3.select("#voronoi")
+        .on("mousemove", update);
+     
+    svg.selectAll("path")
+        .data(d3.geom.voronoi(vertices))
+      .enter().append("path")
+        .attr("class", function(d, i) { return i ? "q" + (i % 9) + "-9" : null; })
+        .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+     
+    svg.selectAll("circle")
+        .data(vertices.slice(1))
+      .enter().append("circle")
+        .attr("transform", function(d) { return "translate(" + d + ")"; })
+        .attr("r", 2);
+     
+    function update() {
+      vertices[0] = d3.mouse(this);
+      svg.selectAll("path")
+          .data(d3.geom.voronoi(vertices)
+          .map(function(d) { return "M" + d.join("L") + "Z"; }))
+        .filter(function(d) { return this.getAttribute("d") != d; })
+          .attr("d", function(d) { return d; });
+    }
 </script>
 
 Voronoi diagrams are dead simple to explain and have many applications, both in science and art. Imagine a load of points scattered across a plane, which we'll call seed points. Now we want to classify every single point on the plane into a region. To do this, we simply put each point into the same region as the closest seed point. If you inspect the demo above you'll see that's what is going on – each coloured region shows the set of points which are closest to the (white dot) seed point in that region. Naturally, this definition extends into as many dimensions as you like, most usefully 2D and 3D of course.

@@ -60,6 +60,10 @@ Since inventing perlin noise Ken Perlin has since created simplex noise, which h
     .PiYG .q8-9{fill:rgb(77,146,33)}
 </style>
 
+<!--[if IE]>
+    Looks like you're using IE, unfortunately my really cool demo doesn't work in IE. Check it out [here](http://bl.ocks.org/4060366) instead.
+<![endif]-->
+<![if !IE]>
 <a href="http://bl.ocks.org/4060366">
     <svg id="voronoi" width="100%" height="500" class="PiYG">
     </svg>
@@ -100,6 +104,7 @@ Since inventing perlin noise Ken Perlin has since created simplex noise, which h
           .attr("d", function(d) { return d; });
     }
 </script>
+<![endif]>
 
 Voronoi diagrams are dead simple to explain and have many applications, both in science and art. Imagine a load of points scattered across a plane, which we'll call seed points. Now we want to classify every single point on the plane into a region. To do this, we simply put each point into the same region as the closest seed point. If you inspect the demo above you'll see that's what is going on – each coloured region shows the set of points which are closest to the (white dot) seed point in that region. Naturally, this definition extends into as many dimensions as you like, most usefully 2D and 3D of course.
 

@@ -61,7 +61,7 @@ Since inventing perlin noise Ken Perlin has since created simplex noise, which h
 </style>
 
 <a href="http://bl.ocks.org/4060366">
-    <svg id="voronoi" width="100%" height="500" class="PiYG" viewBox="0 0 500 500">
+    <svg id="voronoi" width="100%" height="500" class="PiYG">
     </svg>
 </a>
 

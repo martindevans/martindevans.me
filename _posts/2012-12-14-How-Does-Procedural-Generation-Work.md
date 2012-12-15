@@ -68,7 +68,6 @@ Since inventing perlin noise Ken Perlin has since created simplex noise, which h
     <svg id="voronoi" width="100%" height="500" class="PiYG">
     </svg>
 </a>
-<![endif]>
 
 <script src="http://d3js.org/d3.v3.min.js">
 </script>

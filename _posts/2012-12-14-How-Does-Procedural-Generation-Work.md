@@ -14,7 +14,7 @@ L-Systems are about replacing lines of meaningless text with cool stuff... like 
 
 ## But There's A Hole In My Bucket...
 
-So we've talked about [what procedural generation is for](/Heist/2012-11-18-What-Is-Procedural-Generation.md/), and [what it isn't](/Heist/2012-11-23-What-Isn't-Procedural-Generation.md/) but how does it _really_ work?
+So we've talked about [what procedural generation is for](/Heist/2012/11/18/What-Is-Procedural-Generation/), and [what it isn't](/Heist/2012/11/23/What-Isn't-Procedural-Generation/) but how does it _really_ work?
 
 Ultimately procedural generation is just about building algorithms to create art – of course, there's no one magic algorithm to do that! However, there are a few basic elements that often appear in relation to procedural generation algorithms. Big disclaimer: these are the things that often seem to appear in relation to *me* thinking about how to solve *my* procedural generation problems; I'm certain that other things could be added to this list. If you think of anything missing tell me about it, and I'll probably learn something new. Ordered roughly by how complex they are to use, from least to most complex:
 

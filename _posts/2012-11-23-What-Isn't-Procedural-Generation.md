@@ -3,6 +3,7 @@ layout: post
 category : Heist
 tags : [heist, procedural-generation-series-tech]
 tagline : In Which Some Misconceptions Are Dismissed
+title : What Isn't Procedural Generation?
 ---
 {% include JB/setup %}
 

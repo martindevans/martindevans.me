@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 category : Heist
 tags : [heist, procedural-generation-series-tech]
@@ -14,7 +14,7 @@ L-Systems are about replacing lines of meaningless text with cool stuff... like 
 
 ## But There's A Hole In My Bucket...
 
-So we've talked about [what procedural generation is for](/Heist/2012-11-18-What-Is-Procedural-Generation.md/), and [what it isn't](/Heist/2012-11-23-What-Isn't-Procedural-Generation.md/) but how does it _really_ work?
+So we've talked about [what procedural generation is for](/Heist/2012/11/18/What-Is-Procedural-Generation/), and [what it isn't](/Heist/2012/11/23/What-Isn't-Procedural-Generation/) but how does it _really_ work?
 
 Ultimately procedural generation is just about building algorithms to create art – of course, there's no one magic algorithm to do that! However, there are a few basic elements that often appear in relation to procedural generation algorithms. Big disclaimer: these are the things that often seem to appear in relation to *me* thinking about how to solve *my* procedural generation problems; I'm certain that other things could be added to this list. If you think of anything missing tell me about it, and I'll probably learn something new. Ordered roughly by how complex they are to use, from least to most complex:
 
@@ -29,7 +29,7 @@ Noise is actually quite hard to define. Everyone understands noise from their da
 
 The most well known kind of noise (in the field of computer graphics anyway) is *Perlin Noise*
 
-[Perlin Noise](http://upload.wikimedia.org/wikipedia/commons/d/da/Perlin_noise.jpg)
+![Perlin Noise](http://upload.wikimedia.org/wikipedia/commons/d/da/Perlin_noise.jpg)
 
 The point of perlin noise is that it has pseudo random features _which are all the same size_. This is really useful for many things – if you know roughly how large the noise features are going to be, you can more carefully control the way in which you use the noise to create certain effects. For example if you're generating landscapes you could add together many layers of perlin noise with different scales. You use the layer with features a few feet wide to control little bumps in the landscape and you use the layer with features a few kilometres wide to control the overall geography of the landscape. This is actually how Minecraft generates a lot of the landscape: biomes are selected with overlaid heat and moisture maps, mountains are generated with large scale simplex noise added to small scale simplex noise for hills and finally caves are multiple levels of simplex noise _subtracted_ off the main landscape.
 
@@ -60,10 +60,15 @@ Since inventing perlin noise Ken Perlin has since created simplex noise, which h
     .PiYG .q8-9{fill:rgb(77,146,33)}
 </style>
 
-<a href="http://bl.ocks.org/4060366"><svg id="voronoi" width="960" height="500" class="PiYG"></svg></a>
+<a href="http://bl.ocks.org/4060366">
+    <svg id="voronoi" width="100%" height="500" class="PiYG">
+    </svg>
+</a>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
+<script src="http://d3js.org/d3.v3.min.js">
+</script>
+
+<script type="text/javascript">
     var width = 960,
         height = 500;
      
@@ -104,78 +109,11 @@ If you're interested in how voronoi diagrams and noise can be used together chec
 
 ## L-Systems
 
-<canvas id="lsystem" width="256" height="256"></div>
-<script>
-    var string = "X";
-    var rules = {
-        "X" : "F-[[X]+X]+F[+FX]-X",
-        "F" : "FF"
-    };
-    
-    function produce(input) {
-        var output = "";
-        for (var i = 0; i < input.length; i++) {
-            var rule = rules[input[i]];
-            if (rule) {
-                output += rule;
-            } else {
-                output += input[i];
-            }
-        }
-        return output;
-    }
-    
-    var canvas = document.getElementById("lsystem");
-    var context = canvas.getContext("2d");
-    
-    function draw(input) {
-        context.clearRect(0, 0, canvas.width, canvas.height);   //Doesn't work!
-        canvas.width = canvas.width;
-        context.strokeStyle = "green";
-        
-        var stack = [];
-        var state = {
-            X: canvas.offsetWidth / 2,
-            Y: canvas.offsetHeight,
-            Angle: -Math.PI / 2,
-        }
-        
-        function drawForward() {
-            context.moveTo(state.X, state.Y);
-            state.X = state.X + Math.cos(state.Angle) * 3;
-            state.Y = state.Y + Math.sin(state.Angle) * 3;
-            context.lineTo(state.X, state.Y);
-            context.stroke();
-        }
-        
-        for (var i = 0; i < input.length; i++) {
-            var c = input[i];
-            if (c == 'F') {
-                drawForward();
-            } else if (c == '-') {
-                state.Angle -= 1 * (0.2 + Math.random() * 0.8);   //Turn left 25 degrees
-            } else if (c == '+') {
-                state.Angle += 1 * (0.2 + Math.random() * 0.8);   //Turn right 25 degrees
-            } else if (c == '[') {
-                stack.push({
-                    X: state.X,
-                    Y: state.Y,
-                    Angle: state.Angle
-                });
-            } else if (c == ']') {
-                state = stack.pop();
-            }
-        }
-    }
-    
-    setInterval(function()
-    {
-        var str = string;
-        for (var i = 0; i < 5; i++) {
-            str = produce(str);
-        }
-        draw(str);
-    }, 100);
+#### Click For New Trees:
+<canvas id="lsystem" width="256" height="256">
+</canvas>
+
+<script type="text/javascript" src="/assets/lsystem-demo.js">
 </script>
 
 Noise and Voronoi regions are good ways to generate largely meaningless data, but what about when we want data which is in some way meaningful? L-Systems were originally invented by a biologist to simulate the growth of mould and it has turned out that they're good at generating many other patterns. An L-System can be imagined as a string rewriting system – you start off with some string and then, according to a set of rules, you replace all the letters in the string with other sequences of letters and you keep doing this as many times as you like.

@@ -25,7 +25,7 @@ Games like [Minecraft](http://minecraft.net/), [Garrys mod](http://garrysmod.com
 
 The next few months of development on Heist will be working towards solving this problem by developing an in game construction mode which allows players to create/edit/save and load shapes and then to use these shapes to build procedural cities which can then be loaded in any of the other Heist gamemodes as places to play in. This is quite exciting for me because most of the work for this mode will _not_ be engine work, instead I will be doing most of my work in writing Lua scripts to create the new gamemode and associated scripted tools/entities which means this will be the first real test of how flexible the game is for modding.
 
-The other thing I'm going to be working on in the same period is working out how exactly I'm going to start making money off all this hard work. To start with I'm simply going to be posting on Screenshot Saturday over at [r/gamemdev](http://www.reddit.com/r/gamedev) <del>every</del> most weeks to get a little more attention on the project. Beyond that point I see my options as:
+The other thing I'm going to be working on in the same period is working out how exactly I'm going to start making money off all this hard work. To start with I'm simply going to be posting on Screenshot Saturday over at [r/gamedev](http://www.reddit.com/r/gamedev) <del>every</del> most weeks to get a little more attention on the project. Beyond that point I see my options as:
 
 1. Working towards a full steam release
 2. Working towards a Greenlight release

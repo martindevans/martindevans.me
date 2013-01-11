@@ -44,7 +44,7 @@ I promised a timetable, so here it is:
 - Basic Construct Mode (tools to create and manipulate CSG brushes)
 - Material selection for CSG brushes
 - Shape Library (a place to save and load custom shapes from, persistant)
-- <delAccount System (a centralised profile for players of Heist, for when I get bored with CSG)</del> [Steam accounts](/Heist/2013/01/09/Thinking-Aloud-About-Release/)
+- <del>Account System (a centralised profile for players of Heist, for when I get bored with CSG)</del> [Steam accounts](/Heist/2013/01/09/Thinking-Aloud-About-Release/)
 - Better Mod UI on main menu (more graphical, prettier layout, descriptions of mods, force refresh)
 
 ### February

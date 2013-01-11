@@ -27,7 +27,7 @@ This is obviously a really big decision and I'm going to use this blog post as a
 
 Publishing on Steam has some *huge* advantages. The most obvious is that Steam is [_ridiculously_ popular](http://store.steampowered.com/stats/) - simply getting onto Steam gets you exposure to ~10,000,000 gamers! Additionally, Valve are masters at selling games – getting their advice on pricing and marketing schemes is worth paying for. If you publish on Steam you also get access to the [Steamworks SDK](http://www.steampowered.com/steamworks/) which looks like it would save me from implementing a whole load of backend infrastructure myself. Here are just a few things Steamworks does for you:
  - Multiplayer matchmaking
- - Multiplayer session initiation ([NAT holepunching!](http://martindevans.me/Heist/2012/10/15/Get-Up-And-Initiate-That-Session/))
+ - Multiplayer session initiation ([NAT holepunching!](/Heist/2012/10/15/Get-Up-And-Initiate-That-Session/))
  - Leaderboards
  - Valve anti cheat
  - Cloud save files

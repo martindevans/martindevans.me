@@ -44,7 +44,6 @@ I promised a timetable, so here it is:
 - Basic Construct Mode (tools to create and manipulate CSG brushes)
 - Material selection for CSG brushes
 - Shape Library (a place to save and load custom shapes from, persistant)
-- Better Mod UI on main menu (more graphical, prettier layout, descriptions of mods, force refresh)
 
 ### February
 
@@ -55,5 +54,4 @@ I promised a timetable, so here it is:
 ### March
 
 - Multiplayer Construct Mode (shouldn't be a massive amount of work)
-- General Multiplayer Polish (make NAT negotiation more reliable, better session initiation)
-- Prepare For Paid Alpha Release? (depends on what I decide)
+- Put Heist on Steam Greenlight (Concept or Alpha Release?)

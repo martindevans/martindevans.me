@@ -42,7 +42,7 @@ I promised a timetable, so here it is:
 ### January
 
 - Basic Construct Mode (tools to create and manipulate CSG brushes)
-- Material selection for CSG brushes
+- Material Selection for CSG Brushes
 - Shape Library (a place to save and load custom shapes from, persistant)
 
 ### February
@@ -50,8 +50,10 @@ I promised a timetable, so here it is:
 - Parametric Construct Mode (allow players to create nodes containing shapes with sizes like "X is 75% of the width of Y")
 - Parametric Saving (save parametric shapes as scripts for city generator)
 - Generate Cities (allow players to generate an regenerate small chunks of a city on the fly, including using the paramtetric shapes they just saved)
+- Improve Demo City (craft some interesting buildings using Construct Parametric Mode)
 
 ### March
 
-- Multiplayer Construct Mode (shouldn't be a massive amount of work)
+- Implement Building Topology (Wiring, water pipes, computer networks, AI navmesh)
+- Integrate Topology Into Construct Mode
 - Put Heist on Steam Greenlight (Concept or Alpha Release?)

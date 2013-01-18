@@ -42,7 +42,7 @@ I promised a timetable, so here it is:
 ### January
 
 - Basic Construct Mode (tools to create and manipulate CSG brushes)
-- <del>Material Selection for CSG Brushes</del>
+- *Material Selection for CSG Brushes* (DONE)
 - Shape Library (a place to save and load custom shapes from, persistant)
 
 ### February

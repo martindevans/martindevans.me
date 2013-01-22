@@ -2,7 +2,7 @@
 layout: post
 category : Heist
 tags : [heist]
-tagline : In Which A Promise Is Prepared To Be Broken
+tagline : Mind = Blown
 ---
 {% include JB/setup %}
 

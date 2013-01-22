@@ -43,7 +43,7 @@ I promised a timetable, so here it is:
 
 - Basic Construct Mode (tools to create and manipulate CSG brushes)
 - (COMPLETE) *Material Selection for CSG Brushes*
-- Shape Library (a place to save and load custom shapes from, persistant)
+- (ON HOLD) *Shape Library (a place to save and load custom shapes from, persistant)*
 
 ### February
 

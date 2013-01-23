@@ -41,7 +41,7 @@ I promised a timetable, so here it is:
 
 ### January
 
-- Basic Construct Mode (tools to create and manipulate CSG brushes)
+- (COMPLETE) *Basic Construct Mode (tools to create and manipulate CSG brushes)*
 - (COMPLETE) *Material Selection for CSG Brushes*
 - (ON HOLD) *Shape Library (a place to save and load custom shapes from, persistant)*
 

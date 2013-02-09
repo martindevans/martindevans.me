@@ -84,3 +84,7 @@ This all sounds... awesome. A few posts back I discussed the different approache
  - Greenlight can eventually be done away with in favour of the more open steam platform already talked about
  
 This makes sense. It now becomes obvious that Greenlight is just a transitional technology while Valve shift their entire distribution system over to user driven stores.
+
+# Summary
+
+Although it looks like a new and strange way of doing business Valve are really just taking the next logical step. Over the years games have been increasingly about releasing early and getting lots of community interaction, then constantly updating the game with free or paid DLC. Indies in particular seem to always release their games incomplete (or at least as early as possible) and then develop it onwards in the direction the community likes the most. What Valve are doing looks to be the next step, actually allowing the community to directly interact with and modify the game (and possibly being _paid_ by the rest of the community to do so). This is going to be a very exciting time for gamers, game developers and modders. It's probably going to be a less exciting time for traditional game publishers.

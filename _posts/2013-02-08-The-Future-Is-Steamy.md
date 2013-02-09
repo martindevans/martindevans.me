@@ -41,13 +41,14 @@ Personally I don't agree that Apple have the best path into the living room. Any
 # Games are productivity platforms for gamers creating digital goods and services for other gamers
 
  - Community produces 10x more content for TF2 than valve do
-  - Best way for Valve *and* the community to make money is for Valve to enable community to make even more/better content
+ - Best way for Valve *and* the community to make money is for Valve to enable community to make even more/better content
  - Ownership of content should be tracked through the entire system
   - Someone makes a texture, someone then uses that texture to make a model, and someone else uses the model to make a level.
-   - If someone buys the level, then everyone in the chain should get some reward for the value they created
+  - If someone buys the level, then everyone in the chain should get some reward for the value they created
   - Enables ad-hoc collaboration
  - A single game shouldn't be a closed economy, work put into getting, for example, leather in WoW should be exchangeable for something in another game, e.g. DoTA
   - Essentially, every game becomes an instanced dungeon of a global game economy
+  - Obvious Example, Steam Trade
  - Reviews, Replays, Commentary, are all content which valve wants to provide a way to reward
  - [Na'Vi](http://en.wikipedia.org/wiki/Natus_Vincere) (famous gaming team) provide a service (streaming their games, entertainment), so they should be able to earn money from it
   - Valve need to provide a framework for people like Na'Vi to earn money from being famous players of DoTA
@@ -64,8 +65,7 @@ Engaging with the community is something I consider incredibly important for Hei
   - Create artificial costs to entering the market
   - Reduces innovation
   - Less innovation is bad for everyone
- - Valve can only put so many games onto steam each day
-  - They are inadvertently creating limited shelf space
+ - Valve can only put so many games onto steam each day, inadvertently creating limited shelf space
  - Right way to solve the problem is for steam to become a network API for developers to distribute their content, anyone can publish anything on steam, no bottleneck!
  - A store for games or content should be user generated
   - Indie devs create a store for their game

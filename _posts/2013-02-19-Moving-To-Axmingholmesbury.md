@@ -44,9 +44,9 @@ Pretty simple, I hope.
 
 Results:
 
-    1. *m* (must be the start letter, it's the only start letter this system knows about)
-    2. *a* (picked randomly, 66% probability)
-    3. *t* (picked randomly, 50% probability)
+    1. m (must be the start letter, it's the only start letter this system knows about)
+    2. a (picked randomly, 66% probability)
+    3. t (picked randomly, 50% probability)
     4. (_end_) (picked randomly, 50% probability)
     
 Given such an _incredibly_ limited set of examples _Mat_ is not a bad example name to generate.

@@ -13,7 +13,7 @@ I'm been hard at work on Artificial Intelligence.
 
 ## Where Have You Been!?
 
-It's been a while since my last blog post, sorry about that. I was aiming to get a page up on Steam Greenlight at the end of last month - I decided that I would keep my head down, work extra super hard and then come back with an announcement of my Greenlight page. That didn't happen because the [UI system that Heist uses](http://awesomium.com/) released a new version which I upgraded to and instantly discovered a major bug in it. Rather than wasting my time working around the bug I've been working on other stuff until the bug is fixed (soon, according to their support). I have to admit I think this whole thing has worked out rather well - the UI work was really dragging me down and the change to something else has been very refreshing.
+It's been a while since my last blog post, sorry about that. I was aiming to get a page up on Steam Greenlight at the end of last month - I decided that I would keep my head down, work extra super hard and then come back with an announcement of my Greenlight page. That didn't happen because the [UI system that Heist uses](http://awesomium.com/) released a new version which I upgraded to and instantly discovered a major bug in. Rather than wasting my time working around the bug I've been working on other stuff until the bug is fixed (soon, according to their support). I have to admit I think this whole thing has worked out rather well - the UI work was really dragging me down and the change to something else has been very refreshing.
 
 ## Something Else
 

@@ -31,7 +31,7 @@ I haven't been completely idle these last three weeks, people who know me probab
 
 ### [Refuctoring](http://www.codinghorror.com/blog/2012/07/new-programming-jargon.html)
 
-I mentioned last time that I was going over the networking code, writing a few unit tests. I've gone a _little_ bit beyond that now, in the last week I've pulled out 6000 lines of code from Heist and moved them into a separate library (Called Placeholder.*) for building games - that's about 20% of the entire of Heist modified in a single week. During this time I have:
+I mentioned last time that I was going over the networking code, writing a few unit tests. I've gone a _little_ bit beyond that now, in the last week I've pulled out 6000 lines of code from Heist and moved them into a separate library (Called Placeholder.\*) for building games - that's about 20% of the entire of Heist modified in a single week. During this time I have:
 
 - Redesigned the networking system
 - Redesigned the packet serialisation system for networking
@@ -52,9 +52,9 @@ The hardest part of the project for me so far is simply bringing the team up to 
 
 - C#/XNA (My primary language for 5 years)
 - Myre (I've been involved with this for over 3 years)
-- Placeholder.* (Basically all of my time coding over the past 8 months)
+- Placeholder.\* (Basically all of my time coding over the past 8 months)
 
-A lot of the basic setup of the project (the stuff we're doing now, at the start) is plugging together components that are already written into Myre or Placeholder.* which isn't what anyone is _really_ interested in when making games. It's a fun challenge.
+A lot of the basic setup of the project (the stuff we're doing now, at the start) is plugging together components that are already written into Myre or Placeholder.\* which isn't what anyone is _really_ interested in when making games. It's a fun challenge.
 
 ### MORE GAMES
 

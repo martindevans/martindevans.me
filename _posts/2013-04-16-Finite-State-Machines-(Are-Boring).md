@@ -21,9 +21,9 @@ Pretty basic stuff I hope. The AI will patrol around until it finds an enemy, on
 
 ![Finite State Machine](/assets/FiniteStateMachine2.png)
 
-Oh God, what happened here? This is a slightly more interesting AI, but even this one is missing some pretty vital parts. E.g. If you throw a grenade an AI making coffee he will totally ignore it, so you need to add more connections from basically every node to dive for cover if a grenade is sighted. If the enemy is no longer in sight after dropping snacks the AI will be confused, so you need to add a connection there to "search cautiously". Once again there's no way back from combat to patrolling so we need another connetion there. If we wanted to add in little things like AIs meeting each other mid patrol and exchanging some small we'd need a whole load of states to handle seeing each other, stopping, talking *and* all the extra conenctions for what happens if they see a grenade/enemy while doing all this.
+Oh God, what happened here? This is a slightly more interesting AI, but even this one is missing some pretty vital parts. E.g. If you throw a grenade at an AI making coffee he will totally ignore it - you need to add more connections from basically every node to dive for cover if a grenade is sighted. If the enemy is no longer in sight after dropping snacks the AI will be confused, so you need to add a connection there to "search cautiously". Once again there's no way back from combat to patrolling so we need another connetion there. If we wanted to add in little things like AIs meeting each other mid patrol and exchanging some small talk we'd need a whole load of states to handle seeing each other, stopping, talking *and* all the extra conenctions for what happens if they see a grenade/enemy while doing all this. Now imagine what would need to be done to add another weapon type into the game (e.g. a flash bang grenade), or a special enemy type (e.g. one who can only be taken down by specialised weaponry).
 
-What I'm trying to get at here is that FSMs might *seem* like a good way to create AIs, because the game designer retains complete control, but actually they're terrible because the designer retains _complete control_ of _every action the AI will ever make_ which is loads more control than we really want.
+What I'm trying to get at here is that FSMs might *seem* like a good way to create AIs (because the game designer retains complete control) but actually they're terrible because the designer retains _complete control_ of _every action the AI will ever make_ which is loads more control than is really practical.
 
 ## Why Would You Tell Me About Such A Dreadful Way To Design AI?
 
@@ -31,4 +31,4 @@ Heist doesn't use any FSMs for AI (it does have a rather complex FSM for network
 
 ## Coming Soon
 
-I'm going to discuss *Goal Oriented Action Planning* and *Behaviour Trees* in the next coupla of entries. Both of these are techniques which improve upon the limitations of Finite State Machines.
+I'm going to discuss *Goal Oriented Action Planning* and *Behaviour Trees* in the next couple of entries. Both of these are techniques which improve upon the limitations of Finite State Machines.

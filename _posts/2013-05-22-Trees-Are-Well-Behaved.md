@@ -47,7 +47,7 @@ There are some hidden subtleties here, for example what is the difference betwee
 - Concurrent Selector: Traverse children in order and fail if any of them fail.
 - Sequence Selector: Traverse children in order (starting from the first "running" node, if there are any).
 
-Now we can see that the difference between the two if how they handle long running sequences of actions.
+Now we can see that the difference between the two is how they handle long running sequences of actions. The long running behaviour of most of the nodes is fairly obvious, for example the "random" node always picks a running node, and only picks randomly if there are no running nodes.
 
 ## So is this how the Heist AI works?
 

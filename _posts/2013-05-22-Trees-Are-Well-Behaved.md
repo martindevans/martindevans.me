@@ -19,14 +19,14 @@ A Behaviour Tree (BT) is an improvement on Finite State Machines (FSM) which enc
 
 This is slightly less simple than the FSM example, for example what are these "Concurrent Selector" Nodes? How *exactly* does this get used? Let's run through an example. Remember, *every* time the AI is updated, we traverse the entire tree from the top down.
 
-1) Priority Selector - Traverse child nodes in priority order. In my example left most nodes are a higher priority. So we move to the left most child (the concurrent selector).
-2) Concurrent Selector - A concurrent selector visits all of it's children each time, and fails if any of them fail. So we move to the first child to find out if it fails.
-3) Condition: Grenade In Sight? - There are no grenades in sight, so this node fails, which means the concurrent selector fails, and we get all the way back up to the priority selector.
-4) Priority Selector - Traverse child nodes in priority order. The left most child is now marked as *failed*, so moved on to the next child.
-5) Concurrent Selector - Again, visit children in order and fail if any of them fail.
-6) Condition: Enemy In Sight? - Nope, no enemies in sight, so fail and fall all the way back again.
-7) Priority Selector - Both concurrent selectors are now marked as failed, moved on to the next child in priority order.
-8) Action: Patrol - This starts a patrol. Finally we have succeeded in doing something.
+1. Priority Selector - Traverse child nodes in priority order. In my example left most nodes are a higher priority. So we move to the left most child (the concurrent selector).
+2. Concurrent Selector - A concurrent selector visits all of it's children each time, and fails if any of them fail. So we move to the first child to find out if it fails.
+3. Condition: Grenade In Sight? - There are no grenades in sight, so this node fails, which means the concurrent selector fails, and we get all the way back up to the priority selector.
+4. Priority Selector - Traverse child nodes in priority order. The left most child is now marked as *failed*, so moved on to the next child.
+5. Concurrent Selector - Again, visit children in order and fail if any of them fail.
+6. Condition: Enemy In Sight? - Nope, no enemies in sight, so fail and fall all the way back again.
+7. Priority Selector - Both concurrent selectors are now marked as failed, moved on to the next child in priority order.
+8. Action: Patrol - This starts a patrol. Finally we have succeeded in doing something.
 
 The critical thing here is to remember that the entire tree is visited every time. Now that our AI is happily patrolling along everything will work as we might expect - if a grenade appears the first concurrent selector will suddenly succeed and the "Dive For Cover" action will interrupt the "Patrol" action. Similarly, if the AI sees an enemy while patrolling it will start shooting at it.
 

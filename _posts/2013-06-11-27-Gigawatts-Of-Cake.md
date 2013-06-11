@@ -13,7 +13,7 @@ Goal Oriented Action Planning is the best way for a lazy game designer to build 
 
 ## What Is Goal Oriented Action Planning?
 
-I've talked about [Finite State Machines (FSM)](/heist/2013/04/16/Finite-State-Machines-(Are-Boring)/) and [Behaviour Trees (BT)](/heist/2013/05/22/Trees-Are-Well-Behaved/) as general techniques for deciding what action an AI should take next and I've talked about [pathfinding](/heist/2013/04/10/Pathfinding/) as a general AI topic for how to get around the world. What happens when we put all these things together? We get Goal Oriented Action Planning (GOAP)!
+I've talked about [Finite State Machines (FSM)](/heist/2013/04/16/Finite-State-Machines-(Are-Boring\)/) and [Behaviour Trees (BT)](/heist/2013/05/22/Trees-Are-Well-Behaved/) as general techniques for deciding what action an AI should take next and I've talked about [pathfinding](/heist/2013/04/10/Pathfinding/) as a general AI topic for how to get around the world. What happens when we put all these things together? We get Goal Oriented Action Planning (GOAP)!
 
 With both FSMs and BTs the game designer has to carefully craft the enemy AI so it will act in the way he wants - this design stage is basically the designer laying out the sequence of actions needed to achieve some desired goal. Where else have we talked about a sequence of actions to reach a goal? Pathfinding!
 
@@ -38,19 +38,19 @@ Let's say my current state is:
 
 Having no cake is a terrible situation to be in, we must rectify that! So our goal here is:
 
-1. 1 Cake In Inventory
+- 1 Cake In Inventory
 
 There's only 1 action I can take to satisfy this goal: _Bake Cake_. Let's apply that. Now our goal is:
 
-2. Inventory Contains: Flour, 2xEgg, Sugar
+- Inventory Contains: Flour, 2xEgg, Sugar
 
 We're already in the kitchen, so that's not a goal here even though the _Bake Cake_ action requires it. We need eggs, flour and sugar (none of which can be obtained while in the kitchen), the only applicable action here is to go to the shop, which makes our goal:
 
-3. Inventory Contains: Flour, 2xEgg, Sugar.
+- Inventory Contains: Flour, 2xEgg, Sugar.
 
 We didn't achieve anything here, what gives? Remember this search is just like A\* Pathfinding, sometimes you have to get further away from your destination in order to get there. Now that we're in the supermarket we can buy eggs, flour or sugar, let's skip a few steps and do all three. This makes our goal:
 
-4. ... Nothing!
+- ... Nothing!
 
 That's it. We've not got a _backwards_ plan for how to make cake. To execute the plan we have to do it in reverse order. An additional gotcha is with goto actions, we need to flip the goto actions around so they goto where they came from during planning, also we need to start the plan with a goto _wherever the planning ended up_. So the plan becomes:
 
@@ -65,7 +65,7 @@ My concern when implementing this was that GOAP might be too slow to use practic
 
 ## But Cake Isn't Everything In Life
 
-Sadly, we can't get by simply by baking 3300 cakes every second. If I wanted to implement the guard AI I've been using in my FSM and BT examples I would need two goals:
+Sadly, we can't get by in life simply by baking 3300 cakes every second. If I wanted to implement the guard AI I've been using in my FSM and BT examples I would need two goals:
 
 1. Do Not Die
 2. Kill Enemies
@@ -80,17 +80,20 @@ The really cool thing about GOAP is _emergence_. With other techniques the AI wi
 
 1. Patrol until you find an enemy
 2. Patrol until you find an enemy
-.... Keep patrolling until all 20 enemies are following you, and shooting at you ...
-10. Walk into the oncoming hail of bullets to the first enemy
-11. Punch enemy to death
-12. Take gun from limp corpse
-13. Proceed to perfectly headshot all the remaining enemies (remembering to stand in the open and reload half way)
+3. Patrol until you find an enemy (It kept patrolling until all 20 enemies were following it and shooting at it)
+4. Walk into the oncoming hail of bullets to the closest enemy
+5. Punch enemy to death
+6. Take gun from limp corpse
+7. Proceed to perfectly headshot half the remaining enemies
+8. Walk up to nearest dead enemy, take ammo
+9. Reload Gun
+10. Perfectly headshot remaining enemies
 
 This is a pretty stupid plan (obviously), there's no way the AI is *actually* going to get to execute all of that plan without dying. But it _is_ fascinating that the AI can come up with such unexpected behaviour all by itself.
 
 ## This Sounds Like Rubbish, You're a Lazy Game Designer
 
-Some other small, indie titles you may have heard of using GOAP:
+Some other titles you _may_ have heard of which use GOAP:
 
 - F.E.A.R
 - S.T.A.L.K.E.R
@@ -99,4 +102,4 @@ Some other small, indie titles you may have heard of using GOAP:
 - Just Cause 2
 - Deus Ex: Human Revolution
 
-Among others.
+Among many others.

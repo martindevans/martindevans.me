@@ -13,7 +13,7 @@ Goal Oriented Action Planning is the best way for a lazy game designer to build 
 
 ## What Is Goal Oriented Action Planning?
 
-I've talked about [Finite State Machines (FSM)](/heist/2013/04/16/Finite-State-Machines-(Are-Boring\)/) and [Behaviour Trees (BT)](/heist/2013/05/22/Trees-Are-Well-Behaved/) as general techniques for deciding what action an AI should take next and I've talked about [pathfinding](/heist/2013/04/10/Pathfinding/) as a general AI topic for how to get around the world. What happens when we put all these things together? We get Goal Oriented Action Planning (GOAP)!
+I've talked about [Finite State Machines (FSM)][1] and [Behaviour Trees (BT)](/heist/2013/05/22/Trees-Are-Well-Behaved/) as general techniques for deciding what action an AI should take next and I've talked about [pathfinding](/heist/2013/04/10/Pathfinding/) as a general AI topic for how to get around the world. What happens when we put all these things together? We get Goal Oriented Action Planning (GOAP)!
 
 With both FSMs and BTs the game designer has to carefully craft the enemy AI so it will act in the way he wants - this design stage is basically the designer laying out the sequence of actions needed to achieve some desired goal. Where else have we talked about a sequence of actions to reach a goal? Pathfinding!
 
@@ -103,3 +103,5 @@ Some other titles you _may_ have heard of which use GOAP:
 - Deus Ex: Human Revolution
 
 Among many others.
+
+[1]: /heist/2013/04/16/Finite-State-Machines-(Are-Boring)/

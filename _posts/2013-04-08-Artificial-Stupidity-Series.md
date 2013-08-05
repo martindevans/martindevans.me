@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, artificial-intelligence, ai-series]
 tagline : In Which Distractions Are Revealed To Sometimes Be A Good Thing
 ---

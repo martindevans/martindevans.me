@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, networking-series]
 tagline : Praise Be To The Almighty Proof Reader
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist]
 tagline : In Which I Discuss Playing Multiplayer Games Without A Network Connection
 ---

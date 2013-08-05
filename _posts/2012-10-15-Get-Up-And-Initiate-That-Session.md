@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, networking-series]
 tagline : In Which Great Technical Depth Is Discussed (Again)
 ---

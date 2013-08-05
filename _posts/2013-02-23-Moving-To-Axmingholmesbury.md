@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist]
 tagline : In Which The Protagonist Does Not Move To Axmingholmesbury
 ---

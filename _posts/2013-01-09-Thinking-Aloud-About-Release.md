@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, steam, greenlight]
 tagline : In Which Some Loud Thinking Is Conducted
 ---

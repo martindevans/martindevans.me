@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, artificial-intelligence]
 tagline : In Which I Program Myself More Friends
 ---

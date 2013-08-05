@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist]
 tagline : In Which A Promise Is Made And Broken
 ---

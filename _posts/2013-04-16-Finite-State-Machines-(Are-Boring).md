@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, artificial-intelligence, ai-series]
 tagline : In Which The Author Talks About Something He Never Intends To Use
 ---

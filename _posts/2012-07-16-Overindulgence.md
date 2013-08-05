@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, release]
 tagline : In Which I Decided Never Again To Indulge My Artistic Side
 ---

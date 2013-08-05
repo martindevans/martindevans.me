@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, procedural-generation-series-tech]
 tagline : In Which Some Misconceptions Are Dismissed
 title : What Isn't Procedural Generation?

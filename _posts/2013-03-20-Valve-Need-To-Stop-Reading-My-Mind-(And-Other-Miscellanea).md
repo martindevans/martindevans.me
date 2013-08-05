@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist]
 tagline : In Which The Telepathic Abilities Of Gabe Newell Are Revealed
 ---

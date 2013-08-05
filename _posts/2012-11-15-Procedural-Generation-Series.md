@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, procedural-generation-series-tech, procedural-generation-series-airship]
 tagline : In Which A New Series Is Revealed
 ---

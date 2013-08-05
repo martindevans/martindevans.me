@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, networking-series]
 tagline : In Which There is Much Talk Of Bytes And Bits
 ---

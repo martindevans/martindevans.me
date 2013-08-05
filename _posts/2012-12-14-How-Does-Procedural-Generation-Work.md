@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, procedural-generation-series-tech]
 tagline : In Which Long String Of Meaningless Text Are Given Meaning
 title : How Does Procedural Generation Work?

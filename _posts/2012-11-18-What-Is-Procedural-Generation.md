@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, procedural-generation-series-tech]
 tagline : In Which Some History Is Discussed
 title : What Is Procedural Generation?

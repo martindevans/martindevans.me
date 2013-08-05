@@ -75,7 +75,7 @@ Now these strings aren't really looking terribly useful – however does that st
  - "F" means draw a short line forward
  - "-" means turn left some small randomised amount
  - "+" means turn right some small randomised amount
- - "[" means save the current position and angle on a stack
+ - "\[" means save the current position and angle on a stack
  - "]" means restore the previous position and angle off the stack
  
 L-Systems don't have to just be string rewriting systems either – that's just a convenient way to talk about them. For example Heist uses what amounts to an L-System in it's city generation, but is implemented very differently. Each script is a node which places a bit of geometry or a few child nodes. For example, a "City" is a node, which places down a load of building and road nodes. A "Road" is a node which places a load of pavement and streetlamp nodes. A "Building" is a node which places a load of window, door and room nodes inside itself. If you think about it, this is an L-System – we have symbols:

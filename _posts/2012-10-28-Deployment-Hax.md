@@ -13,7 +13,7 @@ My current deployment is pretty horrible.
 
 ## Idealistic Drivel
 
-I think it's pretty widely accepted that the idea deployment process is the one a developer barely even realises exists. What I would really love for Heist is something like this:
+I think it's pretty widely accepted that the ideal deployment process is the one a developer barely even realises exists. What I would really love for Heist is something like this:
 
  - Develop feature in a git branch
  - Merge branch into "Release" branch

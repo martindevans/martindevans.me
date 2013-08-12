@@ -47,17 +47,19 @@ Now, obviously the change from one build to another is generally pretty small. I
 
 With bsDiff I've made upload time infinitely faster (approximately), but now my deploy process has gone from:
 
-1) Copy Folder to server
-2) Do something else for a while
-3) Rename folders
+1. Copy Folder to server
+2. Do something else for a while
+3. Rename folders
 
 To:
 
-1) Download rar of previous version
-2) Rar compress folder of new version
-3) Generate diff
-4) Upload diff
-5) Execute a remote script to apply diff, unrar the patched file, and copy in result
+1. Download rar of previous version
+2. Rar compress folder of new version
+3. Generate diff
+4. Upload diff
+5. Execute a remote script to apply diff
+6. unrar the patched file
+7. Copy result into place
 
 That's a bit of a pain.
 

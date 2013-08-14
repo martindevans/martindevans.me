@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, procedural-generation-series-tech]
 tagline : In Which Long String Of Meaningless Text Are Given Meaning
 title : How Does Procedural Generation Work?
@@ -37,71 +37,7 @@ Since inventing perlin noise Ken Perlin has since created simplex noise, which h
 
 ## Voronoi Diagrams
 
-<style><!-- Yes, style tag in body, what you gonna do? -->
-    path {
-      fill: yellow;
-      stroke: #000;
-    }
-     
-    circle {
-      fill: #fff;
-      stroke: #000;
-      pointer-events: none;
-    }
-     
-    .PiYG .q0-9{fill:rgb(197,27,125)}
-    .PiYG .q1-9{fill:rgb(222,119,174)}
-    .PiYG .q2-9{fill:rgb(241,182,218)}
-    .PiYG .q3-9{fill:rgb(253,224,239)}
-    .PiYG .q4-9{fill:rgb(247,247,247)}
-    .PiYG .q5-9{fill:rgb(230,245,208)}
-    .PiYG .q6-9{fill:rgb(184,225,134)}
-    .PiYG .q7-9{fill:rgb(127,188,65)}
-    .PiYG .q8-9{fill:rgb(77,146,33)}
-</style>
-
-<a href="http://bl.ocks.org/4060366">
-    <svg id="voronoi" width="100%" height="500" class="PiYG">
-    </svg>
-</a>
-
-<script src="http://d3js.org/d3.v3.min.js">
-</script>
-
-<script type="text/javascript">
-    var width = 960,
-        height = 500;
-     
-    var vertices = d3.range(75).map(function(d) {
-      return [Math.random() * width, Math.random() * height];
-    });
-     
-    var svg = d3.select("#voronoi")
-        .on("mousemove", update);
-     
-    svg.selectAll("path")
-        .data(d3.geom.voronoi(vertices))
-      .enter().append("path")
-        .attr("class", function(d, i) { return i ? "q" + (i % 9) + "-9" : null; })
-        .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
-     
-    svg.selectAll("circle")
-        .data(vertices.slice(1))
-      .enter().append("circle")
-        .attr("transform", function(d) { return "translate(" + d + ")"; })
-        .attr("r", 2);
-     
-    function update() {
-      vertices[0] = d3.mouse(this);
-      svg.selectAll("path")
-          .data(d3.geom.voronoi(vertices)
-          .map(function(d) { return "M" + d.join("L") + "Z"; }))
-        .filter(function(d) { return this.getAttribute("d") != d; })
-          .attr("d", function(d) { return d; });
-    }
-</script>
-
-Voronoi diagrams are dead simple to explain and have many applications, both in science and art. Imagine a load of points scattered across a plane, which we'll call seed points. Now we want to classify every single point on the plane into a region. To do this, we simply put each point into the same region as the closest seed point. If you inspect the demo above you'll see that's what is going on – each coloured region shows the set of points which are closest to the (white dot) seed point in that region. Naturally, this definition extends into as many dimensions as you like, most usefully 2D and 3D of course.
+[Voronoi diagrams](http://bl.ocks.org/mbostock/4060366) are dead simple to explain and have many applications, both in science and art. Imagine a load of points scattered across a plane, which we'll call seed points. Now we want to classify every single point on the plane into a region. To do this, we simply put each point into the same region as the closest seed point. If you inspect the demo above you'll see that's what is going on – each coloured region shows the set of points which are closest to the (white dot) seed point in that region. Naturally, this definition extends into as many dimensions as you like, most usefully 2D and 3D of course.
 
 If noise is good for generating continuous things, voronoi noise is good for generating discontinuous things. For example, you could use voronoi noise as the basis for generating city blocks by placing roads along the edges of the regions and filling in the regions with buildings and maybe some minor roads for large blocks.
 
@@ -139,7 +75,7 @@ Now these strings aren't really looking terribly useful – however does that st
  - "F" means draw a short line forward
  - "-" means turn left some small randomised amount
  - "+" means turn right some small randomised amount
- - "[" means save the current position and angle on a stack
+ - "\[" means save the current position and angle on a stack
  - "]" means restore the previous position and angle off the stack
  
 L-Systems don't have to just be string rewriting systems either – that's just a convenient way to talk about them. For example Heist uses what amounts to an L-System in it's city generation, but is implemented very differently. Each script is a node which places a bit of geometry or a few child nodes. For example, a "City" is a node, which places down a load of building and road nodes. A "Road" is a node which places a load of pavement and streetlamp nodes. A "Building" is a node which places a load of window, door and room nodes inside itself. If you think about it, this is an L-System – we have symbols:
@@ -155,9 +91,9 @@ L-Systems don't have to just be string rewriting systems either – that's just 
  
 and we have rules:
 
- - City => Road, Building
- - Road => Street lamp, pavement
- - Building => Door, Window, Room
+ - City =&gt; Road, Building
+ - Road =&gt; Street lamp, pavement
+ - Building =&gt; Door, Window, Room
  
 ## Markov Chains
 

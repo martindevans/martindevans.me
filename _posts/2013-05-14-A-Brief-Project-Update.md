@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, release, game-development]
 tagline : In Which A Long Absence Is Ended
 ---

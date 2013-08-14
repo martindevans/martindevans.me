@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, release]
 tagline : In Which You Stop Reading This Blogpost To Play My Game
 ---

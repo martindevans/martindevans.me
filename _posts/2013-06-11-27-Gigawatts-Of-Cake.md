@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, artificial-intelligence, ai-series]
 tagline : In Which It Is Revealed That The Cake Was A Major Power Source For Aperture Science
 ---

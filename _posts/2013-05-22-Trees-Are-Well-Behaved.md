@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Heist
+category : Heist-Game
 tags : [heist, artificial-intelligence, ai-series]
 tagline : In Which The Secret Life Of Trees Is Exposed
 ---

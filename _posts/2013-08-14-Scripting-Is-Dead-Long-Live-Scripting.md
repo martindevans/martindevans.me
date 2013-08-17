@@ -13,13 +13,13 @@ I'm replacing Lua scripting in the engine with C# scripting.
 
 ## Scripting Is Dead
 
-#### First, A Disclaimer
+#### Disclaimer
 
-I think [Lua](http://www.lua.org/) is pretty cool, it's a _very_ minimal language and elegant language. for small tasks (things like configuration files, throwaway scripts or UI mods etc) Lua would probably be my choice of language. This post should most certainly *not* be read as a criticism purely of Lua!
+I think [Lua](http://www.lua.org/) is pretty cool, it's a very minimal and elegant language. for small tasks (configuration files, throwaway scripts, UI mods etc) Lua would probably be my choice of language. This post should most certainly *not* be read as a criticism purely of Lua!
 
 #### Let's Talk About Dynamic Languages
 
-Dynamic languages are languages which defer some of the things traditionally done at compilation time to runtime. The most obvious example is deferring compile time type checking to runtime time checking, another common feature is modifying objects at runtime. Python, Javascript\*, Ruby and Perl are all examples of very popular dynamically typed languages.
+[Dynamic languages](https://en.wikipedia.org/wiki/Dynamic_programming_language) are languages which defer some of the things traditionally done at compilation time to runtime. The most obvious example is deferring compile time type checking to runtime time checking, another common feature is modifying objects at runtime. Python, Javascript\*, Ruby and Perl are all examples of inexplicably popular dynamically typed languages.
 
 ##### Python
 
@@ -29,7 +29,7 @@ I've never particularly liked dynamic languages - it always seemed pretty stupid
     
 So... how exactly do I call this again? Better refer back to the documentation because I don't have a type system constraining me to only passing in the correct things! Naturally, if you do anything wrong you don't know until runtime. 
 
-If you're thinking "It's ok, unit tests solve this" then you're a fucking idiot and you need a new Job - writing unit tests (which are essentially hand written compile time checks) to check types is a total waste of my time. If you were thinking of unit tests in the last sentence then maybe you're thinking of [Lint](http://c2.com/cgi/wiki?PyChecker) now - well done, you've just applied a compile time checker to your code except it's only a series of Heuristic guesses so you can get false positives.
+If you're thinking "It's ok, unit tests solve this" then you're an idiot and you need a new Job - writing unit tests (which are essentially hand written compile time checks) to check types is a total waste of my time. Unbelievably there are even [lint tools](http://c2.com/cgi/wiki?PyChecker) for python - quite why anyone would waste their time writing a heuristic compile time checker for a dynamic language is beyond me.
 
 ##### Javascript
 
@@ -43,15 +43,20 @@ This is a pretty stupid thing to want to do, what does a string minus an int eve
 
     Operator '-' cannot be applied to operands of type 'int' and 'string'
 
-In Python (dynamically typed, still strong) you'd get basically the same error, only at runtime:
+In Python (dynamically typed, still strong) you'd get basically the same error, just deferred to runtime:
 
     TypeError: unsupported operand type(s) for -: 'str' and 'int'
     
-What about Javascript (delusionally typed, still strong)? It says "Sweet, a string minus an int, yeah I can do that!":
+What about Javascript (delusionally typed)? It says "Sweet, a string minus an int, yeah I can do that!":
 
     NaN
     
 Fuck you. This happens because Javascript will coerce things to hell and back before it admits there's such a thing as types! Coercing "a" to a number makes no damn sense and (rather than _actually_ failing) Javascript just says, "yeah, I can totally do that, it's NaN". Which of these three responses is the most useful, I wonder?
+
+I'm just going to leave this here:
+
+<blockquote class="twitter-tweet"><p>((([][[]]+[])[(!![])]+&#39;&#39;)[(-~(!![]))+(~~(!![]))+(~~(!![]))])+((0/0+&#39;&#39;)[~~(!![])])+(([1, 2, 3][!!({}==[])]+&#39;&#39;)[-~4])+(&quot;&quot;+([]===[]))[-~(!![])]</p>&mdash; Martin Evans (@martindevans) <a href="https://twitter.com/martindevans/statuses/368402781591175169">August 16, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 \*<sub> To be fair, if you're doing web development you don't have much choice to use Javascript ([until recently](http://www.typescriptlang.org/)). But that's another blog post. </sub>
 
@@ -74,16 +79,17 @@ In these two lines of code the boundary between C# and Lua is crossed 6 times. E
 
 So, I'm getting rid of Lua. I'm replacing it with the only sane solution for scripting a C# game engine: C#.
 
-The Heist engine has been abandoned. I've ported all the non scripting related code (most of it) to a new Engine called *[Epimetheus](https://en.wikipedia.org/wiki/Epimetheus_(mythology))*. All mods for Epimetheus are written in C#, they will be:
+The Heist engine has been abandoned. I've ported all the non scripting related code (most of it) to a new Engine called *[Epimetheus](https://en.wikipedia.org/wiki/Epimetheus_(mythology))*. This change gives me mods which are:
 
-1. Strongly typed
-2. Far Faster to execute (faster city generation)
-3. Less memory hungry (bigger cities, more entities)
-4. Easier to write
+1. Strongly typed (more robust)
+2. Faster to execute (faster city generation)
+3. Less memory hungry (bigger cities)
+4. Easier to write (more in varied cities)
 5. Easier for *me* to design a scripting interface for, which means...
 6. A more comprehensive scripting interface, which means...
-7. More powerful mods
-8. Better language support (don't like C#? Use some other [CLI language](https://en.wikipedia.org/wiki/List_of_CLI_languages))
+7. More powerful mods, which means...
+8. More game modes!
+9. Better language support (don't like C#? Use some other [CLI language](https://en.wikipedia.org/wiki/List_of_CLI_languages))
 
 Everyone wins!
 

@@ -13,15 +13,15 @@ I'm replacing Lua scripting in the engine with C# scripting.
 
 ## Scripting Is Dead
 
-#### Disclaimer
+### Disclaimer
 
 I think [Lua](http://www.lua.org/) is pretty cool, it's a very minimal and elegant language. for small tasks (configuration files, throwaway scripts, UI mods etc) Lua would probably be my choice of language. This post should most certainly *not* be read as a criticism purely of Lua!
 
-#### Let's Talk About Dynamic Languages
+### Let's Talk About Dynamic Languages
 
 [Dynamic languages](https://en.wikipedia.org/wiki/Dynamic_programming_language) are languages which defer some of the things traditionally done at compilation time to runtime. The most obvious example is deferring compile time type checking to runtime time checking, another common feature is modifying objects at runtime. Python, Javascript\*, Ruby and Perl are all examples of inexplicably popular dynamically typed languages.
 
-##### Python
+#### Python
 
 I've never particularly liked dynamic languages - it always seemed pretty stupid to be to *delay* useful stuff like type checking until runtime. For example my experience with learning Python\** (my first dynamic language) was constantly referring back to the documentation because method signatures are useless:
 
@@ -31,7 +31,7 @@ So... how exactly do I call this again? Better refer back to the documentation b
 
 If you're thinking "It's ok, unit tests solve this" then you're an idiot and you need a new Job - writing unit tests (which are essentially hand written compile time checks) to check types is a total waste of my time. Unbelievably there are even [lint tools](http://c2.com/cgi/wiki?PyChecker) for python - quite why anyone would waste their time writing a heuristic compile time checker for a dynamic language is beyond me.
 
-##### Javascript
+#### Javascript
 
 I should mention Javascript, probably one of the [worst languages I have ever used](http://stackoverflow.com/a/359509/108234). Javascript is not only dynamic it's also [weak](https://en.wikipedia.org/wiki/Strong_and_weak_typing) (i.e. it tries to completely pretend there's no such thing as types). For example:
 
@@ -63,7 +63,7 @@ That is some perfectly valid javascript. Try executing it.
 
 \*\* It's been a *really* long time since I've used python and I've done my best to forget the eldritch horrors I encountered when learning it. Therefore my examples are stolen from [here](http://widgetsandshit.com/teddziuba/2008/12/python-makes-me-nervous.html)
 
-#### Let's Talk About Lua
+### Let's Talk About Lua
 
 I expect it's clear by now that I don't really like dynamic languages, which leads to the natural question: "Why the hell did you spend 1.5 years writing a game engine scriptable in Lua?". My aim with the Heist engine was (and still is) that it would be *very* moddable - even games that I myself write for the engine are really just mods. I thought that it would be easier for a newbie/hobbyist programmer to edit a bit of Lua code than to fiddle around with the big scary C# and it's angry compiler. The thing is the big angry compiler is seriously useful - if you make a little mistake calling one of the many engine methods it will tell you before you can even compile your mod. This is approximately 1000000x better than running a script to generate a city and _hoping_ that your script gets selected to do whatever it does and then hoping you notice the error in the log spam.
 

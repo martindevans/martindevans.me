@@ -53,12 +53,6 @@ What about Javascript (delusionally typed)? It says "Sweet, a string minus an in
     
 Fuck you. This happens because Javascript will coerce things to hell and back before it admits there's such a thing as types! Coercing "a" to a number makes no damn sense and (rather than _actually_ failing) Javascript just says, "yeah, I can totally do that, it's NaN". Which of these three responses is the most useful, I wonder?
 
-I'm just going to leave this here:
-
-((([][[]]+[])[(!![])]+'')[(-~(!![]))+(~~(!![]))+(~~(!![]))])+((0/0+'')[~~(!![])])+(([1, 2, 3][!!({}==[])]+'')[-~4])+(""+([]===[]))[-~(!![])]
-
-That is some perfectly valid javascript. Try executing it.
-
 \* To be fair, if you're doing web development you don't have much choice to use Javascript ([until recently](http://www.typescriptlang.org/)). But that's another blog post.
 
 \*\* It's been a *really* long time since I've used python and I've done my best to forget the eldritch horrors I encountered when learning it. Therefore my examples are stolen from [here](http://widgetsandshit.com/teddziuba/2008/12/python-makes-me-nervous.html)

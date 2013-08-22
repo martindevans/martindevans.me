@@ -1,7 +1,7 @@
 ---
 layout: post
-category : site-update
-tags : [generals]
+category : Heist-Game
+tags : [heist]
 tagline : In Which The Death Of Lua Is Announced
 ---
 {% include JB/setup %}
@@ -55,12 +55,13 @@ Fuck you. This happens because Javascript will coerce things to hell and back be
 
 I'm just going to leave this here:
 
-<blockquote class="twitter-tweet"><p>((([][[]]+[])[(!![])]+&#39;&#39;)[(-~(!![]))+(~~(!![]))+(~~(!![]))])+((0/0+&#39;&#39;)[~~(!![])])+(([1, 2, 3][!!({}==[])]+&#39;&#39;)[-~4])+(&quot;&quot;+([]===[]))[-~(!![])]</p>&mdash; Martin Evans (@martindevans) <a href="https://twitter.com/martindevans/statuses/368402781591175169">August 16, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+((([][[]]+[])[(!![])]+'')[(-~(!![]))+(~~(!![]))+(~~(!![]))])+((0/0+'')[~~(!![])])+(([1, 2, 3][!!({}==[])]+'')[-~4])+(""+([]===[]))[-~(!![])]
 
-\*<sub> To be fair, if you're doing web development you don't have much choice to use Javascript ([until recently](http://www.typescriptlang.org/)). But that's another blog post. </sub>
+That is some perfectly valid javascript. Try executing it.
 
-\*\*<sub> It's been a *really* long time since I've used python and I've done my best to forget the eldritch horrors I encountered when learning it. Therefore my examples are stolen from [here](http://widgetsandshit.com/teddziuba/2008/12/python-makes-me-nervous.html)</sub>
+\* To be fair, if you're doing web development you don't have much choice to use Javascript ([until recently](http://www.typescriptlang.org/)). But that's another blog post.
+
+\*\* It's been a *really* long time since I've used python and I've done my best to forget the eldritch horrors I encountered when learning it. Therefore my examples are stolen from [here](http://widgetsandshit.com/teddziuba/2008/12/python-makes-me-nervous.html)
 
 #### Let's Talk About Lua
 

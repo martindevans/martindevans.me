@@ -36,6 +36,7 @@ None (yet)!
 - System Shock
 - Hitman: Sniper Challenge
 - The Ship
+- Hotline Miami
 
 ### In Progress
 

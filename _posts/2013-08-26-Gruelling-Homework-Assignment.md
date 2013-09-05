@@ -23,9 +23,13 @@ With the change over to Epimetheus using C# scripting I feel like the engine in 
 
 Not all the games on this list are (or will be) stealth games. I'll probably also add some games on this list which at first have nothing (obviously) in common with Heist but gave me some inspiration while playing them.
 
-### Reviewed
+### The Series (So Far)
 
-None (yet)!
+<ul>
+    {% for page in site.tags.stealth-analysis-series %}
+    <li><a href="{{ post.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
 
 ### Completed
 
@@ -42,6 +46,7 @@ None (yet)!
 
 - PAYDAY 2
 - Hitman: Absolution
+- Splinter Cell: Blacklist
 
 ### Planned
 
@@ -50,7 +55,9 @@ None (yet)!
 - Amnesia: The Dark Descent
 - Mark Of The Ninja
 - Thief: Deadly Shadows
-- Splinter Cell: Blacklist
+- Skyrim
+- Frozen Synapse
+- Door Kickers
 
 ## ???
 

@@ -58,6 +58,7 @@ Not all the games on this list are (or will be) stealth games. I'll probably als
 - Skyrim
 - Frozen Synapse
 - Door Kickers
+- Grand Theft Auto
 
 ## ???
 

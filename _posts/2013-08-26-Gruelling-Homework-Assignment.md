@@ -27,7 +27,7 @@ Not all the games on this list are (or will be) stealth games. I'll probably als
 
 <ul>
     {% for page in site.tags.stealth-analysis-series %}
-    <li><a href="{{ post.url }}">{{ page.title }}</a></li>
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
 </ul>
 

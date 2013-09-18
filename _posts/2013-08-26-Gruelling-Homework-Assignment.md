@@ -59,6 +59,7 @@ Not all the games on this list are (or will be) stealth games. I'll probably als
 - Frozen Synapse
 - Door Kickers
 - Grand Theft Auto
+- Splinter Cell: Chaos Theory
 
 ## ???
 

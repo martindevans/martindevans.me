@@ -41,19 +41,18 @@ Not all the games on this list are (or will be) stealth games. I'll probably als
 - Hitman: Sniper Challenge
 - The Ship
 - Hotline Miami
+- Mark Of The Ninja
 
 ### In Progress
 
 - PAYDAY 2
 - Hitman: Absolution
-- Splinter Cell: Blacklist
 
 ### Planned
 
 - Monaco
 - Hitman: Blood Money
 - Amnesia: The Dark Descent
-- Mark Of The Ninja
 - Thief: Deadly Shadows
 - Skyrim
 - Frozen Synapse

@@ -43,8 +43,12 @@ Blacklist has the "Spies Vs Mercs" Gamemode which pitches powerful, heavily arme
 
 ## The Bad
 
-I only really have one complaint about blacklist...
-
 ### Failure Amplification
 
 Conversely to the last point the game suffers something I'm going to call _Failure Amplification_ - there are some points where the game deliberately amplifies a very small mistake into having much larger consequences than normal. Usually when you get spotted by an enemy they will shout out (alerting nearby enemies) and start searching for you, after a while they usually give up the search and return to patrolling. However, there are some levels where you are informed that the enemy has reinforcements standing by and that if you are spotted they will summon the reinforcements (who will then arrive _instantly_, in large numbers, and on a permanent high alert). In these levels the small failure (being spotted by one single enemy) results in a massively amplified response. This doesn't really increase the standard stealth game tension - after all your sneaking about will be the same as usual - it just introduces an incredibly frustrating event that usually requires a quicksave load.
+
+### Dogs
+
+Dogs. Oh God how much do I hate dogs in Blacklist. Humans are predictable and understandable - they react to noises by investigating them and they can only see things in front of them. Not dogs, oh no, Dogs react to small noises by...barking loudly and putting almost every guard on alert (failure amplification to the max). Not only that, I honestly have no clue how dogs detect me half the time, I guess the game gives them some omnidirectional sense of smell that picks up enemies in a radius.
+
+The main problem with dogs is that I simply don't understand them and the game makes no effort to help. Whenever I'm detected by a human it *makes sense*, I know that he saw me because I failed to take cover properly. Conversely whenever I'm detected by a dog it feels like total bullshit, I was detected by the dog through two layers of cover, whilst not moving, in a big smelly junk yard... yeah that makes sense.

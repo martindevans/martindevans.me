@@ -16,5 +16,11 @@
 <foaf:family_name>Evans</foaf:family_name>
 <foaf:nick>Nyarlathothep</foaf:nick>
 <foaf:mbox rdf:resource="mailto:martindevans@gmail.com"/>
-<foaf:homepage rdf:resource="http://martindevans.me"/></foaf:Person>
+<foaf:homepage rdf:resource="http://martindevans.me"/>
+<foaf:schoolHomepage rdf:resource="University Of Birmingham School Of Computer Science"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Damian Lanningham</foaf:name>
+<foaf:mbox rdf:resource="mailto:qrebound@gmail.com"/>
+<rdfs:seeAlso rdf:resource="http://quantumplation.me/foaf.rdf"/></foaf:Person></foaf:knows></foaf:Person>
 </rdf:RDF>

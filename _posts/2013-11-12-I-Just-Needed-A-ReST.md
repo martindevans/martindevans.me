@@ -25,7 +25,7 @@ I have made [two](/heist-game/2012/06/18/Multiplayer-Release/) [attempts](/heist
 
 This time I've made a totally new multiplayer session handling system all implemented on top of Steamworks. When a game is in progress all the players are in a steam lobby together, thus if any kind of session management stuff needs to be done (e.g. sending a message to another peer before the session is fully initiated) I don't have to mess with a half initiated session instead I just send the message via the steam lobby! Obviously the lobby is also used pregame for player chat and choosing game configuration options.
 
-There is one really massive huge problem with this: I don't have any kind of agreement with steam to distribute the game (I will hopefully be on greenlight before 2013 ends). This obviously means that I cannot distribute the game in its current form. However the whole steam lobby dependency well abstracted and when I eventually get around to implementing my own lobby system I can swap out steam and distribute that version of the game.
+There is one really massive huge problem with this: I don't have any kind of agreement with steam to distribute the game (I will hopefully be on greenlight before 2013 ends). This obviously means that I cannot distribute the game in its current form. However the whole steam lobby dependency is well abstracted and when I eventually get around to implementing my own lobby system I can swap out steam and distribute that version of the game.
 
 ## Logging
 
@@ -82,7 +82,7 @@ This would return the contents of the file **foo/bar.bash**. So really the MainM
         }
     }
     
-"views" is an endpoint that will take the rest of the URL as a search path and search all installed mods for that path, once it finds something that matches it redirects to that file and renders it out as a html view. This makes the new menu system loads better than the old one, now you no longer need all your UI elements in one mod (specified by the UiDirectory option), instead any file in any mod which can be a menu is found as used as appropriate!
+"views" is an endpoint that will take the rest of the URL as a search path and search all installed mods for that path. Once it finds something that matches it redirects to that file and renders it out as a html view. This makes the new menu system loads better than the old one. Now you no longer need all your UI elements in one mod (specified by the UiDirectory option). Instead any file in any mod which can be a menu is found as used as appropriate!
 
 #### Simple Tools Built Quickly
 
@@ -98,11 +98,11 @@ The consequence of all this power being in the API is that if I want a tool to d
 
 ## Ivory Towers/Coming Soon
 
-I'm sure some people who are following the project have thought it (I certainly have): I'm building lots of cool engines tech but no games! For the past two years I've been building the engine tech to do some pretty unprecedented stuff (vast procedurally generated) worlds, I'm finally at the point where it's all mature enough for me to start working on games! I finished work on the entity API today and tied up a lot of little loose ends before moving on to the next big sprint (tomorrow).
+I'm sure some people who are following the project have thought it (I certainly have): I'm building lots of cool engines tech but no games! For the past two years I've been building the engine tech to do some pretty unprecedented stuff (vast procedurally generated worlds) and I'm finally at the point where it's all mature enough for me to start working on games! I finished work on the entity API today and tied up a lot of little loose ends before moving on to the next big sprint (tomorrow).
 
 The next two things I do are going to be:
 
 1. Deathmatch
 2. Heist
 
-The deathmatch is the simplest gamemode I can implement. Simply some people in a multiplayer session killing one another with guns. This will be a test of all the basics of the system such as generating small shared worlds, physics, player movement, hit detection etc etc. The Heist mode will start off as a _very_ basic iteration over this, it will basically just be a box (labelled _loot_) which the players can pick up and carry to a certain point to win the game. Once I have this basic Heist mode I can start working on the features that make Heist fun such as complicated buildings containing the loot, alarm systems guarding the loot and NPCs populating the world around the loot.
+The deathmatch is the simplest gamemode I can implement. Simply some people in a multiplayer session killing one another with guns. This will be a test of all the basics of the system such as generating small shared worlds, physics, player movement, hit detection etc etc. The Heist mode will start off as a _very_ basic iteration over this. It will basically just be a box (labelled _loot_) which the players can pick up and carry to a certain point to win the game. Once I have this basic Heist mode I can start working on the features that make Heist fun such as complicated buildings containing the loot, alarm systems guarding the loot and NPCs populating the world around the loot.

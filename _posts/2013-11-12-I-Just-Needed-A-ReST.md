@@ -43,7 +43,7 @@ This has turned out to be the second best (after C# scripting) change I've ever 
  * GET **http://localhost:41338/config/{option name}** (show specific config option)
  * PATCH **http://localhost:41338/config/{option name}** (change a specific config option)
  
- This meant I could get rid of the equivalent methods I was binding before and it seemed to work nicely. It had the added little bonus that you could visit these links in your browser while the game is running and interact with the backend API yourself. Since this experiment worked I went and replaced all of the methods bound in the main menu, this reduced MainMenu.cs from a 500 line beast with lots of complex handling for marshalling async callbacks back onto the UI thread to post results back into the javascript context down to this:
+This meant I could get rid of the equivalent methods I was binding before and it seemed to work nicely. It had the added little bonus that you could visit these links in your browser while the game is running and interact with the backend API yourself. Since this experiment worked I went and replaced all of the methods bound in the main menu, this reduced MainMenu.cs from a 500 line beast with lots of complex stuff (like marshalling async callbacks back onto the UI thread to post results back into the javascript context) down to this:
  
     public class MainMenu
             :AwesomiumScreen

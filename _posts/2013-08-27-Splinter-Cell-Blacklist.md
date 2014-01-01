@@ -9,7 +9,7 @@ tagline : In Which Splinter Cell Is Played
 
 ## TL;DR
 
-I'm still playing the game, this is just a log of my first impressions - It will be tidied up into a proper analysis once I finish.
+I like a lot of blacklist, it's let down a by a few bad design choices.
 
 ## General Impression
 
@@ -52,3 +52,17 @@ Conversely to the last point the game suffers something I'm going to call _Failu
 Dogs. Oh God how much do I hate dogs in Blacklist. Humans are predictable and understandable - they react to noises by investigating them and they can only see things in front of them. Not dogs, oh no, Dogs react to small noises by...barking loudly and putting almost every guard on alert (failure amplification to the max). Not only that, I honestly have no clue how dogs detect me half the time, I guess the game gives them some omnidirectional sense of smell that picks up enemies in a radius.
 
 The main problem with dogs is that I simply don't understand them and the game makes no effort to help. Whenever I'm detected by a human it *makes sense*, I know that he saw me because I failed to take cover properly. Conversely whenever I'm detected by a dog it feels like total bullshit, I was detected by the dog through two layers of cover, whilst not moving, in a big smelly junk yard... yeah that makes sense.
+
+### The Asshole Level
+
+This is one I've seen in a lot of games. Most splinter cell levels have a bit of quick storyline justification before dumping you into a building full of bad guys with some objective to complete. If you don't care about the story it _doesn't matter_ because it's just a short interlude between each level which takes a backseat to the _game actually being fun_. Except the asshole level. The asshole level is the one where the game takes a backseat to the story. Splinter cell has two (that I can think of, I'm pretty sure there's more).
+
+##### I'm Taking Away All These Toys
+
+So at one point the protagonist takes a face full of deadly nerve gas ("Sam! Get away from there, just 1 micro-gram of that stuff will kill you"). This extremely deadly stuff then... makes the screen wavy for a bit and makes the controls slightly mushy as the character weaves around before collapsing and being captured in a cutscene. This is pretty annoying, the whole section of the game where you're playing with a wavy screen was not in the slightest bit fun.
+
+Of course once captured all of your equipment is taken away and when you later escape you have to get away, within a certain time limit (before the nerve gas is untreatable), with a slightly wavy screen and mushy controls, and no equipment. Fun.
+
+##### Oh I Suddenly Realised This Is The Last Level
+
+The last level of games usually seems to suck, and blacklist is no exception. First control is taken away from the player several times for an important storyline cutscene to do it's thing, then we have the player captured again, and finally the player character is injured and we have the final boss fight with a character who is injured and can't do half his usual moves. It really feels like the game was going along full steam when they suddenly realised they needed to finish it, so they tacked a heavily storyline driven level on the end with no consideration for how much it sucks to be railroaded this much in one level.

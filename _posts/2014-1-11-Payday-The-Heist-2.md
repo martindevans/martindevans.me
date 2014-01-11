@@ -13,7 +13,7 @@ A pretty badly broken game.
 
 ## General Impression
 
-The first payday game was a bit of a disappointment. A co-operative game about breaking into banks is something I want to play so much I've spent 2 years building such a game! The game instead turned out to be a series of level about slaughtering your way through hundreds of police men whilst waiting for the _worlds slowest drill_ to finish drilling a lock. Tragically payday 2 is no different - the entire game seems to be designed to degenerate into an endless police slaughterfest as soon as possible.
+The first payday game was a bit of a disappointment. A co-operative game about breaking into banks is something I want to play so much I've spent 2 years building such a game! The game instead turned out to be a series of level about slaughtering your way through hundreds of police whilst waiting for the _worlds slowest drill_ to finish drilling a lock. Tragically payday 2 is no different - the entire game seems to be designed to degenerate into an endless police slaughterfest as soon as possible.
 
 ## The Good
 
@@ -26,6 +26,10 @@ Before every mission you have a chance to scout out the level. In multiplayer th
 ### Incapacitated Guards Have Pagers
 
 When you incapacitate a guard their pager will go off (I have no idea how the pager magically detects that the guard is unconscious) and you have to answer the pager. This is a pretty neat idea which means it effectively takes a little longer to knock out a guard and makes the whole "sneak around knocking everyone out from behind" approach a little harder.
+
+### Branching Missions
+
+To be honest, I haven't played enough <del>police slaughterfest</del> Payday to really get a feel for how the branching  missions work. They were described as each scripted mission having a series of possible follow up scripted missions depending on your performance in a mission. E.g. in mission 1 you steal some art, in mission 2 you take the art to the person who commissioned you to steal it and then either trade it peacefully (mission over) or double cross him and make off with the money *and* the art which leads to mission 3 (escape). This is pretty cool and it's an idea I'd like to be possible in Heist - a branching mission generator ought not to be a lot harder to write than a linear mission generator.
 
 ## The Bad
 
@@ -48,5 +52,6 @@ The failure amplification in splinter cell was a bit annoying: sometimes the gam
 - You walk in front of any camera without disabling the security room first: **FULL SWAT ASSAULT**
 - You begin drilling a lock without subduing every single person in the building: **FULL SWAT ASSAULT**
 - You stand in front of a guard for 0.1s too long, even though you don't have a mask on and made no suspicious moves: **FULL SWAT ASSAULT**
+- I think you get the idea
 
 Naturally once a police assault has started there's no way to stop it, and no way to resolve it peacefully - you just have to slaughter endless police whilst completing the objective.

@@ -31,12 +31,11 @@ Not all the games on this list are (or will be) stealth games. I'll probably als
     {% endfor %}
 </ul>
 
-### Completed
+### Completed Games
 
 - Dishonored
 - Deus Ex: Human Revolution
 - Assassins Creed
-- PAYDAY: The Heist
 - System Shock
 - Hitman: Sniper Challenge
 - The Ship
@@ -45,11 +44,7 @@ Not all the games on this list are (or will be) stealth games. I'll probably als
 
 ### In Progress
 
-- PAYDAY 2
 - Hitman: Absolution
-
-### Planned
-
 - Monaco
 - Hitman: Blood Money
 - Amnesia: The Dark Descent
@@ -59,6 +54,7 @@ Not all the games on this list are (or will be) stealth games. I'll probably als
 - Door Kickers
 - Grand Theft Auto
 - Splinter Cell: Chaos Theory
+- Assassins Creed: Black Flag
 
 ## ???
 

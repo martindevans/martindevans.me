@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 category : Game-Design
 tags : [general-gaming, game-design, game-development, stealth-analysis-series]

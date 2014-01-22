@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 category : Game-Design
 tags : [general-gaming, game-design, game-development, stealth-analysis-series]
-tagline : In Which Payday: The Heist 2 Is Played
+tagline : In Which Payday The Heist 2 Is Played
 ---
 {% include JB/setup %}
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 category : heist
 tags : [changelog, heist]
@@ -19,7 +19,7 @@ However, the project is starting to move from entirely being about building the 
 
 ## Changelog #0
 
-[Go watch it](//www.youtube.com/embed/72o0LWwPkx0). Seriously, right now!
+<iframe width="560" height="315" src="//www.youtube.com/embed/72o0LWwPkx0" frameborder="0" allowfullscreen></iframe>
 
 ## Where Is The Long Promised Alpha Release?
 

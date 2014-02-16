@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 category : heist
 tags : [changelog, heist]

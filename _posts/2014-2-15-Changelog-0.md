@@ -19,7 +19,7 @@ However, the project is starting to move from entirely being about building the 
 
 ## Changelog #0
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/72o0LWwPkx0" frameborder="0" allowfullscreen></iframe>
+[Go and watch it](http//www.youtube.com/embed/72o0LWwPkx0), right now!
 
 ## Where Is The Long Promised Alpha Release?
 

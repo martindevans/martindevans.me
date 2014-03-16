@@ -7,6 +7,9 @@ auto: true
 pygments: true
 lsi: false
 
+# RSS variables
+description: One Man And His Adventures In Game Development.
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #

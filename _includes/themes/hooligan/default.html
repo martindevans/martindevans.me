@@ -28,6 +28,9 @@
     <link href="{{ ASSET_PATH }}/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">    
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
+    {% if site.JB.rss_path %}
+    <link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="alternate" type="application/rss+xml" title="{{ site.title }}" />
+    {% endif %}
     
     <!-- fav and touch icons -->
   <!-- Update these with your own images

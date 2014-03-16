@@ -61,6 +61,11 @@
             </ul>
             <ul class="nav pull-right social">
               <li class="divider-vertical"></li>
+              {% if site.JB.rss_path %}
+                <li>
+                  <a href="{{ site.production_url }}{{ site.JB.rss_path }}" class="zocial rss icon" target="_blank"></a>
+                </li>
+              {% endif %}
               {% if site.author.github %}
                 <li>
                   <a href="https://www.github.com/{{ site.author.github }}" class="zocial github icon" target="_blank"></a>

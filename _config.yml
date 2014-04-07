@@ -6,6 +6,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
 lsi: false
+markdown: kramdown
 
 # RSS variables
 description: One Man And His Adventures In Game Development.

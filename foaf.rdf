@@ -3,24 +3,27 @@
       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
       xmlns:admin="http://webns.net/mvcb/">
-<foaf:PersonalProfileDocument rdf:about="">
-  <foaf:maker rdf:resource="#me"/>
-  <foaf:primaryTopic rdf:resource="#me"/>
-  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
-  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
-</foaf:PersonalProfileDocument>
-<foaf:Person rdf:ID="me">
-<foaf:name>Martin Evans</foaf:name>
-<foaf:title>Mr</foaf:title>
-<foaf:givenname>Martin</foaf:givenname>
-<foaf:family_name>Evans</foaf:family_name>
-<foaf:nick>Nyarlathothep</foaf:nick>
-<foaf:mbox rdf:resource="mailto:martindevans@gmail.com"/>
-<foaf:homepage rdf:resource="http://martindevans.me"/>
-<foaf:schoolHomepage rdf:resource="University Of Birmingham School Of Computer Science"/>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Damian Lanningham</foaf:name>
-<foaf:mbox rdf:resource="mailto:qrebound@gmail.com"/>
-<rdfs:seeAlso rdf:resource="http://quantumplation.me/foaf.rdf"/></foaf:Person></foaf:knows></foaf:Person>
+    <foaf:PersonalProfileDocument rdf:about="">
+      <foaf:maker rdf:resource="#me"/>
+      <foaf:primaryTopic rdf:resource="#me"/>
+      <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+      <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+    </foaf:PersonalProfileDocument>
+    <foaf:Person rdf:ID="me">
+        <foaf:name>Martin Evans</foaf:name>
+        <foaf:title>Mr</foaf:title>
+        <foaf:givenname>Martin</foaf:givenname>
+        <foaf:family_name>Evans</foaf:family_name>
+        <foaf:nick>Nyarlathothep</foaf:nick>
+        <foaf:mbox rdf:resource="mailto:martindevans@gmail.com"/>
+        <foaf:homepage rdf:resource="http://martindevans.me"/>
+        <foaf:schoolHomepage rdf:resource="http://www.cs.bham.ac.uk/"/>
+        <foaf:knows>
+            <foaf:Person>
+                <foaf:name>Damian Lanningham</foaf:name>
+                <foaf:mbox rdf:resource="mailto:qrebound@gmail.com"/>
+                <rdfs:seeAlso rdf:resource="http://quantumplation.me/foaf.rdf"/>
+            </foaf:Person>
+        </foaf:knows>
+    </foaf:Person>
 </rdf:RDF>

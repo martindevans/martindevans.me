@@ -5,10 +5,14 @@ tagline: I make games.
 ---
 {% assign first_post = site.posts.first %}
 <div id="post">
-    <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
-    <div id="date">published {{ first_post.date | date_to_string }}</div>
-    {{ first_post.content }}
-    <a id="more" href="{{ first_post.url }}#disqus">Comments &raquo;</a>
+    <div class="row">
+        <div class="span11">
+            <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
+            <div id="date">published {{ first_post.date | date_to_string }}</div>
+            {{ first_post.content }}
+            <a id="more" href="{{ first_post.url }}#disqus_thread">Comments &raquo;</a>
+        </div>
+    </div>
 </div>
 
 <hr />

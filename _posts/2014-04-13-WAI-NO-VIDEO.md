@@ -1,6 +1,6 @@
 ---
 layout: post
-category : heist
+category : heist-game
 tags : [changelog, heist]
 tagline : In Which A Tradition Is Not Upheld
 title: WAI NO VIDEO

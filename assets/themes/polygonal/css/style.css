@@ -95,7 +95,7 @@ hr {
   margin-bottom: 0;
 }
 /* line 84, ../_sass/_base.scss */
-.navbar div.navbar-inner {
+.navbar {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -106,18 +106,31 @@ hr {
   background-image: none;
 }
 
-.navbar ul.nav > li > a:hover {
+.navbar ul.nav > li > a.active {
     color: #fff;
+    background-color: #111;
+}
+
+.navbar ul.navbar-nav > li > a:hover {
+    color: #fff;
+    background-color: #777;
+}
+
+.navbar ul.social > li > a:hover {
+    background-color: inherit;
+}
+
+.nav > li {
+    display: inline-block;
 }
 
 /* line 86, ../_sass/_base.scss */
-.navbar div.navbar-inner a.brand {
-  padding: 10px 20px;
+.navbar-brand {
   color: #444;
   text-decoration: none;
 }
 /* line 91, ../_sass/_base.scss */
-.navbar div.navbar-inner ul.nav:first-child li a {
+.navbar div.container-fluid ul.nav:first-child li a {
   padding: 12px 10px 8px;
 }
 
@@ -144,8 +157,8 @@ hr {
   /* when there's no page-header */
   /* Wide column content */
   background: rgba(255, 255, 255, 0.3);
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -154,6 +167,12 @@ hr {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+.content > .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* line 112, ../_sass/_base.scss */
 .content img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
@@ -316,7 +335,7 @@ div.content div#page-index {
   margin-bottom: 0;
 }
 /* line 4, ../_sass/_responsive.scss */
-.navbar div.navbar-inner {
+.navbar div.container-fluid {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;

@@ -9,7 +9,7 @@ tagline : In Which Some CSS Is Written
 
 ## TL;DR
 
-My old blog sucked wasn't too bad, but I wanted something with a bit more... colour.
+My old blog wasn't too bad, but I wanted something with a bit more... colour.
 
 ## Colourful Is The New Black
 

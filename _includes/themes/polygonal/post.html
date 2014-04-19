@@ -5,6 +5,40 @@
       <small>{{ page.tagline }}</small>
     {% endif %}
   </h1>
+  
+  <div>
+    Written By
+    <b>
+        {% if page.author %}
+            {% if page.author.url %}
+                <a href="{{ page.author.url }}">{{ page.author.name }}</a>
+            {% else %}
+                {{ page.author.name }}
+            {% endif %}
+        {% else %}
+            {{ site.author.name }}
+        {% endif %}
+    </b>
+    
+    On
+    
+    <b>{{ page.date | date_to_long_string }}</b>
+    
+    {% if page.category %}
+        Filed In <b>{{ page.category }}</b>
+    {% endif %}
+  </div>
+  
+  <div>
+    {% unless page.tags == empty %}
+      <section>
+        <ul class="tag_box inline">
+          {% assign tags_list = page.tags %}
+          {% include JB/tags_list %}
+        </ul>
+      </section>
+    {% endunless %}         
+  </div>
 </div>
 
 <div class="row">

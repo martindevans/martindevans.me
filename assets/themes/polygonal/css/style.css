@@ -156,9 +156,10 @@ hr {
 .content {
   /* when there's no page-header */
   /* Wide column content */
-  background: rgba(255, 255, 255, 0.3);
   padding-left: 2em;
   padding-right: 2em;
+  
+  background: rgba(255, 255, 255, 0.6);
   
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;

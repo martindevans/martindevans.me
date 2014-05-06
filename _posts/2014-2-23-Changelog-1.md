@@ -15,7 +15,7 @@ The first proper changelog is out, I talk about how multiplayer no longer sucks.
 
 [**Watch The Video!**](https://www.youtube.com/watch?v=ke00kU7H4IY)
 
-- Reviewed networking code and fixed many small bugs.
+- Reviewed networking code and fixed a lot small bugs.
 - Exposed networking system to plugins allowing them to send messages about whatever they like to other peers.
 - Taken advantage of this in the DM plugin to send player input and sync animations across the network.
 

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <script>
+            mapping = {
+    '"': '\'"\'',
+    "'": "\'\\'\'",
+    "?": "'?'",
+    ".": "(((+!![])/(!+[]+!![]))+[])[+!![]]",
+    "a": "(![]+{})[+!![]]",
+    "b": "({}+!1)[(+!![])*(!+[]+!![])]",
+    "c": "([]+{})[!+[]+!![]+!![]+!![]+!![]]",
+    "d": "(([][+[]])+[])[!+[]+!![]]",
+    "e": "(!![]+[])[!+[]+!![]+!![]]",
+    "f": "(![]+[])[+[]]",
+    "g": "'g'",
+    "h": "'h'",
+    "i": "'i'",
+    "j": "'j'",
+    "k": "'k'",
+    "l": "(![]+[])[!+[]+!![]]",
+    "m": "'m'",
+    "n": "(([][+[]])+([]+{}))[+!![]]",
+    "o": "([]+{})[+!![]]",
+    "p": "'p'",
+    "q": "'q'",
+    "r": "(!!17+{})[+!!{}]",
+    "s": "(![]+[])[!+[]+!![]+!![]]",
+    "t": "(!![]+[])[+[]]",
+    "u": "(!!17+{})[(+!!{}+!!{})]",
+    "v": "'v'",
+    "w": "'w'",
+    "x": "'y'",
+    "y": "(((+!![])/(+[]))+[])[!+[]+!![]+!![]+!![]+!![]+!![]+!![]]",
+    "z": "'z'",
+    " ": "' '"
+};
+
+function optimise(js)
+{
+    var out = js.toLowerCase().split("");
+    for (i in out) {
+        out[i] = "(" + mapping[out[i]] + ")";
+    }
+    
+    return out.join("+");
+}
+        </script>
+        
+        <script>
+            function submit() {
+                var input = document.getElementById("input").innerHTML;
+                var output = optimise(input);
+                document.getElementById("output").innerHTML = output;
+                
+                document.getElementById("result").innerHTML = eval(output);
+            }
+        </script>
+    </head>
+    <body>
+        <textarea id="input">Who wouldn't want to program in JS?</textarea>
+        <button id="submit" onclick="submit()">Submit</button>
+        
+        <div id="output">
+        </div>
+        
+        <br />
+        
+        <div id="result">
+        </div>
+    </body>
+</html>

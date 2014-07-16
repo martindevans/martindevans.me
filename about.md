@@ -8,7 +8,7 @@ group: navigation
 
 I'm a solo indie game developer working from Worcester, UK.  
 
-You can contact me at <a href="mailto:martin@placeholder-software.co.uk">martin@placeholder-software.co.uk</a>.
+You can contact me at <a href="mailto:martin@placeholder-software.co.uk">martin@placeholder-software.co.uk</a>. Feel free to use [this](729906C47F913D1A0EA7B0001642F34F0F6D3EBB.asc) PGP key if you have something private to say.
 
 ## Bio
 

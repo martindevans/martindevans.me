@@ -19,7 +19,7 @@ Last week I was away from home and didn't intend to put out a video. In these ci
 
 After getting all the AI stuff tied together a couple of weeks ago I decided to move onto something new - generation of building internals. This is something that I've worked on before and each time I come back to it I advanced my technique a little bit, usually building out some more supporting libraries to make generation easier. For example earlier this year I built a parcelling system which I use for generating the layout of buildings in a block as well as the layout of rooms on a floor which can generate layouts like this:
 
-![Parcelled Floor](assets/ParcelledFloorplan.png)
+![Parcelled Floor](/assets/ParcelledFloorplan.png)
 
 Obviously this isn't a complete layout - it needs corridors and stairwells and other non-room features added, but it's a good start.
 
@@ -32,7 +32,7 @@ One thing that this floor plan lacks is any information about what room neighbou
  
 My current prototype generates a plan a little like this:
  
- ![Floor Plan Prototype](assets/FloorPlanPrototype.png)
+ ![Floor Plan Prototype](/assets/FloorPlanPrototype.png)
  
 You can see that this plan has:
 

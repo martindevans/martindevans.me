@@ -65,7 +65,7 @@ Yeah, it's never that easy is it. The question is - *what objects do I have to p
 
 ![Graphical Skeleton](/assets/ZoeBones.png)
 
-As you can see here the character model already has a skeleton - this is the skeleton that is driven by the animation system whenever an animation is playing from file. It makes sense just to directly put these bones into the physics engine so there's a very close match up between animations from file and procedural animations from physics engine. Unfortunately this resulted in less than optimal results:
+As you can see here the character model already has a skeleton - this is the skeleton that is driven by the animation system whenever an animation is playing from file. It makes sense just to directly put these bones into the physics engine so there's a very close match up between animations from file and procedural animations from physics engine. Unfortunately the results were less than optimal:
 
 ![Less Than Optimal Results](/assets/Oh-God-I-Am-So-Sorry.png)
 

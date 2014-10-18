@@ -30,36 +30,36 @@ Total Time Travelling/Awake: *25 hours*.
 
 So the really long journey was pretty difficult and it was a huge relief to go to bed when we finally got to Kawaguchiko (at 1900). I think we may have dodged a bullet though - we suffered no jet lag! By the time we'd spent so long awake and running around we went to bed as soon as we arrived, slept for 16 hours we're on Japan time!
 
-{% include lightbox/photo.html thumb="/assets/Japan/Trip/Thumb-WP_20141014_001.jpg" path="/assets/Japan/Trip/WP_20141014_001.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Trip/Thumb-WP_20141014_12_04_26_Pro.jpg" path="/assets/Japan/Trip/WP_20141014_12_04_26_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Trip/Thumb-WP_20141014_12_33_40_Pro.jpg" path="/assets/Japan/Trip/WP_20141014_12_33_40_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Trip/Thumb-WP_20141014_13_19_35_Pro.jpg" path="/assets/Japan/Trip/WP_20141014_13_19_35_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Trip/Thumb-WP_20141015_11_08_14_Pro.jpg" path="/assets/Japan/Trip/WP_20141015_11_08_14_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Trip/Thumb-WP_20141015_13_26_44_Pro.jpg" path="/assets/Japan/Trip/WP_20141015_13_26_44_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Trip/thumb-WP_20141014_001.jpg" path="/assets/Japan/Trip/WP_20141014_001.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Trip/thumb-WP_20141014_12_04_26_Pro.jpg" path="/assets/Japan/Trip/WP_20141014_12_04_26_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Trip/thumb-WP_20141014_12_33_40_Pro.jpg" path="/assets/Japan/Trip/WP_20141014_12_33_40_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Trip/thumb-WP_20141014_13_19_35_Pro.jpg" path="/assets/Japan/Trip/WP_20141014_13_19_35_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Trip/thumb-WP_20141015_11_08_14_Pro.jpg" path="/assets/Japan/Trip/WP_20141015_11_08_14_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Trip/thumb-WP_20141015_13_26_44_Pro.jpg" path="/assets/Japan/Trip/WP_20141015_13_26_44_Pro.jpg" %}
 {% include lightbox/spacer.html %}
 
 ## Kawaguchiko
 
 Around the base of Fuji there are 5 lakes; Kawaguchiko, Saiko, Yamanakako, Shojiko and Motosuko. We stayed at Kawaguchikiko at the [Mizuno Hotel](http://www.tripadvisor.com/Hotel_Review-g1165976-d1169200-Reviews-Mizuno_Hotel-Fujikawaguchiko_machi_Minamitsuru_gun_Yamanashi_Prefecture_Chubu.html). The hotel description promised great views of Fuji and most definitely did not disappoint! On the very first day we were up at 6am and were lucky enough to see Fuji poking through the fog. We thought that would probably be all that we saw of Fuji, but we turned out to be incredibly lucky with the weather and later in the day we were on top of a nearby hill just as the clouds were clearing and got some beautiful shots. Throughout the day the clouds slowly cleared and we got more incredible shots of Fuji:
 
-{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/Thumb-WP_20141016_06_56_41_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_06_56_41_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/Thumb-WP_20141016_07_55_08_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_07_55_08_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/Thumb-WP_20141016_11_03_25_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_11_03_25_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/Thumb-WP_20141016_12_05_54_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_12_05_54_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/Thumb-WP_20141016_12_58_47_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_12_58_47_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/Thumb-WP_20141016_14_04_52_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_14_04_52_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/Thumb-WP_20141016_14_05_41_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_14_05_41_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/Thumb-WP_20141017_07_18_40_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141017_07_18_40_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/thumb-WP_20141016_06_56_41_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_06_56_41_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/thumb-WP_20141016_07_55_08_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_07_55_08_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/thumb-WP_20141016_11_03_25_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_11_03_25_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/thumb-WP_20141016_12_05_54_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_12_05_54_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/thumb-WP_20141016_12_58_47_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_12_58_47_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/thumb-WP_20141016_14_04_52_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_14_04_52_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/thumb-WP_20141016_14_05_41_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141016_14_05_41_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/Kawaguchiko/thumb-WP_20141017_07_18_40_Pro.jpg" path="/assets/Japan/Kawaguchiko/WP_20141017_07_18_40_Pro.jpg" %}
 {% include lightbox/spacer.html %}
  
 ## Kawaguchiko To Kyoto
 
 I'm actually writing this blog post from my hotel room in Kyoto, yesterday we left Kawaguchiko on the train (exactly on time, of course) and then took the bullet train from Yokohama to Kyoto. I didn't manage to get a window seat, so I didn't get any good pictures from the bullet train - but I did get a load from the trains on the way to Yokohama:
 
-{% include lightbox/photo.html thumb="/assets/Japan/TrainToYokohama/Thumb-WP_20141017_12_15_03_Pro.jpg" path="/assets/Japan/TrainToYokohama/WP_20141017_12_15_03_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/TrainToYokohama/Thumb-WP_20141017_12_15_35_Pro.jpg" path="/assets/Japan/TrainToYokohama/WP_20141017_12_15_35_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/TrainToYokohama/Thumb-WP_20141017_12_19_21_Pro.jpg" path="/assets/Japan/TrainToYokohama/WP_20141017_12_19_21_Pro.jpg" %}
-{% include lightbox/photo.html thumb="/assets/Japan/TrainToYokohama/Thumb-WP_20141017_12_23_19_Pro.jpg" path="/assets/Japan/TrainToYokohama/WP_20141017_12_23_19_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/TrainToYokohama/thumb-WP_20141017_12_15_03_Pro.jpg" path="/assets/Japan/TrainToYokohama/WP_20141017_12_15_03_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/TrainToYokohama/thumb-WP_20141017_12_15_35_Pro.jpg" path="/assets/Japan/TrainToYokohama/WP_20141017_12_15_35_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/TrainToYokohama/thumb-WP_20141017_12_19_21_Pro.jpg" path="/assets/Japan/TrainToYokohama/WP_20141017_12_19_21_Pro.jpg" %}
+{% include lightbox/photo.html thumb="/assets/Japan/TrainToYokohama/thumb-WP_20141017_12_23_19_Pro.jpg" path="/assets/Japan/TrainToYokohama/WP_20141017_12_23_19_Pro.jpg" %}
 {% include lightbox/spacer.html %}
  
 And that's the first couple of days in Japan. Expect my next update within a week or so, covering Kyoto!

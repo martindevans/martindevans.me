@@ -1,7 +1,7 @@
 ---
 layout: post
-category : Holiday
-tags : [holiday-japan-2014]
+category : Personal
+tags : [holiday, japan]
 tagline : In Which The Vending Machines Invade
 ---
 {% include JB/setup %}

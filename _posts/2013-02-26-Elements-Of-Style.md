@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 category : General-Gaming
 tags : [game-design,general-gaming]

@@ -12,7 +12,7 @@ In 2014 I went to Japan for three weeks, we visited Kawaguchiko lake (near Fuji)
 
 Click on any of the images to get a full resolution version, when you have a full resolution image displayed click anywhere to dismiss it.
 
-A lot of the thumbnail images look vert strangely squashed or stretched, it's because all the thumbnails are square but the images are portrait or landscape - the full resolution version doesn't suffer that problem :)
+A lot of the thumbnail images look very strangely squashed or stretched, it's because all the thumbnails are square but the images are portrait or landscape - the full resolution version doesn't suffer that problem :)
 
 ### Kawaguchiko
 

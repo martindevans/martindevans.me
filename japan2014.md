@@ -10,7 +10,7 @@ In 2014 I went to Japan for three weeks, we visited Kawaguchiko lake (near Fuji)
 
 ## Gallery
 
-Click on any of the images to get a full resolution version.
+Click on any of the images to get a full resolution version, when you have a full resolution image displayed click anywhere to dismiss it.
 
 ### Kawaguchiko
 

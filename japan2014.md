@@ -28,13 +28,6 @@ The hotel description promised great views of Fuji and most definitely did not d
 
 Kyoto was the home of the emperor and the capital of Japan from 794 through to 1868. It's a city absolutely *packed* with history - there are no less than **17** UNESCO World Heritage sites in the city! We spent an entire week exploring Kyoto and I still feel like we barely scratched the surface of what there is to see here.
 
-{% for num in (0..275) %}
-    {% capture thumb %}/assets/Japan/Kyoto2/thumb-{{ num }}.jpg{% endcapture %}
-    {% capture full %}/assets/Japan/Kyoto2/{{ num }}.jpg{% endcapture %}
-    {% include lightbox/photo.html thumb="{{ thumb }}" path="{{ full }}" %}
-{% endfor %}
-{% include lightbox/spacer.html %}
-
 ### Hiroshima
 
 We changed it up a little in Hiroshuma and stayed in a guest house 25 minutes out of the city by bus. It was a great place with a friendly host and it was nice to escape to the countryside a little after the crowds in Kyoto.

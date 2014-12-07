@@ -29,7 +29,7 @@ We changed it up a little in Hiroshuma and stayed in a guest house 25 minutes ou
 {% for num in (0..72) %}
     {% capture thumb %}/assets/Japan/Hiroshima/thumb-{{ num }}.jpg{% endcapture %}
     {% capture full %}/assets/Japan/Hiroshima/{{ num }}.jpg{% endcapture %}
-    {% include lightbox/photo.html thumb="{{ thumb }}" path="{{ full }}" %}
+    {% include lightbox/photo.html thumb=thumb path=full %}
 {% endfor %}
 {% include lightbox/spacer.html %}
 

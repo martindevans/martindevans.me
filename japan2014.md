@@ -16,9 +16,9 @@ Fuji is the tallest mountain in Japan. Around the base are fives lakes; Kawaguch
 
 The hotel description promised great views of Fuji and most definitely did not disappoint! On the very first day we were up at 6am and were lucky enough to see Fuji poking through the fog. We thought that would probably be all that we saw of Fuji, but we turned out to be incredibly lucky with the weather and later in the day we were on top of a nearby hill just as the clouds were clearing and got some beautiful shots. Throughout the day the clouds slowly cleared and we got more incredible shots of Fuji.
 
-{% for pic in site.Japan2014.kawaguchiko %}
-    {% capture thumbnail %}{{ site.Japan2014.basePath }}{{ site.Japan2014.thumbPrefix }}{{ pic }}{% endcapture %}
-    {% capture fullpath %}{{ site.Japan2014.basePath }}{{ pic }}{% endcapture %}
+{% for pic in site.data.Japan2014.kawaguchiko %}
+    {% capture thumbnail %}{{ site.data.Japan2014.basePath }}{{ site.data.Japan2014.thumbPrefix }}{{ pic }}{% endcapture %}
+    {% capture fullpath %}{{ site.data.Japan2014.basePath }}{{ pic }}{% endcapture %}
     {% include lightbox/photo.html thumb="{{ thumbnail }}" path="{{ fullpath }}" %}
 {% endfor %}
 {% include lightbox/spacer.html %}

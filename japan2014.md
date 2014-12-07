@@ -77,8 +77,8 @@ Matsumoto is a 30 minute train ride away from [The Japanese Alps](https://encryp
 At the end of the holiday we had an entire week in Tokyo. It's unbelievable just how crowded Tokyo is if London seems crowded with it's population density of 5300 people per square kilometer imagine what Tokyo is like with **14,562** people per square kilometer!! Like Kyoto there's absolutely loads to do in Tokyo and I feel like we barely scratched the surface.
 
 {% for num in (0..80) %}
-{% capture thumb %}/assets/Japan/Matsumoto/thumb-{{ num }}.jpg{% endcapture %}
-{% capture full %}/assets/Japan/Matsumoto/{{ num }}.jpg{% endcapture %}
+{% capture thumb %}/assets/Japan/Tokyo/thumb-{{ num }}.jpg{% endcapture %}
+{% capture full %}/assets/Japan/Tokyo/{{ num }}.jpg{% endcapture %}
 {% include lightbox/photo.html thumb=thumb path=full %}
 {% endfor %}
 {% include lightbox/spacer.html %}

@@ -40,11 +40,8 @@ Kyoto was the home of the emperor and the capital of Japan from 794 through to 1
 We changed it up a little in Hiroshuma and stayed in a guest house 25 minutes out of the city by bus. It was a great place with a friendly host and it was nice to escape to the countryside a little after the crowds in Kyoto.
 
 {% for num in (0..72) %}
-    {% capture thumb %}/assets/Japan/Hiroshima/thumb-{{ num }}.jpg{% endcapture %}
-    {% capture full %}/assets/Japan/Hiroshima/{{ num }}.jpg{% endcapture %}
-    {% include lightbox/photo.html thumb="{{ thumb }}" path="{{ full }}" %}
+    {{ num }}
 {% endfor %}
-{% include lightbox/spacer.html %}
 
 After we left Hiroshima we stopped off on the way to visit an island which used to be used for making chemical weapons (before and during WWII). The island is abandoned now and nothing lives there except rabbits! With no predators to stop them there are just rabbits *everywhere*!
 
@@ -52,31 +49,10 @@ After we left Hiroshima we stopped off on the way to visit an island which used 
 
 It's a long way from Hiroshima to Matsumoto, even by bullet train! Nagoya is conveniently in the middle of the two and so we stopped off here for one night. The castle was one of the most important castles in Japan, being located right in the middle of the country and in a large and important city.
 
-{% for num in (0..15) %}
-    {% capture thumb %}/assets/Japan/Hiroshima/thumb-{{ num }}.jpg{% endcapture %}
-    {% capture full %}/assets/Japan/Hiroshima/{{ num }}.jpg{% endcapture %}
-    {% include lightbox/photo.html thumb="{{ thumb }}" path="{{ full }}" %}
-{% endfor %}
-{% include lightbox/spacer.html %}
-
 ### Matsumoto
 
 Matsumoto is a 30 minute train ride away from [The Japanese Alps](https://encrypted.google.com/maps/place/Japanese+Alps/data=!4m2!3m1!1s0x600291b57e334125:0xc184cab8126f1041!5m1!1e4?sa=X&ei=QZCEVML3GMjzUoiUhNgP&ved=0CB0Q8gEwAA). By this point in the holiday we were pretty tired of walking and so we didn't really do as much climbing as we'd planned - it was nice to sit at the base of the mountain trail drinking tea and admiring the view though!
 
-{% for num in (0..22) %}
-    {% capture thumb %}/assets/Japan/Matsumoto/thumb-{{ num }}.jpg{% endcapture %}
-    {% capture full %}/assets/Japan/Matsumoto/{{ num }}.jpg{% endcapture %}
-    {% include lightbox/photo.html thumb="{{ thumb }}" path="{{ full }}" %}
-{% endfor %}
-{% include lightbox/spacer.html %}
-
 ### Tokyo
 
 At the end of the holiday we had an entire week in Tokyo. It's unbelievable just how crowded Tokyo is if London seems crowded with it's population density of 5300 people per square kilometer imagine what Tokyo is like with **14,562** people per square kilometer!!
-
-{% for num in (0..80) %}
-    {% capture thumb %}/assets/Japan/Tokyo/thumb-{{ num }}.jpg{% endcapture %}
-    {% capture full %}/assets/Japan/Tokyo/{{ num }}.jpg{% endcapture %}
-    {% include lightbox/photo.html thumb="{{ thumb }}" path="{{ full }}" %}
-{% endfor %}
-{% include lightbox/spacer.html %}

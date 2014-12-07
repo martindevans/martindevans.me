@@ -12,6 +12,8 @@ In 2014 I went to Japan for three weeks, we visited Kawaguchiko lake (near Fuji)
 
 Click on any of the images to get a full resolution version, when you have a full resolution image displayed click anywhere to dismiss it.
 
+A lot of the thumbnail images look vert strangely squashed or stretched, it's because all the thumbnails are square but the images are portrait or landscape - the full resolution version doesn't suffer that problem :)
+
 ### Kawaguchiko
 
 Fuji is the tallest mountain in Japan. Around the base are fives lakes; Kawaguchiko, Saiko, Yamanakako, Shojiko and Motosuko. The lakes a popular tourist destination for Japanese and foreigners alike. We went here mostly because there's *not* much to do which makes it a fantastic place to recover from close to 40 hours awake and travelling as well as jetlag from 9 timezones!

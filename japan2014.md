@@ -27,9 +27,9 @@ Kyoto was the home of the emperor and the capital of Japan from 794 through to 1
 We changed it up a little in Hiroshuma and stayed in a guest house 25 minutes out of the city by bus. It was a great place with a friendly host and it was nice to escape to the countryside a little after the crowds in Kyoto.
 
 {% for num in (0..72) %}
-    {% capture thumb %}/assets/Japan/Hiroshima/thumb-{{ num }}.jpg{% endcapture %}
-    {% capture full %}/assets/Japan/Hiroshima/{{ num }}.jpg{% endcapture %}
-    {% include lightbox/photo.html thumb=thumb path=full %}
+{% capture thumb %}/assets/Japan/Hiroshima/thumb-{{ num }}.jpg{% endcapture %}
+{% capture full %}/assets/Japan/Hiroshima/{{ num }}.jpg{% endcapture %}
+{% include lightbox/photo.html thumb=thumb path=full %}
 {% endfor %}
 {% include lightbox/spacer.html %}
 

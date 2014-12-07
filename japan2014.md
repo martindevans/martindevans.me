@@ -3,6 +3,8 @@ layout: page
 title: Japan 2014
 tagline: Gallery From My Holiday To Japan
 ---
+{% include JB/setup %}
+{% include lightbox/setup.html %}
 
 In 2014 I went to Japan for three weeks, we visited Kawaguchiko lake (near Fuji), the ancient capital Kyoto, Hiroshima, Nagoya, Matsumoto and Tokyo.
 
@@ -27,9 +29,7 @@ We changed it up a little in Hiroshuma and stayed in a guest house 25 minutes ou
 {% for num in (0..72) %}
     {% capture thumb %}/assets/Japan/Hiroshima/thumb-{{ num }}.jpg{% endcapture %}
     {% capture full %}/assets/Japan/Hiroshima/{{ num }}.jpg{% endcapture %}
-    
-    {{ full }}
-    {{ thumb }}
+    {% include lightbox/photo.html thumb="{{ thumb }}" path="{{ full }}" %}
 {% endfor %}
 {% include lightbox/spacer.html %}
 

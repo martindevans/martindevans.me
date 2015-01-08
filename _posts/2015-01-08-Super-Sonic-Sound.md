@@ -100,11 +100,11 @@ One problem with passing structs around instead of objects is that they're pass-
 
 I have tried to maintain the naming of methods in Supersonic Sound as much as possible. Obviously C# naming conventions are different from those of the FMOD library and so I have changed capitalisation of methods and structures etc. e.g.
 
- > RESULT getSoundInfo(string key, out SOUND_INFO);
+    RESULT getSoundInfo(string key, out SOUND_INFO);
     
 Becomes:
     
- > SoundInfo GetSoundInfo(string key);
+    SoundInfo GetSoundInfo(string key);
     
 Here you can see:
 
@@ -114,43 +114,37 @@ Here you can see:
 
 There are some places in the FMOD API where multiple methods do the same thing with different arguments, e.g.
 
- > getBank(string key);
- 
- > getBankById(GUID id);
+    getBank(string key);
+    getBankById(GUID id);
 
 These have become:
 
- > GetBank(string key);
- 
- > GetBank(Guid id);
+    GetBank(string key);
+    GetBank(Guid id);
 
 i.e. they are simply overloaded with the same name, instead of having "byId" prefixed on the name.
 
 Finally properties which are getters and setters simply become properties, e.g.
 
- > getVolume(out float);
- 
- > setVolume(float volume);
+    getVolume(out float);
+    setVolume(float volume);
  
 Instead have become:
 
- > float Volume { get; set; }
+    float Volume { get; set; }
 
 #### Naming - Indexers
 
 The most radical name changes between FMOD and Supersonic Sound come in index properties. For example in *Sound* there are several methods for manipulating channels:
 
- > RESULT getMusicNumChannels(out int numchannels);
- 
- > RESULT setMusicChannelVolume(int channel, float volume);
- 
- > RESULT getMusicChannelVolume(int channel, out float volume);
+    RESULT getMusicNumChannels(out int numchannels);
+    RESULT setMusicChannelVolume(int channel, float volume);
+    RESULT getMusicChannelVolume(int channel, out float volume);
  
 The first one could simply become a readonly property `MusicNumChannels { get; }` and the other two would have to stay as methods because they need the channel index parameter. Instead in cases like these I have decided to use indexed properties, so instead this becomes something like:
 
- > thing.MusicChannels.Count;
- 
- > thing.MusicChannels[123].Volume = 0.5f;
+    thing.MusicChannels.Count;
+    thing.MusicChannels[123].Volume = 0.5f;
 
 Which is a much more fluent interface than before.
 

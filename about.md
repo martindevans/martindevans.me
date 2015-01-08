@@ -27,6 +27,7 @@ I'm a huge believer in [Open Source](https://en.wikipedia.org/wiki/Open_source) 
  - [HandyCollections](https://github.com/martindevans/HandyCollections) - A set of useful collections which I use in many of my projects
  - [MumbleSharp](https://github.com/martindevans/MumbleSharp) - A partial implementation of the [Mumble](http://mumble.sourceforge.net/) protocol in C# (everything except voice)
  - [NockFSharp](https://github.com/martindevans/NockFSharp) - An implementation of the homoiconic combinator algebra [Nock](http://urbit.org/) in F#
+ - [Supersonic Sound](https://github.com/martindevans/SupersonicSound) - A C# wrapper around FMOD Studio
  
 Epimetheus is my game engine and it is totally closed source (at the moment). However *plugins* to Epimetheus are a different matter entirely, My [profile at Bitbucket](https://bitbucket.org/martindevans) is entirely scripts which make the Epimetheus engine stop being an engine and start being a game:
 

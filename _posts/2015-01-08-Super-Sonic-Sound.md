@@ -15,7 +15,7 @@ I have released a C# wrapper for [FMOD studio](http://www.fmod.org/fmod-studio/)
 
 FMOD is an audio middleware for games which comes in two parts: FMOD Programmers API and FMOD Studio.
 
-![FMOD Studio](assets/FMOD Studio.png)
+<img align="right" src="assets/FMOD Studio.png"></img>
 
 FMOD studio is an audio creation tool for your audio artists to use to create complex sound effects - using the studio you can create sounds which depends upon parameters and run complicated state machines and then the game can tweak those parameters at runtime and make your sounds responsive to in game events.
 

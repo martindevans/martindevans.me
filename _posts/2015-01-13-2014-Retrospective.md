@@ -232,10 +232,10 @@ Line count statistics unavailable (they're thrown off by moving lots of files ar
 I haven't got detailed changelogs for these (there are too many) but I have done a lot of development of plugins too. A lot of functionality is tied up in these plugins and they're a significant part of development. Remember, every plugin I develop is open source, and you can find them all [on Bitbucket](https://bitbucket.org/martindevans).
 
 ##### Deathmatch Gamemode
-  - Testing moving, shooting, NPCs etc
+Testing moving, shooting, NPCs etc.
   
 ##### Base-ArtificialIntelligence
-  - Library for building NPCs for Epimetheus
+Library for building NPCs for Epimetheus.
   
 ##### Electronic-Infrastructure
 Library for building circuitry in game (e.g. wiring up logic for controlling automatic doors).

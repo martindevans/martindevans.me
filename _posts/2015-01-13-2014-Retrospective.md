@@ -80,7 +80,7 @@ I continue to be a massive fan of open source and release a lot of my code publi
 
 My job is game development, so what did I do with that this year? My primary focus is the **Epimetheus Engine**, my custom game engine. This is supported by **Placeholder.\***, a (closed source) set of libraries for various game related things (advanced entity management, networking, game audio, AI etc). Finally the whole thing is based on my open source game library [Myre](https://github.com/martindevans/Myre). I quickly skimmed the commit notes for the entire of last for for these three core projects and this is the mile high view of what I did (I'm not really mentioning bugfixes in this list, so just mentally drop a couple of hundred bugfixes for each project into this list).
 
-#### Epimetheus
+#### **Epimetheus**
 
 240 commits<br />
 5,840 files changed<br />
@@ -162,7 +162,7 @@ My job is game development, so what did I do with that this year? My primary foc
  - Implemented a score tracking service
  - Enabled steam overlay in game
 
-#### Myre
+#### **Myre**
 
 103 commits<br />
 780 files changed<br />
@@ -194,7 +194,7 @@ Line count statistics unavailable (they're thrown off by moving lots of files ar
  - Implemented collection initializers for named box collection
  - Implemented Writer for console
 
-#### Placeholder
+#### **Placeholder**
 
 125 commits<br />
 3,103 files changes<br />
@@ -231,32 +231,44 @@ Line count statistics unavailable (they're thrown off by moving lots of files ar
 
 I haven't got detailed changelogs for these (there are too many) but I have done a lot of development of plugins too. A lot of functionality is tied up in these plugins and they're a significant part of development. Remember, every plugin I develop is open source, and you can find them all [on Bitbucket](https://bitbucket.org/martindevans).
 
- - Deathmatch Gamemode
+##### Deathmatch Gamemode
   - Testing moving, shooting, NPCs etc
- - Base-ArtificialIntelligence
+  
+##### Base-ArtificialIntelligence
   - Library for building NPCs for Epimetheus
- - Electronic-Infrastructure
-  - Library for building circuitry in game (e.g. wiring up logic for controlling automatic doors)
- - Construct Gamemode
-  - A sandbox test mode
- - City1
-  - A set of scripts for the procedural city generator
- - Character-Controllers
-  - Library for building player controlled characters for Epimetheus
- - Base-Equipment
-  - Library for building wieldable tools for Epimetheus (e.g. guns)
- - Base-GameUI
-  - A HTML template along with a load of Javascript plugins for constructing UIs (mainly HUDs)
- - Base-Sneaky
-  - Library for implementing sneaky things (stealth, detection, disguises etc)
- - Default-Shaders
-  - A set of shaders for the engine (including fundamental things like the GBuffer shader - you can completely change how the renderer works by replacing these)
- - Base-TrainGeneration
-  - A set of scripts for generating trains. Trains are compact and have lots of little rooms and narrow corridors so this was a great test for the procedural city generator.
- - Base-CityGeneration
-  - A library for implementing procedural generation scripts
- - Base-Achievement
-  - Library for tracking hierarchies of goals
+  
+##### Electronic-Infrastructure
+Library for building circuitry in game (e.g. wiring up logic for controlling automatic doors).
+  
+##### Construct Gamemode
+A sandbox test mode.
+  
+##### City1
+A set of scripts for the procedural city generator.
+  
+##### Character-Controllers
+Library for building player controlled characters for Epimetheus.
+  
+##### Base-Equipment
+Library for building wieldable tools for Epimetheus (e.g. guns).
+  
+##### Base-GameUI
+A HTML template along with a load of Javascript plugins for constructing UIs (mainly HUDs).
+  
+##### Base-Sneaky
+Library for implementing sneaky things (stealth, detection, disguises etc).
+  
+##### Default-Shaders
+A set of shaders for the engine (including fundamental things like the GBuffer shader - you can completely change how the renderer works by replacing these).
+  
+##### Base-TrainGeneration
+A set of scripts for generating trains. Trains are compact and have lots of little rooms and narrow corridors so this was a great test for the procedural city generator.
+  
+##### Base-CityGeneration
+A library for implementing procedural generation scripts.
+  
+##### Base-Achievement
+Library for tracking hierarchies of goals.
 
 ### Things I enjoyed
 

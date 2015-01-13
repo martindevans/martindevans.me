@@ -27,42 +27,52 @@ The biggest change to how I do development in 2014 was my changelog videos - a q
 
 I continue to be a massive fan of open source and release a lot of my code publicly (MIT License FTW). This year I have made some pretty cool contributions to open source, all of which are [available on github](https://github.com/martindevans).
 
-##### New Open Source Projects
+#### New Open Source Projects
 
- - [WebDesktop](https://github.com/martindevans/WebDesktop)
+##### [WebDesktop](https://github.com/martindevans/WebDesktop)
   - A project to render a webpage over your desktop - desktop widgets using a web stack!
   - Not currently actively developed, but it pretty much works and I'd like to do more work on it sometime.
- - [SupersonicSound](https://github.com/martindevans/SupersonicSound)
+  
+##### [SupersonicSound](https://github.com/martindevans/SupersonicSound)
   - A very lightweight C# wrapper for [FMOD](http://www.fmod.org/)
   - Largely complete, actively developed.
- - [Bastet](https://github.com/martindevans/Bastet)
+  
+##### [Bastet](https://github.com/martindevans/Bastet)
   - A [CoAP](https://en.wikipedia.org/wiki/Constrained_Application_Protocol)/HTTP Proxy server for smart home devices
   - Not *currently* actively developed, we're working on other smart home stuff at the moment but Bastet is very core to the whole thing.
- - [LCARS](https://github.com/martindevans/LCARS)
+  
+##### [LCARS](https://github.com/martindevans/LCARS)
   - A CSS framework for Start Trek style LCARS interfaces
   - Not actively developed, works for a few basic demo interfaces.
   - This project was just for fun and was a good way to learn various web things (Typescript, LESS, node, HTML5 custom elements).
- - [Sorcery](https://github.com/martindevans/Sorcery)
+  
+##### [Sorcery](https://github.com/martindevans/Sorcery)
   - A library for evaluating [Combinator Algebras](https://en.wikipedia.org/wiki/Combinatory_logic) in C#.
   - This one was just for fun, I might pick it back up or I might not.
- - [KeybaseFSharp](https://github.com/martindevans/KeybaseFSharp)
+  
+##### [KeybaseFSharp](https://github.com/martindevans/KeybaseFSharp)
   - An F# wrapper around the [Keybase](https://keybase.io/) API.
   - Also a WPF desktop client for Keybase.
   - This project was a way to learn about F#, and then became a way to learn about WPF. Not being developed right now, but I continue to think Keybase is totally awesome and I'll probably pick this back up at some point.
- - [Cassowary.net](https://github.com/martindevans/Cassowary.net)
+  
+##### [Cassowary.net](https://github.com/martindevans/Cassowary.net)
   - An incremental constraint solver.
   - This is a fork of Cassowary.net which was a port from Java, which was itself a port from Smalltalk and to be honest... you could tell - the code was not C# style at all!
   - Improved code quality, implemented unit testing, implemented a new way to express constraints (using C# [expression trees](http://msdn.microsoft.com/en-us/library/bb397951.aspx)), created a [nuget package](https://www.nuget.org/packages/Cassowary/).
   - This project is largely complete and so does not have any recent commits but it *is* in use by my city generation so it's alive and well maintained.
- - [SharpSteer2](https://github.com/martindevans/SharpSteer2)
+  
+##### [SharpSteer2](https://github.com/martindevans/SharpSteer2)
   - This is a fork of SharpSteer2, which was a fork of SharpSteer, which was a port of OpenSteer from C++ to C# for a much older version of C#. As with Cassowary.net the code was functional but wasn't properly up to the standards of modern C#.
   - Unit testing, naming conventions, removed dead and useless code, improved usability with extension methods on interfaces which make implementing the interface much easier, bugfixes and new features!
   - As with Cassowary.net my work on this project is more or less done but the project is in active use by my AI and is well maintained.
- - [PlaceholderHomepage](https://github.com/martindevans/PlaceholderHomepage)
+  
+##### [PlaceholderHomepage](https://github.com/martindevans/PlaceholderHomepage)
   - I made a [homepage](http://placeholder-software.co.uk/) for my game. It's a bit out of date now, I guess I should fix that!
- - [Epimetheus-Public](https://github.com/martindevans/Epimetheus-Public)
+  
+##### [Epimetheus-Public](https://github.com/martindevans/Epimetheus-Public)
   - This is a repository for all the public facing parts of Epimetheus (my game engine) - bug reports and documentation for plugin development.
- - [NockFSharp](https://github.com/martindevans/NockFSharp)
+  
+##### [NockFSharp](https://github.com/martindevans/NockFSharp)
   - A basic implementation of [Nock](http://doc.urbit.org/doc/nock/tut/1/) in F#.
   - This was just a learning exercise for F#, as well as an attempt to get my head around Nock (which is part of [Urbit](http://doc.urbit.org/), which is bizarre and awesome).
 

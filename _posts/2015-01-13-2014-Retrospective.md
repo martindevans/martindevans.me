@@ -84,8 +84,8 @@ My job is game development, so what did I do with that this year? My primary foc
 
 240 commits<br />
 5,840 files changed<br />
-53,515 lines written<br />
-41,130 lines deleted<br />
+12,385 lines written<br />
+41,130 lines changed<br />
 
 
  - Implemented animation system for plugins (enables playing animation clips on models)
@@ -198,8 +198,8 @@ Line count statistics unavailable (they're thrown off by moving lots of files ar
 
 125 commits<br />
 3,103 files changes<br />
-55,247 lines added<br />
-46,218 lines removed<br />
+9,029 lines added<br />
+46,218 lines changed<br />
 
  - Implemented system for improved thread safety for steam
  - Switched to Steamworks.net from my own steamworks wrapper (HotAndSteamy)

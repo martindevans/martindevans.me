@@ -16,7 +16,7 @@ I'm working on a sticky cover system, it's quite complicated.
 Sticky cover is a mechanic where you can move into "cover" and then move around inside the cover. Once you're in cover your input is handled in a different way; for example rather than A making you move left it instead makes you move left *along the cover*. Here's an example of some sticky cover in **Splinter Cell: Blacklist**:
 
 <video id="Blacklist" width="640" height="360" controls preload>
-    <!-- <source src="/assets/Blacklist-Cover.mp4" type="video/mp4"  codecs=avc1.42E01E,mp4a.40.2"> -->
+    <source src="/assets/Blacklist-Cover.mp4" type="video/mp4"  codecs=avc1.42E01E,mp4a.40.2">
     <source src="/assets/Blacklist-Cover.webm" type="video/webm; codecs=vp8,vorbis">
     <source src="/assets/Blacklist-Cover.ogv"  type="video/ogg; codecs=theora,vorbis">
 </video>
@@ -60,7 +60,7 @@ Most of the heavy lifting of sticky cover is done with raycasting (in my impleme
 
 This is pretty simple: when the player presses the *take cover* key you need to find some cover. The first thing to do here is just to cast a ray out from the camera an appropriate distance and check if you can find a surface which could be cover.
 
-<img src="/assets/Cover-Check-1.png" width="357" height="179" align="right"></img>
+<img src="/assets/Cover-Check-1.png" width="357" height="179" align="right">
 
 Here we've got the thick black line indicating the ray coming from the camera and this hits the wall. The red line indicates the *normal* of the surface at the point where the ray hit. Here's our first exit condition: if the normal at that point is not roughly horizontal that means the surface is unsuitable to be cover.
 
@@ -68,7 +68,7 @@ We can test if the normal is horizontal with a [dot product](https://en.wikipedi
 
 ### Step 2 - Is This Point Accessible?
 
-<img src="/assets/Cover-Check-2.png" width="357" height="179" align="left"></img>
+<img src="/assets/Cover-Check-2.png" width="357" height="179" align="left">
 
 So we have a point next to some roughly vertical surface, that's not enough to check if this is a cover point or not! We need to check if it's actually physically possible to *get* to this point.
 
@@ -84,7 +84,7 @@ There is of course the possibility that the raycast won't hit anything at all be
 
 ### Step 3 - Is This Actually *Cover*?
 
-<img src="/assets/Cover-Check-3.png" width="357" height="179" align="right"></img>
+<img src="/assets/Cover-Check-3.png" width="357" height="179" align="right">
 
 Let's say we've found a vertical surface with a floor below it and no roof above it, is this definitely cover? No. I could have just described a single brick lying in the middle of a field - it's accessible but it's too short; it's only cover for your toes.
 
@@ -92,7 +92,7 @@ We need to find out how high this vertical surface is. We can achieve this with 
 
 ### Yay Cover
 
-<img src="/assets/heist-cover.jpg" width="357" height="179" align="left"></img>
+<img src="/assets/heist-cover.jpg" width="357" height="179" align="left">
 
 Now that we know how to find a cover point, what do we do with it? First thing we're likely to want to do is to move to it from a random nearby point. At the moment I achieve this by turning the character towards the cover and making it run, in the future I'm likely to replace this with a specific *move into cover* animation (a dive or a roll).
 

@@ -16,7 +16,7 @@ I'm working on a sticky cover system, it's quite complicated.
 Sticky cover is a mechanic where you can move into "cover" and then move around inside the cover. Once you're in cover your input is handled in a different way; for example rather than A making you move left it instead makes you move left *along the cover*. Here's an example of some sticky cover in **Splinter Cell: Blacklist**:
 
 <video id="Blacklist" width="640" height="360" controls preload>
-    <source src="/assets/Blacklist-Cover.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2">
+    <source src="/assets/Blacklist-Cover.mp4" type="video/mp4;">
     <source src="/assets/Blacklist-Cover.webm" type="video/webm; codecs=vp8,vorbis">
     <source src="/assets/Blacklist-Cover.ogv"  type="video/ogg; codecs=theora,vorbis">
 </video>

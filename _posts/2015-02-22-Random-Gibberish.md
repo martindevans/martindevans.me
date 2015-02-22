@@ -135,3 +135,7 @@ Your GPU could be bottlenecked in a few places (which are relevant to this discu
  - Arithmetic
  
 Using a lookup texture would cost you memory and bandwidth but save you arithmetic. Modern GPUs are pretty good at arithmetic but tend to be heavily loaded in terms of memory usage, which means saving yourself some memory space/bandwidth at the cost of a few ALU instructions is probably worth it.
+
+## Why Aren't You Using \[Insert Well Known PRNG here\]?
+
+Random number generation is hardly a new topic! There are [endless](http://www.jstatsoft.org/v08/i14/paper) [varieties](https://en.wikipedia.org/wiki/Linear_congruential_generator) of [random number](https://en.wikipedia.org/wiki/Mersenne_twister) [generators](https://en.wikipedia.org/wiki/RANDU) for [every possible](https://en.wikipedia.org/wiki/Blum_Blum_Shub) level of randomness quality, so why am I inventing my own? Almost every random number generator that I could find uses some bitwise operations (which are not available in the HLSL version I am targeting) or worked with integer operations which are slow on all but the most modern GPU architectures. This PRNG uses entirely floating point operations and should be very fast on all levels of GPU hardware.

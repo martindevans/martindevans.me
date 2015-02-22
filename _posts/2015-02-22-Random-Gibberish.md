@@ -17,7 +17,7 @@ One interesting challenge I had to address whilst developing heist was how to ge
 
 ## Just Use A Texture Lookup
 
-The obvious way to get randomness on the GPU is to put it there. It's really easy to generate high quality random numbers of the CPU and you can just stuff them into a texture and pass them to the GPU, sorted! You even generate yourself a random texture at compile time and just pass that in, great! Except... I wanted animated fuzz so I needed a *different* random number for every pixel every frame. Obviously you can extend the texture concept into a volume texture entirely full of random numbers and then move through the volume texture with time but that's actually a pretty huge texture; 1920x1080x60 if you don't mind repeating your randomness every second!
+The obvious way to get randomness on the GPU is to generate it on the CPU. It's really easy to generate high quality random numbers of the CPU and you can just stuff them into a texture and pass them to the GPU. You even generate yourself a random texture at compile time and just pass that in, great! Except... I wanted animated fuzz so I needed a *different* random number for every pixel every frame. Obviously you can extend the texture concept into a volume texture entirely full of random numbers and then move through the volume texture with time but that's actually a pretty huge texture; 1920x1080x60 and that's if you don't mind repeating your randomness every second!
 
 If this appeals to you, it would look something like this:
 
@@ -99,7 +99,7 @@ Which *sort of* worked, but looked very weird over time. It felt like there was 
     float x = dot(uv + vec2(1, 1), r);
     return fract( cos( mod( 123456789.0, 1e-7 + 256.0 * x ) ) ); 
     
-This produced pretty bad noise, with strange patterns flicking around. before giving up on this line of enquiry I though I'd try something else with x, something a little less complex than the StackOverflow method. Something like...
+This produced pretty bad noise, with strange patterns flicking around. Before giving up on this line of enquiry I thought I'd try something else with x, something a little less complex than the StackOverflow method. Something like...
 
     return fract(x);
     

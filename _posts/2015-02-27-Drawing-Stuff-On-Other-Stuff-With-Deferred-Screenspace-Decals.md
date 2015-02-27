@@ -19,19 +19,19 @@ Decals are used in games to draw images onto others surfaces. Every time you see
 
 The traditional way to do decals is to build a mesh which conforms to the surface you want to the texture drawn on, and then to draw the decal onto that. The hard part here is extracting the appropriate mesh once you know where you want your decal, after that you can just render the decal however you render any other texture mapped object. There's a pretty good [overview](http://blog.wolfire.com/2009/06/how-to-project-decals/) of this technique over at wolfire.
 
-The advantages of this technique is that you don't need any changes to the rendering pipeline. Whatever system you're currently using can be used to render your decals just the same as anything else. The disadvantage, of course, if that extracting those surface meshes is pretty complex and you have to keep a load of decal geometry around for as long as your decals live. Also surfaces very close together tend to suffer from [Z-Fighting](https://en.wikipedia.org/wiki/Z-fighting), you can't get much closer together than *an exactly conforming mesh in exactly the same place* and so you have to carefully tune depth biases to prevent flickering.
+The advantage of this technique is that you don't need any changes to the rendering pipeline; whatever system you're currently using can be used to render your decals just the same as anything else. The disadvantage, of course, if that extracting those surface meshes is pretty complex and you have to keep a load of decal geometry around for as long as your decals live. Furthermore surfaces very close together tend to suffer from [Z-Fighting](https://en.wikipedia.org/wiki/Z-fighting) and you can't get much closer together than *an exactly conforming mesh in exactly the same place* and so you have to carefully tune fiddly depth biases to prevent flickering.
 
 ### Megatexture
 
 A megatexture is a way to draw one vast texture over your entire world, initially made famous by [Rage](https://en.wikipedia.org/wiki/Rage_(video_game)) and [John Carmack](https://en.wikipedia.org/wiki/John_Carmack). There's an interesting side effect to this; there's a unique bit of texture for every bit of geometry in your game. So if you want to draw something on top of a piece of geometry you can just edit the megatexture. [Planetary Annihilation](http://www.uberent.com/pa/) uses this effect so when there's an explosion mark drawn on the ground it's just drawn into the megatexture and then stays there *forever*.
 
-The advantages here are pretty obvious, you just chuck something into your megatexture and you're done and even better the decal is there forever! The disadvantage, however, is that you have to use megatextures. I'm not saying that megatextures are bad but they're complicated to implement and rarely used.
+The advantages here are pretty obvious, you just draw something into your megatexture and you're done and even better the decal is there forever! The disadvantage, however, is that you have to use megatextures. I'm not saying that megatextures are bad but they're complicated to implement and rarely used.
 
 ### Deferred Screen Space Decals
 
-Screen space decals are an approach that only works in a deferred renderer, this would be a pretty big disadvantage if that didn't describe basically every modern renderer in existence (including the one I use, which is all I really care about)!
+Screen space decals are an approach that only works in a [deferred renderer](https://en.wikipedia.org/wiki/Deferred_shading), this would be a pretty big disadvantage if that didn't describe basically *every modern renderer in existence* (including the one I use, which is all I really care about)!
 
-With a deferred renderer when you draw an object you don't draw out the finished image to the screen, instead you draw out information about the object to each pixel. Things like surface texture colour, depth, normal and shininess all get written into a texture called the GBuffer. Once the GBuffer is complete you follow that up with a series of passes which process the GBuffer information into a finished image. Screen space decals fit into the middle of this pipeline - they modify the GBuffer and change the data written there. Before and after that it's just a normal deferred rendering pipeline.
+With a deferred renderer when you draw an object you don't draw out the finished image to the screen, instead you draw out information about the object to each pixel. Things like surface texture colour, depth, normal and shininess all get written into a texture called the GBuffer. Once the GBuffer is complete you follow that up with a series of passes which process the GBuffer information into a finished image. Screen space decals fit right into the middle of this pipeline - they modify the GBuffer and change the data written there. Before and after that it's just a normal deferred rendering pipeline.
 
 ## So How Do They Work?
 
@@ -145,6 +145,21 @@ This sounds super complicated but it really isn't. We have the shape of the surf
     
 Not surprisingly, perhaps, it took me a while to work this out! The value can now be written out into the GBuffer and everything after this point is a perfectly normal deferred renderer.
 
+### Are We Done Now?
+
+No, not quite. There's one really big problem with this system which goes all the way back to how we're initially getting our shader to run on some pixels. We're drawing a box... but what happens if the camera touches the box? If the camera is *inside* the box we have a problem because backface culling stops you seeing any of the box (and thus you can't see the decal). The solution here is pretty obvious; just use frontface culling if the camera intersects the box, you also need to turn off (or invert, I haven't tested that though) any depth culling that you're doing.
+
+Doing this is dead simple, you can just test if the camera intersects the box on the CPU and select a different shader *technique* based on the result. I do it like this:
+
+    //Create a space sphere for the camera bounds
+    var cameraSphere = new BoundingSphere(position: cameraPosition, radius: cameraNearClipPlane)
+    
+    //Transform sphere into object space
+        .Transform(inverseDecalTransform);
+    
+    //Check if the camera bounds overlap the decal bounds (unit cube at the origin)
+    bool cameraIntersectsDecal = new BoundingBox(new Vector3(-0.5f), new Vector3(0.5f)).Contains(cameraSphere) != ContainmentType.Disjoint;
+    
 ## Can I Use This?
 
-Yes! I built this decal system for my game (Heist) but everything detailed here is part of an underlying game library called Myre which is open source and available [here](https://github.com/martindevans/Myre). Myre is strongly tied to XNA and is totally undocumented, so I don't necessarily recommend you *start* using it for a new project now. However it's a great source of reference code and it you want the specific decal shader code to tear apart it can be found [here](https://github.com/martindevans/Myre/blob/master/Myre/Myre.Graphics.Content/Decal.fx). *Good Luck*
+Yes! I built this decal system for my game (Heist) but everything detailed here is part of an underlying game library called Myre which is open source and available [here](https://github.com/martindevans/Myre). Myre is strongly tied to XNA and is totally undocumented, so I don't necessarily recommend you *start* using it for a new project now (but feel free to if you want). However it's a great source of reference code and it you want the specific decal shader code to tear apart it can be found [here](https://github.com/martindevans/Myre/blob/master/Myre/Myre.Graphics.Content/Decal.fx). *Good Luck*

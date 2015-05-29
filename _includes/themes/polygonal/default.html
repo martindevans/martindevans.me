@@ -20,22 +20,22 @@
 
     <link rel="author" type="application/rdf+xml" title="FOAF" href="http://martindevans.me/foaf.rdf" />
 
-    <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script async src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    
-    <script async src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-    <script async src="{{ ASSET_PATH }}/js/trianglify.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/trianglify.min.js"></script>
 
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css-social-buttons/css/zocial.stripped.css" />
     <link href="{{ ASSET_PATH }}/css/pygments.css" rel="stylesheet" type="text/css" media="all">
-     
+
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
     {% if site.JB.rss_path %}
     <link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="alternate" type="application/rss+xml" title="{{ site.title }}" />
     {% endif %}
-    
+
     <!-- fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -79,22 +79,22 @@
                 <li>
                   <a href="https://profiles.google.com/{{ site.author.google }}" class="zocial googleplus icon" target="_blank"></a>
                 </li>
-              {% endif %}    
+              {% endif %}
               {% if site.author.twitter %}
                 <li>
                   <a href="http://www.twitter.com/{{ site.author.twitter }}" class="zocial twitter icon" target="_blank"></a>
                 </li>
-              {% endif %}                          
+              {% endif %}
               {% if site.author.facebook %}
                 <li>
                   <a href="http://www.facebook.com/{{ site.author.facebook }}" class="zocial facebook icon" target="_blank"></a>
                 </li>
-              {% endif %}           
+              {% endif %}
               {% if site.author.linkedin %}
                 <li>
                   <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="zocial linkedin icon" target="_blank"></a>
                 </li>
-              {% endif %}                    
+              {% endif %}
               {% if site.author.feedburner %}
                 <li>
                   <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" class="zocial rss icon" target="_blank"></a>
@@ -111,14 +111,14 @@
       </div>
 
       <footer>
-        <p>&copy; {{ site.author.name }} 2014 
+        <p>&copy; {{ site.author.name }} 2014
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and a modified <a href="http://github.com/dhulihan/hooligan" target="_blank">Hooligan Theme</a>
         </p>
       </footer>
     </div> <!-- /container -->
     {% include JB/analytics %}
-    
+
     <script>
         function height() {
             return Math.max(
@@ -127,17 +127,17 @@
                 document.body.clientHeight, document.documentElement.clientHeight
             );
         }
-    
+
         var t = new Trianglify({
             noiseIntensity: 0
         });
-            
+
         function redraw() {
             var pattern = t.generate(document.documentElement.clientWidth, height());
             document.documentElement.setAttribute("style", "background-image: " + pattern.dataUrl + "; background-size: cover;");
         }
         redraw();
-        
+
         window.onresize = function() { redraw(); };
     </script>
   </body>

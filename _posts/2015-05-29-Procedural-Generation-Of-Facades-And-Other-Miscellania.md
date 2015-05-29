@@ -31,7 +31,7 @@ FMOD is great because it allows me to author really complex sounds including stu
 
 So here's an example of the reload sound for a magnum:
 
-<video src="assets/FmodMagnumReload.webm"></video>
+<video src="/assets/FmodMagnumReload.webm" controls="true"></video>
 
 At the start are 3 overlapping *multisounds*. Each time a multisound plays it chooses a single sound from a set to play, in this case it chooses randomly. After a small delay there is another multisound which randomly chooses one of several clicking noises for the chamber being closed. On top of all this there is some automatic modulation of pitch and volume - every single time any of these sounds play their pitch and modulation and randomly varied by a small amount.
 
@@ -46,7 +46,7 @@ Awesome!
 
 The next big thing I came to work on was characters and animations. At the moment the game has precisely one character, Zoe:
 
- <img src="assets/character.png" class="img-responsive" width="50%">
+ <img src="/assets/character.png" class="img-responsive" width="50%">
  
  Zoe isn't even the right style of character for the game so I need to totally new set of characters, preferably hundreds of them so I can fill up crowds of NPCs on the street. I found this amazing service called [Mixamo](https://www.mixamo.com/) which allows you to create characters in a tool called [Fuse](https://www.mixamo.com/fuse) and then you can pick animations from their library of animations (which is huge, and expanding all the time) and then you just download it all and you're good to go.
  
@@ -60,9 +60,9 @@ The next big thing I came to work on was characters and animations. At the momen
  </style>
  
  <div id="image-container" align="center">
-<img src="assets/gangnam.gif" width="25%">
-<img src="assets/maraschino.gif" width="25%">
-<img src="assets/twerk.gif" width="25%">
+<img src="/assets/gangnam.gif" width="25%">
+<img src="/assets/maraschino.gif" width="25%">
+<img src="/assets/twerk.gif" width="25%">
 </div>
 
 In my experience *anything* to do with graphics and animations is a total nightmare. Unfortunately this time was no different. The obvious way to use Mixamo is to attach the same animations to every single one of my characters and download that, nice and simple. There are two problems here:
@@ -93,6 +93,6 @@ Obviously before I make any kind of release I'm going to need some proper levels
 
 This week I have been working on facade generation. It's heavily work in progress, but here's a quick demo of me throwing together a basic facade in NODE/Machine:
 
-<video src="assets/NodeMachineFacade1.webm"></video>
+<video src="/assets/NodeMachineFacade1.webm" controls="true"></video>
 
 There are a couple of bugs here, but hopefully you get the idea - with this simple little markup language you can design walls to go into the game! Next week I'll (hopefully) have these bugs stamped out and have a much more complicated and impressive looking demo actually rendering in game.

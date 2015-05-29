@@ -52,7 +52,18 @@ The next big thing I came to work on was characters and animations. At the momen
  
  I signed up immediately! A few characters I quickly threw together in Fuse look pretty good:
   
-TODO: INSERT IMAGES HERE
+ <style>
+ #image-container img {
+ 	max-height: 235px;
+ 	width: auto;
+ }
+ </style>
+ 
+ <div id="image-container" align="center">
+<img src="assets/gangnam.gif" width="25%">
+<img src="assets/maraschino.gif" width="25%">
+<img src="assets/twerk.gif" width="25%">
+</div>
 
 In my experience *anything* to do with graphics and animations is a total nightmare. Unfortunately this time was no different. The obvious way to use Mixamo is to attach the same animations to every single one of my characters and download that, nice and simple. There are two problems here:
 

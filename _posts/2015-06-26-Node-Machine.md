@@ -19,7 +19,7 @@ About a month ago I decided that one thing I really needed to be able to show of
 
 NODE/Machine (NM) is a procedural generation toolkit I have been building to help solve this problem. It is essentially an IDE and a collection of domain specific languages for creating various parts of a procedural world. The first part of this was mentioned in my last post; a 2D layout system for designing procedural facades. I've put out a few videos about this on twitter, here's the latest one on facades:
 
-<video src="/assets/fancyfacade1.webm" controls="true"></video>
+<video style="width:  100%; height: auto;" src="/assets/fancyfacade1.webm" controls="true"></video>
 
 As you can see from this there's some markup (inspired by [WPF](https://en.wikipedia.org/wiki/Windows_Presentation_Foundation) and syntactically based on [YAML](http://yaml.org/)). This markup has some elements specifically designed for facades. For example the "Fit" element has a single child and clones it multiple times into the available space - this wouldn't be very useful for a UI layout language but is great for facades where you often want to repeat a common element such as a window several times.
 

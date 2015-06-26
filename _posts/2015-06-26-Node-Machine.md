@@ -131,7 +131,7 @@ Hopefully it should be fairly self explanatory how these work. The top one is ha
 
 Here's my latest video featuring building floor selection:
 
-<video src="/assets/BuildingGeneration1.webm" controls="true"></video>
+<video style="width:  100%; height: auto;" src="/assets/BuildingGeneration1.webm" controls="true"></video>
 
  ## What Are All These Embedded Videos?
  

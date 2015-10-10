@@ -17,8 +17,8 @@ Deferred rendering is a pretty common technique rendering today, it is separate 
 
 ```
 for object in scene
-    for light in scene
-        render(object, light)
+  for light in scene
+    render(object, light)
 ```
 
 All we're doing here is looping over the objects we want to be drawn, and drawing them. When an object is drawn it writes the final pixel colour values to the display. This has some pretty serious disadvantages. It should be obvious that the *cost* of rendering is proportional to the number of objects multiplied by the number of lights. Additionally because we can only pass so many parameters into a pixel shader we have a very small limit on the number of lights we can apply to the scene. Finally we have a lot of overdraw costs here - each item we draw does all the work to calculate pixel lighting and then could be overwritten by another object later.
@@ -35,7 +35,7 @@ for light in scene
 
 What we're doing here is looping through the objects in the scene and rendering out *data about the object* into a buffer - things like surface colour, normal and shininess. This looks a bit like this:
 
-![Image Of Data Buffer](assets/gbuffer_normals.png)
+![Image Of Data Buffer](/assets/gbuffer_normals.png)
 
 We then loop over all the lights in the scene and calculate the final colour for each pixel on the display. This is  a huge performance win because now the cost is proportional to number of objects *plus* number of lights! Also each light is renderer separately so we can have an unlimited number of lights. Finally we completely eliminate overdraw costs because the overdraw is in the (very cheap) renderData phase, not the costly renderLighting phase.
 
@@ -71,7 +71,7 @@ If we're going to draw multiple layers of items we need to know what's in each l
 
 What we really want to do here is pack items which do not overlap in screen space into the same layer. Here's an example scene (top down view):
 
-![Overlapping Transparencies](assets/OverlappingTransparencies.png)
+![Overlapping Transparencies](/assets/OverlappingTransparencies.png)
 
 The camera is a point on the right. The red lines show how the orange sphere overlaps the blue sphere. If we were packing this into as few layers we'd have two layers:
 
@@ -88,9 +88,9 @@ Rendering each layer is pretty simple. Just rerun the entire deferred pipeline a
 
 Once a layer has been rendered we need to blend that layer back into the result of the opaque rendering. At this stage we have two lightbuffers:
 
-![Lightbuffer from opaque geometry](assets/lightbuffer_noball.png)
+![Lightbuffer from opaque geometry](/assets/lightbuffer_noball.png)
 
-![Lightbuffer from transparent geometry](assets/lightbuffer_ball.png)
+![Lightbuffer from transparent geometry](/assets/lightbuffer_ball.png)
 
 To blend them we render the geometry from this layer *again*. The shader this time can take in the two lightbuffers and blend them. It may seem like a waste to render all the geometry again, but this allows us to store information in the vertices as well as cutting down the copied pixels to only those pixels which are covered by geometry.
 

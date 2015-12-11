@@ -16,9 +16,9 @@ L4D is a game about shooting zombies, so the procedural aspect of the game varie
 
 In this series I will explain the techniques I am using for procedural city generation. This involves the generation of things such as road networks, building shapes and floorplans:
 
-<img src="assets/TensorRoadsImg1.png" style="width:33%;height:auto">
-<img src="assets/BigSkyscraper.png" style="width:33%;height:auto">
-<img src="assets/ParcelledFloorplan.png" style="width:33%;height:auto">
+<a href="/assets/TensorRoadsImg1.png"><img src="/assets/TensorRoadsImg1.png" style="width:31%;height:auto"></a>
+<a href="/assets/BigSkyscraper.png"><img src="/assets/BigSkyscraper.png" style="width:31%;height:auto"></a>
+<a href="/assets/ParcelledFloorplan.png"><img src="/assets/ParcelledFloorplan.png" style="width:31%;height:auto"></a>
 
 I may also extend into some more things I have planned for the future such as procedural generation of guard patrol paths, alarm system placement and gameplay guided prop placement.
 

@@ -14,17 +14,11 @@ A solution to this is procedural generation of some element of the game which en
 
 L4D is a game about shooting zombies, so the procedural aspect of the game varies the timing of zombie attacks. The core of a stealth game is exploring the level to find the locations of guards and alarms so that's where I need to focus my procedural generation - generating maps.
 
-In this series I will explain the techniques I am using for procedural city generation. This involves the generation of road networks
+In this series I will explain the techniques I am using for procedural city generation. This involves the generation of things such as road networks, building shapes and floorplans:
 
-<img src="assets/TensorRoadsImg1.png" style="width:100%;height:auto"></img>
-
-building shapes
-
-<img src="assets/BigSkyscraper.png" style="width:100%;height:auto"></img>
-
-floorplans
-
-<img src="assets/ParcelledFloorplan.png" style="width:100%;height:auto"></img>
+<img src="assets/TensorRoadsImg1.png" style="width:33%;height:auto">
+<img src="assets/BigSkyscraper.png" style="width:33%;height:auto">
+<img src="assets/ParcelledFloorplan.png" style="width:33%;height:auto">
 
 I may also extend into some more things I have planned for the future such as procedural generation of guard patrol paths, alarm system placement and gameplay guided prop placement.
 

@@ -30,16 +30,18 @@ With that said, let's dive right in with an overview of how the system is genera
 
 Fundamentally the entire generator is a massive [L-System](https://en.wikipedia.org/wiki/L-system). Each part of the system only knows how to increase the level of detail by one level and this is recursively applied until we reach the maximum level of detail. For example a typical game level might look like this:
 
- > Start With A "City"
- >
- > City - Creates roads and blocks
- > Road - Creates road geometry and street furniture
- > Block - Creates lots
- > Lot - Creates building occupying
- > Building - Creates floors and facades
- > Facade - Creates windows and doors
- > Floor - Creates rooms and corridors
- > Room - Creates game props such as furniture
+```
+Start With A "City"
+
+  City - Creates roads and blocks
+  Road - Creates road geometry and street furniture
+  Block - Creates lots
+  Lot - Creates building occupying
+  Building - Creates floors and facades
+  Facade - Creates windows and doors
+  Floor - Creates rooms and corridors
+  Room - Creates game props such as furniture
+```
  
 If you start off with a city node and keep subdividing it's ancestors you eventually end up with an entire city, full of buildings, where you can enter every single room of every single building.
 

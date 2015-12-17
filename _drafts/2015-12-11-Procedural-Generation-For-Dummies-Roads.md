@@ -65,7 +65,7 @@ Hopefully this is fairly clear. We simply generate a load of candidate points (i
 
 #### Global Goals
 
-This is our method for producing new segments according to large scale global goals. For example one possible implementation would be to generate a single new segment at the end of the input segment which leads towards the local population center. This would generate you one long road which leads from your random seed point directly to the population center and then stops.
+This is our method for producing new segments according to large scale global goals. For example one possible implementation would be to generate a single new segment at the end of the input segment which leads towards the local population centre. This would generate you one long road which leads from your random seed point directly to the population center and then stops.
 
 The critical part of this method is that it generates segments with no concern for if they are possible. This means global goals can be very fast and simple to implement.
 

@@ -7,7 +7,7 @@ title: "Procedural Generation For Dummies: Road Generation"
 ---
 {% include JB/setup %}
 
-## Procedural City Generation For Dummies
+## Procedural City Generation For Dummies Series
 
 <ul>
     {% for page in site.tags.procedural-generation-for-dummies %}
@@ -34,32 +34,30 @@ The majority of road generation systems I have looked at tend to be based on a *
 
 Or in pseudo code:
 
-```
-//Create a priority queue of things to process, add a single seed
-let Q : priority queue;
-Q.Add( 0, seed );
-
-//Create a list of segments (the result we're building)
-let S : segment list;
-
-while !Q.IsEmpty()
-{
-    //Remove the highest priority item from the priority queue
-    let t, segment = Q.RemoveSmallest();
+    //Create a priority queue of things to process, add a single seed
+    let Q : priority queue;
+    Q.Add( 0, seed );
     
-    //Check that it is valid, skip to the next segment if it is not
-    let modified = CheckLocalConstraints(segment);
-    if (modified == null)
-        continue;
-
-    //It's valid, so add it to S. It is now part of the final result
-    S.Add(segment);
+    //Create a list of segments (the result we're building)
+    let S : segment list;
     
-    //Now produce potential segments leading off this road according to some global goal
-    for (tn, sn) in GlobalGoals(segment)
-        Q.Add(t + tn + 1, sn);    
-}
-```
+    while !Q.IsEmpty()
+    {
+        //Remove the highest priority item from the priority queue
+        let t, segment = Q.RemoveSmallest();
+        
+        //Check that it is valid, skip to the next segment if it is not
+        let modified = CheckLocalConstraints(segment);
+        if (modified == null)
+            continue;
+    
+        //It's valid, so add it to S. It is now part of the final result
+        S.Add(segment);
+        
+        //Now produce potential segments leading off this road according to some global goal
+        for (tn, sn) in GlobalGoals(segment)
+            Q.Add(t + tn + 1, sn);    
+    }
 
 Hopefully this is fairly clear. We simply generate a load of candidate points (in the GlobalGoals function), add them to a priority queue and then accept or reject each individual segment (in the CheckLocalConstraints method). The real variety between different algorithms comes in how you generate new constraints and how you express your global goals.
 
@@ -153,42 +151,36 @@ Once the tensor field is created I have a single step which converts the tensor 
 
 Now we have two vector fields, we need to trace a line *through* these fields, a **streamline**. *Conceptually* tracing through a vector field is trivial:
 
-```
-let point = start
-until (some end condition)
-  let direction = sample_vector_field( point )  # replaced with rk4_sample_vector_field
-  point += direction
-```
+    let point = start
+    until (some end condition)
+        let direction = sample_vector_field( point )  # replaced with rk4_sample_vector_field
+      point += direction
 
 However this turns out not to work very well. Because this only samples one single point from the field it is *extremely* sensitive to local noise and does not work at all when the field is highly curved (e.g. around a radial field). Instead I use an RK4 integrator to handle the higher curvature (see [this excellent article](http://gafferongames.com/game-physics/integration-basics/) for more details on integration):
 
-```
-function rk4_sample_vector_field ( point )
+    function rk4_sample_vector_field ( point )
+    
+        let k1 = sample_vector_field( point )             # replaced with corrected_sample_vector field
+        let k2 = sample_vector_field( point + k1 / 2f )   # replaced with corrected_sample_vector field
+        let k3 = sample_vector_field( point + k2 / 2f )   # replaced with corrected_sample_vector field
+        let k4 = sample_vector_field( point + k3f )       # replaced with corrected_sample_vector field
 
-  let k1 = sample_vector_field( point )             # replaced with corrected_sample_vector field
-  let k2 = sample_vector_field( point + k1 / 2f )   # replaced with corrected_sample_vector field
-  let k3 = sample_vector_field( point + k2 / 2f )   # replaced with corrected_sample_vector field
-  let k4 = sample_vector_field( point + k3f )       # replaced with corrected_sample_vector field
-
-  return k1 / 6f + k2 / 3f + k3 / 3f + k4 / 6f
-```
+        return k1 / 6f + k2 / 3f + k3 / 3f + k4 / 6f
 
 Another problem to handle is that when we're tracing through the field we don't care about positive or negative direction - a gridline left to right is the same as a gridline right to left. I handle this by again modifying how I sample the vector field. When a sample is taken it compares the direction of the sample to the direction of the previous vector; if they differ by more than 90 degress the direction is reversed:
 
-```
-function corrected_sample_vector ( point, previous_direction )
-  
-  # Sample the vector field, For real this time!
-  let sample = sample_vector_field ( point )
-  
-  # If previous is zero that's a degenerate case, just bail out
-  # Dot product >= zero indicates angle < 90
-  if (previous_direction == Vector2.Zero || Dot( previous_direction, sample) >= 0)
-    return v;
+    function corrected_sample_vector ( point, previous_direction )
     
-  # Since we didn't return one of the cases above, reverse the direction
-  return -v;
-```
+        # Sample the vector field, For real this time!
+        let sample = sample_vector_field ( point )
+  
+        # If previous is zero that's a degenerate case, just bail out
+        # Dot product >= zero indicates angle < 90
+        if (previous_direction == Vector2.Zero || Dot( previous_direction, sample) >= 0)
+        return v;
+    
+        # Since we didn't return one of the cases above, reverse the direction
+        return -v;
 
 ### Back To Basics
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 category : game-development
-tags : [game-development, procedural-generation]
+tags : [game-development, procedural-generation, procedural-generation-for-dummies]
 tagline : In Which It Is Revealed Locked Doors Aren't So Bad
 ---
 {% include JB/setup %}

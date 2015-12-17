@@ -24,7 +24,7 @@ A lot of the code for my game is open source - the code applicable to this artic
 The majority of road generation systems I have looked at tend to be based on a *growth* system. The general algorithm (see [page 15, Section 3.2](http://gamesitb.com/SurveyProcedural.pdf) of this paper) for pretty much all of them is pretty simple.
 
  - Keep a priority queue of candidate road segments
-   - Initialized with a single seed segment 
+   - Initialised with a single seed segment 
  - While priority queue is not empty
    - Remove highest priority segment from queue
    - Check *local* constraints on segment

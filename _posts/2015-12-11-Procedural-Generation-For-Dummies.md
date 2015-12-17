@@ -51,3 +51,21 @@ So does this solve the infamous inaccessible area problem of large open world ga
 In practice I don't plan to do this for two reasons. Firstly it's extremely difficult to dynamically generate that much geometry on the fly without bringing powerful computer to it's knees - and that's without considering the fact that there is an entire game running at the same time!
 
 Secondly it becomes hard to provide good directed gameplay when the player could be anywhere at any time. I plan to generate large areas, such as one single city block, and then keep the player confined within that area. If you think about games such as GTA and watchdogs they also do this - although you can go anywhere in the city at any time most of the actual *gameplay* (except car chases) is restricted to a small area of the city such as the single building which you are currently infiltrating. Watchdogs goes as far as to warn you when you're leaving the "mission area" and you will fail the mission if you do not return - literally keeping you confined to an area of the city.
+
+## Follow Along
+
+If you want to follow this blog series there are a number of ways to do so. You can follow me on [Twitter](https://twitter.com/) or [Reddit](https://www.reddit.com/user/martindevans/), Subscribe to my [RSS feed](http://martindevans.me/rss.xml), or keep checking back here. This list of posts will update with every new entry in the series:
+
+<ul>
+    {% for page in site.tags.procedural-generation-for-dummies %}
+    <li><a href="{{ post.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
+
+## Suggested Reading
+
+As I write the series I will doubtless reference papers, blogs, articles and forum posts. I'll link the most interesting ones here to form a general reading list on procedural generation:
+
+ - [Procedural Modeling of Cities (Parish, Müller 2001)](https://graphics.ethz.ch/Downloads/Publications/Papers/2001/p_Par01.pdf)
+ - [A Survey of Procedural Techniques for City Generation (Kelly, McCabe 2006)](http://gamesitb.com/SurveyProcedural.pdf)
+ - [Subversion Development Diaries (cancelled game with procedural city generation)](http://www.introversion.co.uk/subversion/)

@@ -11,7 +11,7 @@ title: "Procedural Generation For Dummies: Road Generation"
 
 <ul>
     {% for page in site.tags.procedural-generation-for-dummies %}
-    <li><a href="{{ post.url }}">{{ page.title }}</a></li>
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
 </ul>
 

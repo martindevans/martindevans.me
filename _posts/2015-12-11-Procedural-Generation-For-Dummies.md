@@ -58,7 +58,7 @@ If you want to follow this blog series there are a number of ways to do so. You 
 
 <ul>
     {% for page in site.tags.procedural-generation-for-dummies %}
-    <li><a href="{{ post.url }}">{{ page.title }}</a></li>
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
 </ul>
 

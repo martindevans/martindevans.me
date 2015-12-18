@@ -184,7 +184,9 @@ Another problem to handle is that when we're tracing through the field we don't 
 
 ### Back To Basics
 
-How does this all fit into the algorithm I outlined at the top? This vector tracing is effectively the **Global Goals** function - a single streamline is a collection of candidate segments to add into the map. The *global goals* in this case are the underlying tensor fields. How we handle the line segments traced through the vector field is our **Local Constraints** function.
+How does this all fit into the algorithm I outlined at the top? This vector tracing is effectively the **Global Goals** function - a single streamline is a collection of candidate segments to add into the map. The *global goals* in this case are the underlying tensor fields.
+
+How we handle the line segments traced through the vector field is our **Local Constraints** function.
 
 Rather than keeping a buffer of all the segments of a streamline and handling them one by one, an entire streamline is traced out and stops when a segment is rejected - this is just an optimisation to save a load of bookkeeping work. You can see the method which traces streamlines  [here](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/Tracing/NetworkBuilder.cs?fileviewer=file-view-default#NetworkBuilder.cs-266) and the method which creates each segment (and checks constraints) [here](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/Tracing/NetworkBuilder.cs?fileviewer=file-view-default#NetworkBuilder.cs-327).
 
@@ -199,6 +201,14 @@ If any of these conditions is met the streamline is stopped:
  - Segment connects back to an earlier vertex in the streamline (i.e. forms a loop)
 
 These checks are all implemented with two quadtrees. One keeps track of all vertices in the map and the other keeps track of all segments in the map. This way checking for overlaps and nearby vertices is roughly a log(N) operation (where N is number of vertices/segments in map).
+
+## Streamline #2
+
+So far I have described the process of tracing out one single streamline through a vector field until it terminates. However, a road network is obviously formed from more than a single streamline!
+
+As a streamline is being traced *seed points* are created and added to a priority queue. Each seed is associated with two pieces of information; the position and which field to trace the new streamline through. If we're currently tracing a major streamline then the new one will be minor and vice versa.
+
+When a streamline ends (due to one of the conditions laid out above) the highest priority seed is selected and becomes the start of a new streamline. Priority of the seed is simply sampled from a scalar field - probably a population density field so that there are more roads created in high population areas.
 
 ## What's Next?
 

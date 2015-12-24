@@ -66,6 +66,8 @@ If you want to follow this blog series there are a number of ways to do so. You 
 
 As I write the series I will doubtless reference papers, blogs, articles and forum posts. I'll link the most interesting ones here to form a general reading list on procedural generation:
 
- - [Procedural Modeling of Cities (Parish, Müller 2001)](https://graphics.ethz.ch/Downloads/Publications/Papers/2001/p_Par01.pdf)
- - [A Survey of Procedural Techniques for City Generation (Kelly, McCabe 2006)](http://gamesitb.com/SurveyProcedural.pdf)
+ - [Procedural Modeling Of Cities (Parish, Müller 2001)](https://graphics.ethz.ch/Downloads/Publications/Papers/2001/p_Par01.pdf)
+ - [A Survey Of Procedural Techniques For City Generation (Kelly, McCabe 2006)](http://gamesitb.com/SurveyProcedural.pdf)
  - [Subversion Development Diaries (cancelled game with procedural city generation)](http://www.introversion.co.uk/subversion/)
+ - [Procedural Generation Of Parcels In Urban Modelling](https://www.cs.purdue.edu/cgvlab/papers/aliaga/eg2012.pdf)
+ - [Urban Procedural Modelling](https://www.cs.purdue.edu/cgvlab/urban/urban-procedural-modeling.html) (Literature Survey)

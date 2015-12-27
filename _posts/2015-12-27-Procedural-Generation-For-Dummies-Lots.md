@@ -84,13 +84,13 @@ Now that we have an OBB surrounding the space the second step is to split the sp
 After slicing we have generated two new shapes and we can now apply the same algorithm again, recursively. The only thing left to establish is when to *stop*, i.e. the base case. My implementation supports four rules, as soon as any rule is violated by a child shape then recursion is stopped.
 
  - Area
-  - The most obvious rule is the area rule. This sets a *lower* limit on the area any lot may be. Recursion stops if any slice line generates a lot below this limit.
+   - The most obvious rule is the area rule. This sets a *lower* limit on the area any lot may be. Recursion stops if any slice line generates a lot below this limit.
  - Access
-  - This rule governs things parcels have an edge connecting to. The initial edges of a space have "resources" attached to them (e.g. road access), recursion stops if any generated lot does not have access to a required resource.
+   - This rule governs things parcels have an edge connecting to. The initial edges of a space have "resources" attached to them (e.g. road access), recursion stops if any generated lot does not have access to a required resource.
  - Aspect Ratio
-  - This rule governs the aspect ratio of a lot (length / width). This sets an *upper* limit of the aspect ratio of any lot. Recursion stops if any generated lot exceeds this limit.
+   - This rule governs the aspect ratio of a lot (length / width). This sets an *upper* limit of the aspect ratio of any lot. Recursion stops if any generated lot exceeds this limit.
  - Frontage
-  - This is a specialisation of the access rule which measures *how much* access a lot has to a resource. This sets a *lower* limit on the length of edge next to a given resource, recursion stops is any lot of generated with smaller frontage.
+   - This is a specialisation of the access rule which measures *how much* access a lot has to a resource. This sets a *lower* limit on the length of edge next to a given resource, recursion stops is any lot of generated with smaller frontage.
   
 All of these rules have a probability associated with them. This is the chance that recursion will *not* terminate even if the rule is violated - for example you could have a block setup like this:
 

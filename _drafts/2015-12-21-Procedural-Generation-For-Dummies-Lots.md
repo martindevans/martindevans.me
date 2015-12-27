@@ -31,10 +31,8 @@ After road generation has finished it will have generated a road map which will 
 </style>
  
 <div id="image-container" align="center">
-<img src="/assets/TensorRoadsImg1.png" width="54%">
+<img src="/assets/TensorRoadsImg2.png" width="54%">
 </div>
-
-NOTE TO SELF: GENERATE NEW ROAD MAP FOR IMAGE ABOVE
 
 The next stage of procedural city generation is to take each area surrounded by roads, called a parcel, and decide where to place buildings in this area. The spaces buildings are placed into are called "lots".
 
@@ -42,15 +40,47 @@ I have come up with two different lot generation algorithms: **OBB Parcelling** 
 
 #### OBB Parcelling
 
-NOTE TO SELF: INSERT GALLERY OF IMAGES: UNDIVIDED, OBB FIT, OBB SPLIT, FULLY DIVIDED WITH OBB PARCELLER
+<div id="image-container" align="center">
+<img src="/assets/OBB_shape.png" width="24%">
+<img src="/assets/OBB_shape_fit.png" width="24%">
+<img src="/assets/OBB_shape_fit_line.png" width="24%">
+<img src="/assets/OBB_shape_fit_line_slice.png" width="24%">
+</div>
 
 OBB (Object Aligned Bounding Box) Parcelling is a method for recursively dividing a space into roughly cuboid parcels. It is best when the initial space is nearly cuboid, for example in a Manhattan style city.
+
+The algorithm is quite simple:
+
+```
+function obb_subdivide( space ) {
+  
+  // 1. Fit an Object Aligned Bounding Box around the space
+  let obb = fit(space);
+  
+  // 2. Slice the space along the shorter axis of the OBB
+  let parts = slice( obb.shorterAxis, space );
+  
+  // 3. Check validity of all children, terminate if any are not valid
+  // This is the base case
+  if ( parts.Any( IsNotValid ) )
+    return space;
+  
+  // 4. Recursively apply this algorithm to all parts
+  for (part in parts)
+    return obb_subdivide( part );
+    
+}
+```
 
 The first step is to fit an object aligned bounding box to the space. My approach to this is basic brute force; since the OBB must be aligned to one of the edges of the space, I simply generate every possibility (equal to the number of edges) and then pick the smallest one. Generating a box along an edge simply requires projecting all the points of the shape onto the axis so the total cost ends up being proportional to ```Edges * Points```, which is equivalent to ```Edges ^ 2```. Normally it's best to avoid algorithms with an exponential cost but in this case it's ok - the number of edges in a space is unlikely to be high enough for this to become a problem.
 
 Now that we have an OBB surrounding the space the second step is to split the space in half. This is done by cutting the shape along the shorter axis of the bounding box. There are multiple techniques to slice a 2D shape, I decided to come up with my own (based on the code I had available). My technique is based on generating the Delauney triangulation of the shape (using the [Poly2Tri](https://github.com/martindevans/Poly2Tri) library). Slicing a triangle is trivial - you just need some careful handling for the slice line and triangle edge being perfectly co-linear. Now we have a load of edges of triangles, the next step is to remove all *pairs* of edges which do not lie along the slice line. Finally we just need to walk around the remaining edges (never crossing the slice line) reconstructing the original sliced shapes.
 
-NOTE TO SELF: INSERT IMAGES FOR SLICING: UNSLICED, DECOMPOSED INTO TRIANGLES, HALF EDGE DIAGRAM, PAIRS REMOVED (JUST OUTLINE), SLICED PARTS
+<div id="image-container" align="center">
+<img src="/assets/OBB_shape.png" width="33%">
+<img src="/assets/OBB_shape_triangles.png" width="32%">
+<img src="/assets/OBB_shape_triangles_sliced.png" width="33%">
+</div>
 
 After slicing we have created two slightly smaller shapes and at this point we simply recurse - an OBB is fitted around each half and then sliced down the middle. The only thing left to establish is the base case - i.e. when to *stop* recursion. My implementation supports four rules, as soon as any rule is violated by a subdivision then recursion is stopped.
 
@@ -78,7 +108,9 @@ In this example we have two hard rules which will not be violated (area and aspe
 
 Straight Skeleton Subdividing (SSS) is an approach to generate lots in one single step. It works only on long thin parcels - quality of the generated lots drops as the initial parcel approaches a square shape - it's best used for suburbs with long winding roads. The straight skeleton of a shape is a line which is what you'd end up with if you collapsed a shape inwards at an equal rate from all points. This is incredibly complicated to generate, in fact I gave up attempting to implement it myself in C# and ended up writing a C# wrapper around [CGAL](https://www.cgal.org/) to access the methods I needed. [Wikipedia](https://en.wikipedia.org/wiki/Straight_skeleton) puts the runtime cost at something like O(N^3 log N), which is pretty scary!
 
-NOTE TO SELF: INSERT GALLERY OF IMAGES: SHAPE, STRAIGHT SKELETON, PARCELS (WITH TRIANGES AT ENDS), PARCELS WITH TRIANGLES ELIMINATED
+<div id="image-container" align="center">
+<img src="/assets/StraightSkeletonDefinition.png" width="54%">
+</div>
 
 Once you have the straight skeleton, lots can be placed along the edges connecting between the external points and the skeleton. This leaves annoying triangles at the ends which need to be somehow detected and removed. Requiring these kind of heuristics is part of the reason I haven't implemented this yet.
 

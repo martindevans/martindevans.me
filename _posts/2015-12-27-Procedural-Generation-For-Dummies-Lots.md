@@ -51,26 +51,25 @@ OBB (Object Aligned Bounding Box) Parcelling is a method for recursively dividin
 
 The algorithm is quite simple:
 
-```
-function obb_subdivide( space ) {
-  
-  // 1. Fit an Object Aligned Bounding Box around the space
-  let obb = fit(space);
-  
-  // 2. Slice the space along the shorter axis of the OBB
-  let parts = slice( obb.shorterAxis, space );
-  
-  // 3. Check validity of all children, terminate if any are not valid
-  // This is the base case
-  if ( parts.Any( IsNotValid ) )
-    return space;
-  
-  // 4. Recursively apply this algorithm to all parts
-  for (part in parts)
-    return obb_subdivide( part );
-    
-}
-```
+
+    function obb_subdivide( space ) {
+      
+      // 1. Fit an Object Aligned Bounding Box around the space
+      let obb = fit(space);
+      
+      // 2. Slice the space along the shorter axis of the OBB
+      let parts = slice( obb.shorterAxis, space );
+      
+      // 3. Check validity of all children, terminate if any are not valid
+      // This is the base case
+      if ( parts.Any( IsNotValid ) )
+        return space;
+      
+      // 4. Recursively apply this algorithm to all parts
+      for (part in parts)
+        return obb_subdivide( part );
+        
+    }
 
 The first step is to fit an object aligned bounding box to the space. My approach to this is basic brute force; since the OBB must be aligned to one of the edges of the space, I simply generate every possibility (equal to the number of edges) and then pick the smallest one. Generating a box along an edge simply requires projecting all the points of the shape onto the axis so the total cost ends up being proportional to ```Edges * Points```, which is equivalent to ```Edges ^ 2```. Normally it's best to avoid algorithms with an exponential cost but in this case it's ok - the number of edges in a space is unlikely to be high enough for this to become a problem.
 

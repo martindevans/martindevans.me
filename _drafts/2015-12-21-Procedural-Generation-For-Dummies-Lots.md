@@ -74,7 +74,7 @@ function obb_subdivide( space ) {
 
 The first step is to fit an object aligned bounding box to the space. My approach to this is basic brute force; since the OBB must be aligned to one of the edges of the space, I simply generate every possibility (equal to the number of edges) and then pick the smallest one. Generating a box along an edge simply requires projecting all the points of the shape onto the axis so the total cost ends up being proportional to ```Edges * Points```, which is equivalent to ```Edges ^ 2```. Normally it's best to avoid algorithms with an exponential cost but in this case it's ok - the number of edges in a space is unlikely to be high enough for this to become a problem.
 
-Now that we have an OBB surrounding the space the second step is to split the space in half. This is done by cutting the shape along the shorter axis of the bounding box. There are multiple techniques to slice a 2D shape, I decided to come up with my own (based on the code I had available). My technique is based on generating the Delauney triangulation of the shape (using the [Poly2Tri](https://github.com/martindevans/Poly2Tri) library). Slicing a triangle is trivial - you just need some careful handling for the slice line and triangle edge being perfectly co-linear. Now we have a load of edges of triangles, the next step is to remove all *pairs* of edges which do not lie along the slice line. Finally we just need to walk around the remaining edges (never crossing the slice line) reconstructing the original sliced shapes.
+Now that we have an OBB surrounding the space the second step is to split the space in half. This is done by cutting the shape along the shorter axis of the bounding box. There are multiple techniques to slice a 2D shape, I decided to come up with my own (based on the code I had available). My technique is based on generating the Delauney triangulation of the shape (using the [Poly2Tri](https://github.com/martindevans/Poly2Tri) library). Slicing a triangle is trivial - you just need some careful handling for the slice line and triangle edge being perfectly co-linear. Once the triangles are sliced it's a simple matter of walking all the directed edges and reconstructing the result (I may do a more in depth post on this, if people are interested).  
 
 <div id="image-container" align="center">
 <img src="/assets/OBB_shape.png" width="33%">
@@ -82,7 +82,7 @@ Now that we have an OBB surrounding the space the second step is to split the sp
 <img src="/assets/OBB_shape_triangles_sliced.png" width="33%">
 </div>
 
-After slicing we have created two slightly smaller shapes and at this point we simply recurse - an OBB is fitted around each half and then sliced down the middle. The only thing left to establish is the base case - i.e. when to *stop* recursion. My implementation supports four rules, as soon as any rule is violated by a subdivision then recursion is stopped.
+After slicing we have generated two new shapes and we can now apply the same algorithm again, recursively. The only thing left to establish is when to *stop*, i.e. the base case. My implementation supports four rules, as soon as any rule is violated by a child shape then recursion is stopped.
 
  - Area
   - The most obvious rule is the area rule. This sets a *lower* limit on the area any lot may be. Recursion stops if any slice line generates a lot below this limit.

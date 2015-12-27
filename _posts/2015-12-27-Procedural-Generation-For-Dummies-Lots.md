@@ -41,10 +41,10 @@ I have come up with two different lot generation algorithms: **OBB Parcelling** 
 #### OBB Parcelling
 
 <div id="image-container" align="center">
-<img src="/assets/OBB_shape.png" width="24%">
-<img src="/assets/OBB_shape_fit.png" width="24%">
-<img src="/assets/OBB_shape_fit_line.png" width="24%">
-<img src="/assets/OBB_shape_fit_line_slice.png" width="24%">
+<img src="/assets/OBB_shape.png" style="width:24%">
+<img src="/assets/OBB_shape_fit.png" style="width:24%">
+<img src="/assets/OBB_shape_fit_line.png" style="width:24%">
+<img src="/assets/OBB_shape_fit_line_slice.png" style="width:24%">
 </div>
 
 OBB (Object Aligned Bounding Box) Parcelling is a method for recursively dividing a space into roughly cuboid parcels. It is best when the initial space is nearly cuboid, for example in a Manhattan style city.

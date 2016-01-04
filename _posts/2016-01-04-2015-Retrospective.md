@@ -20,9 +20,8 @@ I'm a massive fan of open source and release loads of my code publicly - I even 
 
 #### New Open Source Projects
 
- - **ZSharp** A very recent experiment in designing a *totally functional* language - this is a language which is statically guaranteed to terminate. Turing completeness is overrated! *This is largely a personal project for fun, don't depend on it for anything.*
+ - **ZSharp** A very recent experiment in designing a *totally functional* language - this is a language which is statically guaranteed to terminate. Turing completeness is overrated!
    - Personal project
-   - Just for fun
    - Do not depend upon this for anything
  - [**SwizzleMyVectors**](https://github.com/martindevans/SwizzleMyVectors) .Net4.6 brings new SIMD enabled vector types. SwizzleMyVectors adds a load of helpful structs and extension methods to them. Things such as rays, line segments, bounding rectangles and boxes are all included.
    - Actively used and maintained
@@ -103,7 +102,7 @@ With this technique I have written generators for [road layouts](http://martinde
 
 ### Mod API overhaul
 
-Right at the end of last year I removed mod sandboxing. This was for a variety of reasons which you can [read about here](http://martindevans.me/heist-game/2014/12/22/Sandboxing-Is-Dead-Long-Live-Sandboxing/). Sandboxing the mods put a *lot* of limits on how I could write the API (this was one of the reasons for removing it) and so as I have worked on all these other things I have refactored and redesigned almost the entire API. The end result is a *far* nicer modding API which makes writing mods far more pleasant.
+Right at the end of 2014 I removed mod sandboxing. This was for a variety of reasons which you can [read about here](http://martindevans.me/heist-game/2014/12/22/Sandboxing-Is-Dead-Long-Live-Sandboxing/). Sandboxing the mods put a *lot* of limits on how I could write the API (this was one of the reasons for removing it) and so as I have worked on all these other things I have refactored and redesigned almost the entire API. The end result is a *far* nicer modding API which makes writing mods far more pleasant.
 
 ### Epimetheus
 

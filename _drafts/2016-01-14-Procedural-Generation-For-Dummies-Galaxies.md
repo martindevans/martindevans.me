@@ -5,7 +5,92 @@ tags : [game-development, procedural-generation, procedural-generation-for-dummi
 tagline : In Which The Heavens Are Built
 title: "Procedural Generation For Dummies: Galaxy Generation"
 ---
-{% include JB/setup %}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+<script>
+renderFuncs = [];
+function animate() {
+
+    requestAnimationFrame(animate);
+
+    for (index in renderFuncs) {
+        (renderFuncs[index])();
+    }
+}
+animate();
+
+function displayGalaxy(containerId, stars) {
+    var camera, scene, renderer;
+	var mesh;
+    var container = document.getElementById(containerId);
+    
+    var camera = new THREE.PerspectiveCamera(20, container.clientWidth / container.clientHeight, 5, 3500);
+    camera.position.z = 2550;
+
+    var scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x050505, 2000, 3500);
+
+    var particles = stars.length;
+    var geometry = new THREE.BufferGeometry();
+    var positions = new Float32Array(particles * 3);
+    var colors = new Float32Array(particles * 3);
+    var color = new THREE.Color();
+    var n = 1000, n2 = n / 2;
+    for (var i = 0; i < positions.length; i += 3) {
+
+        var star = stars[i / 3];
+
+        // positions
+        positions[i] = star.x;
+        positions[i + 1] = star.y;
+        positions[i + 2] = star.z;
+
+        // colors
+        var vx = (star.r);
+        var vy = (star.g);
+        var vz = (star.b);
+        color.setRGB(vx, vy, vz);
+
+        colors[i] = color.r;
+        colors[i + 1] = color.g;
+        colors[i + 2] = color.b;
+    }
+
+    geometry.addAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geometry.addAttribute('color', new THREE.BufferAttribute(colors, 3));
+    geometry.computeBoundingSphere();
+
+    var material = new THREE.PointCloudMaterial({ size: 15, vertexColors: THREE.VertexColors });
+
+    var particleSystem = new THREE.PointCloud(geometry, material);
+    scene.add(particleSystem);
+
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.CreationTime = new Date();
+    renderer.setClearColor(scene.fog.color);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(container.clientWidth, container.clientHeight);
+
+    container.appendChild(renderer.domElement);
+
+    window.addEventListener('resize', function() {
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+    }, false);
+
+    var speed = Math.random() * 0.75 + 0.5;
+    renderFuncs.push((function() {
+
+		var time = Date.now() * 0.001;
+
+		particleSystem.rotation.x = 0.85;
+		particleSystem.rotation.y = -time * 0.13 * speed;
+
+		renderer.render(scene, camera);
+	}));
+}
+</script>
 
 ## Procedural <strike>City</strike> Generation For Dummies Series
 
@@ -21,9 +106,35 @@ The code related to this article is open source and can be found [here](https://
 
 ## Galaxy Generation
 
+<style>
+.ar169-wrapper {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.ar169-wrapper:after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.ar169 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+}
+</style>
+
 For my city generator the system is hierarchical - a single generator just knows how to generate one level of the city and then invokes more generators to fill in the gaps. For example a building generator knows how to create building shapes and choose which floors to use but then simply invokes a floor generator for each floor to actually fill in the details of the floor plan.
 
-//TODO: insert animation of same galaxy with and without swirl applied
+<div class="ar169-wrapper">
+  <div class="ar169" id="big-demo-galaxy"></div>
+</div>
 
 The galaxy generator works in a similar way; the high level galaxy generators invokes separate generators for different parts of the galaxy such as the core and the arms. However, there is a major difference: when a nested generator creates a star the parent generator has a chance to modify it. This allows me to generate the core and the arms and then apply a swirl effect to all the stars later which vastly simplifies the implementation of the sub-generators.
 
@@ -31,23 +142,34 @@ Let's look a the basic generators one by one, from the bottom up...
 
 ### Sphere
 
-//TODO: insert an animation of a sphere
+<div class="ar169-wrapper">
+  <div class="ar169" id="sphere-demo-galaxy"></div>
+</div>
 
 [This](https://github.com/martindevans/CasualGodComplex/blob/master/CasualGodComplex/Galaxies/Sphere.cs) is the simplest of all of the generators; it simply generates a roughly spherical blob of stars. The blob of stars is denser in the middle and slowly fades to nothing as distance increases. This is achieved through a *normal distribution* - more commonly known as a *bell curve*.
 
-//TODO: this image credited to wikipedia: https://upload.wikimedia.org/wikipedia/commons/8/8c/Standard_deviation_diagram.svg
+<center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Standard_deviation_diagram.svg">
+    <br />
+    <strong>Standard Deviation Graph - Wikimedia</strong>
+</center>
+<br />
 
 A normal distribution is a probability distribution with a higher probability of things being in the center. As you can see from the diagram above there is a 68.2% chance of something being within 1 *deviation* of the center, a 27.2% chance of something being within 2 deviations, a 4.2% chance of being within 3 and so on. The *deviation* is a parameter which you can pick, so a very large value will get a low density blob of stars spread out a long way and a very small value will get a very high density blob of stars clumped tightly together. My implementation allows you to specify the deviation separately for each axis, so you can actual generate oblate spheroids with this.
 
 ### Cluster
 
-//TODO: insert an animation of a cluster
+<div class="ar169-wrapper">
+  <div class="ar169" id="cluster-demo-galaxy"></div>
+</div>
 
 The [cluster generator](https://github.com/martindevans/CasualGodComplex/blob/master/CasualGodComplex/Galaxies/Cluster.cs) is similar to the sphere generator. However, instead of placing *stars* in a loosely spherical blob it places *spheres of stars*. This generator is inspired by a vaguely scientific basis of how galaxies work - stars are generated in nebulae which will tend to form a clump of stars. Additionally large masses will pull in nearby stars and form clumps. This is used most prominently in the core of the galaxy where a large number of clusters are placed into a relatively tight area (using a small *standard deviation*) to simulate the super high density galactic centre we see in real galaxies.
 
 ### Spiral
 
-//TODO: insert an animation of a spiral galaxy
+<div class="ar169-wrapper">
+  <div class="ar169" id="spiral-demo-galaxy-2"></div>
+</div>
 
 This is the generator which really brings the others together to form something that looks like a real galaxy. Near the start I mentioned how higher level generators in this system have a chance to modify the stars generated at lower levels - this capability is used by the spiral galaxy i two ways.
 
@@ -57,21 +179,33 @@ Secondly there is a *void* right at the center of the galaxy (to simulate the lo
 
 Let's have a look at the three parts of the spiral generator:
 
-##### Background
+#### Background
 
-//TODO: insert an animation of the background
+<div class="ar169-wrapper">
+  <div class="ar169" id="spiral-bg"></div>
+</div>
 
 The [background](https://github.com/martindevans/CasualGodComplex/blob/master/CasualGodComplex/Galaxies/Spiral.cs#L88) is simply a huge *sphere* with the standard deviation set to the size of the galaxy. This means that the galactic disk will have some stars above and below and there will be a very low density halo of stars scattered around the galaxy in all directions. The swirl effect is not applied to these stars.
 
-##### Galactic Core
+#### Galactic Core
 
-//TODO: insert an animation of the core with and without swirl
+<div class="ar169-wrapper" style="width:48%">
+  <div class="ar169" id="spiral-core-notwist"></div>
+</div>
+<div class="ar169-wrapper" style="width:48%">
+  <div class="ar169" id="spiral-core-twist"></div>
+</div>
 
 The [galactic core](https://github.com/martindevans/CasualGodComplex/blob/master/CasualGodComplex/Galaxies/Spiral.cs#L93) is a very tight *cluster*, with the standard devitation set to be about 5-10% of the size of the galaxy. The swirl effect is five times stronger on these stars (and is naturally stronger at short distances from the origin) so the center is *very* strongly rotated around - giving the impression of a chaotic galactic center wrapped around a supermassive blackhole. What started off as spheres distributed around the center ends up many tiny little arms wrapped right around the core.
 
-##### Arms
+#### Arms
 
-//TODO: insert an animation of arms with and without swirl
+<div class="ar169-wrapper" style="width:48%">
+  <div class="ar169" id="spiral-arm-notwist"></div>
+</div>
+<div class="ar169-wrapper" style="width:48%">
+  <div class="ar169" id="spiral-arm-twist"></div>
+</div>
 
 The [arms](https://github.com/martindevans/CasualGodComplex/blob/master/CasualGodComplex/Galaxies/Spiral.cs#L113) begin life as roughly straight lines of *spheres*. Each sphere is initially generated somewhere along a dead straight line and is then rotated to the middle of it's respective arm - with a little random variance to make the arms a little more ragged. After all this the swirl effect is applied to the arms which gives the entire galaxy the appearance of rotation.
 
@@ -103,8 +237,35 @@ Finally there is a strategy which picks names from a pre-set list. This list doe
 
 Different strategies have weights associated with them so the majority of stars have scientifically indexed name. There's a lower chance of markov names (with prefixes and suffixes). Finally the very lowest chance is for unique names (an extension to this could remove unique names from the list, so they are truly unique).
 
-//TODO: Great big galaxy
+<div class="ar169-wrapper">
+  <div class="ar169" id="final-spiral"></div>
+</div>
 
+<script>
+(function() {
+
+    function galaxy(container, dataPath) {
+        $.ajax({ url: dataPath })
+        .done(function(data) {
+            //Yeah yeah, eval is evil. Bite me
+            displayGalaxy(container, eval(data));
+        });
+    }
+
+    galaxy("big-demo-galaxy", "assets/demo-galaxy.js");
+    galaxy("sphere-demo-galaxy", "assets/sphere-galaxy.js");
+    galaxy("cluster-demo-galaxy", "assets/cluster-galaxy.js");
+	galaxy("spiral-demo-galaxy-2", "assets/spiral-galaxy-2.js");
+    galaxy("spiral-bg", "assets/spiral-bg.js");
+    galaxy("spiral-core-notwist", "assets/spiral-core-notwist.js");
+    galaxy("spiral-core-twist", "assets/spiral-core-twist.js");
+    galaxy("spiral-arm-notwist", "assets/spiral-arm-notwist.js");
+    galaxy("spiral-arm-twist", "assets/spiral-arm-twist.js");
+    galaxy("final-spiral", "assets/final-spiral-demo.js");
+
+})();
+
+</script>
 
 
 

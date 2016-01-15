@@ -260,16 +260,16 @@ Different strategies have weights associated with them so the majority of stars 
         });
     }
 
-    galaxy("big-demo-galaxy", "assets/demo-galaxy.js");
-    galaxy("sphere-demo-galaxy", "assets/sphere-galaxy.js");
-    galaxy("cluster-demo-galaxy", "assets/cluster-galaxy.js");
-	galaxy("spiral-demo-galaxy-2", "assets/spiral-galaxy-2.js");
-    galaxy("spiral-bg", "assets/spiral-bg.js");
-    galaxy("spiral-core-notwist", "assets/spiral-core-notwist.js");
-    galaxy("spiral-core-twist", "assets/spiral-core-twist.js");
-    galaxy("spiral-arm-notwist", "assets/spiral-arm-notwist.js");
-    galaxy("spiral-arm-twist", "assets/spiral-arm-twist.js");
-    galaxy("final-spiral", "assets/final-spiral-demo.js");
+    galaxy("big-demo-galaxy", "/assets/demo-galaxy.js");
+    galaxy("sphere-demo-galaxy", "/assets/sphere-galaxy.js");
+    galaxy("cluster-demo-galaxy", "/assets/cluster-galaxy.js");
+	galaxy("spiral-demo-galaxy-2", "/assets/spiral-galaxy-2.js");
+    galaxy("spiral-bg", "/assets/spiral-bg.js");
+    galaxy("spiral-core-notwist", "/assets/spiral-core-notwist.js");
+    galaxy("spiral-core-twist", "/assets/spiral-core-twist.js");
+    galaxy("spiral-arm-notwist", "/assets/spiral-arm-notwist.js");
+    galaxy("spiral-arm-twist", "/assets/spiral-arm-twist.js");
+    galaxy("final-spiral", "/assets/final-spiral-demo.js");
 
 })();
 

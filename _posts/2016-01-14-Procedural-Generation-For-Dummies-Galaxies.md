@@ -102,6 +102,8 @@ function displayGalaxy(containerId, stars) {
 
 My game, Heist, is a cooperative stealth game set in a procedurally generated city. This series of blog posts is an introduction to my approach for rapidly generating entire cities. This post is a fun diversion away from city generation to explore a weekend project from a few months back: Galaxy Generation!
 
+If you're interested in following the series as it's released you can follow me on [Twitter](https://twitter.com/), [Reddit](https://www.reddit.com/user/martindevans/) or Subscribe to my [RSS feed](http://martindevans.me/rss.xml)
+
 The code related to this article is open source and can be found [here](https://github.com/martindevans/CasualGodComplex) and [here](https://github.com/martindevans/MarvellousMarkovModels). It's a complete C\#  galaxy generation library which you can use in your own projects.
 
 ## Galaxy Generation

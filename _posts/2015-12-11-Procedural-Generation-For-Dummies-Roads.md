@@ -5,6 +5,7 @@ tags : [game-development, procedural-generation, procedural-generation-for-dummi
 tagline : In Which Tractable Tensors Are Traced Terrifically
 title: "Procedural Generation For Dummies: Road Generation"
 ---
+{% include JB/setup %}
 
 ## Procedural City Generation For Dummies Series
 

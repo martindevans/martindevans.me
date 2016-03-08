@@ -21,7 +21,10 @@ author :
   github : martindevans
   twitter : martindevans
   
-default_article_image : /assets/Kitty128.jpg
+default_article_image
+    url : /assets/Kitty128.jpg
+    width : 128
+    height : 128
 
 publisher :
   name : Placeholder

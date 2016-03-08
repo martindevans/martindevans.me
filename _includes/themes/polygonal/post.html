@@ -76,7 +76,16 @@
         },
         "image": {
             "@type": "ImageObject",
-            "url": "{{ site.production_url }}{% if page.tagline %}{{ page.image }}{% else %}{{ site.default_article_image }}{% endif %}"
+            
+            {% if page.image %}
+                "url": "{{ site.production_url }}{{ page.image.url }}",
+                "width": {{ page.image.width }},
+                "height": {{ page.image.height }}
+            {% else %}
+                "url": "{{ site.production_url }}{{ site.default_article_image.url }}",
+                "width": {{ site.default_article_image.width }},
+                "height": {{ site.default_article_image.height }}
+            {% endif %}
         },
         "datePublished": "{{ page.date | date_to_xmlschema }}",
         "author": {

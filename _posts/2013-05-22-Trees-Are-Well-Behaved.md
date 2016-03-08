@@ -13,7 +13,7 @@ Behaviour trees are better than Finite State Machines for basic AI.
 
 ## What Is A Behaviour Tree?
 
-A Behaviour Tree (BT) is an improvement on Finite State Machines (FSM) which encapsulates the behaviours an AI undertakes in a more sensible way, making behaviours easier to design individually and then compose together later in a complete AI. Conceptually BTs are pretty simple: every time the AI is updated the tree is traversed from top down, each time execution reaches a node it does what that node says. Let's have an example, I'm going to make the dead simple guard AI from [Last Time](/heist/2013/04/16/Finite-State-Machines-(Are-Boring)/) using a BT instead of an FSM:
+A Behaviour Tree (BT) is an improvement on Finite State Machines (FSM) which encapsulates the behaviours an AI undertakes in a more sensible way, making behaviours easier to design individually and then compose together later in a complete AI. Conceptually BTs are pretty simple: every time the AI is updated the tree is traversed from top down, each time execution reaches a node it does what that node says. Let's have an example, I'm going to make the dead simple guard AI from [Last Time](/heist-game/2013/04/16/Finite-State-Machines-(Are-Boring)/) using a BT instead of an FSM:
 
 ![Behaviour Tree](/assets/BehaviourTree.png)
 

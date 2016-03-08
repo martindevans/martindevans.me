@@ -31,4 +31,4 @@ Heist doesn't use any FSMs for AI (it does have a rather complex FSM for network
 
 ## Coming Soon
 
-I'm going to discuss *Goal Oriented Action Planning* and *Behaviour Trees* in the next couple of entries. Both of these are techniques which improve upon the limitations of Finite State Machines.
+I'm going to discuss *Goal Oriented Action Planning* and *Behaviour Trees* in the next couple of entries. These are techniques which improve upon the limitations of Finite State Machines.

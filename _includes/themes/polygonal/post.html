@@ -70,7 +70,7 @@
         "@type": "BlogPosting",
         "headline": "{{ page.title }}",
         "alternativeHeadline": "{{ page.tagline }}",
-        "image": "{% if page.tagline %}{{ page.image }}{% else %}{{ site.default_article_image }}{% endif %}",
+        "image": "{{ site.production_url }}{% if page.tagline %}{{ page.image }}{% else %}{{ site.default_article_image }}{% endif %}",
         "datePublished": "{{ page.date | date_to_xmlschema }}",
         "author": {
             "@type": "Person",
@@ -78,10 +78,10 @@
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Placeholder",
+            "name": "{{ site.publisher.name }}",
             "logo": {
                 "@type": "ImageObject",
-                "url": "/assets/Kitty128.jpg",
+                "url": "{{ site.production_url }}{{ site.publisher.image }}",
                 "width": 128,
                 "height": 128
             }

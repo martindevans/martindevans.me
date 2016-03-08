@@ -25,7 +25,7 @@
     <b>{{ page.date | date_to_long_string }}</b>
     
     {% if page.category %}
-        Filed In <a href="{{ BASE_PATH }}/categories/#{{ page.category }}-ref"><b>{{ page.category }}</b></a>
+        Filed In <a href="{{ site.production_url }}/categories/#{{ page.category }}-ref"><b>{{ page.category }}</b></a>
     {% endif %}
   </div>
   
@@ -39,7 +39,7 @@
                 "@type": "ListItem",
                 "position": 1,
                 "item": {
-                  "@id": "{{ BASE_PATH }}/categories/",
+                  "@id": "{{ site.production_url }}/categories/",
                   "name": "Categories"
                 }
             },
@@ -47,7 +47,7 @@
                 "@type": "ListItem",
                 "position": 2,
                 "item": {
-                  "@id": "{{ BASE_PATH }}/categories/#{{ page.category }}-ref",
+                  "@id": "{{ site.production_url }}/categories/#{{ page.category }}-ref",
                   "name": "{{ page.category }}"
                 }
             },
@@ -55,7 +55,7 @@
                 "@type": "ListItem",
                 "position": 3,
                 "item": {
-                  "@id": "{{ page.url }}",
+                  "@id": "{{ site.production_url }}{{ page.url }}",
                   "name": "{{ page.title }}"
                 }
             }

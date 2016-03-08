@@ -21,14 +21,14 @@ author :
   github : martindevans
   twitter : martindevans
   
-default_article_image
+default_article_image:
     url : /assets/Kitty128.jpg
     width : 128
     height : 128
 
 publisher :
-  name : Placeholder
-  image : /assets/Kitty128.jpg
+    name : Placeholder
+    image : /assets/Kitty128.jpg
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

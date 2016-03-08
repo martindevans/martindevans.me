@@ -4,6 +4,7 @@ category : game-development
 tags : [game-development, procedural-generation, procedural-generation-for-dummies]
 tagline : In Which The Heavens Are Built
 title: "Procedural Generation For Dummies: Galaxy Generation"
+image: /assets/Galaxy.png
 ---
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>

@@ -66,26 +66,26 @@
   <!-- Blog Post Metadata -->
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "BlogPosting",
-      "headline": "{{ page.title }}",
-      "alternativeHeadline": "{{ page.tagline }}",
-      "image": "{% if page.tagline %}{{ page.image }}{% else %}{{ site.default_article_image }}{% endif %}",
-      "datePublished": "{{ page.date | date_to_xmlschema }}",
-      "author": {
-        "@type": "Person",
-        "name": "{% if page.author %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}"
-      },
-       "publisher": {
-        "@type": "Organization",
-        "name": "Placeholder",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/assets/Kitty128.jpg",
-          "width": 128,
-          "height": 128
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ page.title }}",
+        "alternativeHeadline": "{{ page.tagline }}",
+        "image": "{% if page.tagline %}{{ page.image }}{% else %}{{ site.default_article_image }}{% endif %}",
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "author": {
+            "@type": "Person",
+            "name": "{% if page.author %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Placeholder",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/assets/Kitty128.jpg",
+                "width": 128,
+                "height": 128
+            }
         }
-      },
     }
   </script>
   

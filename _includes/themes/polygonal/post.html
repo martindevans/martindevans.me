@@ -98,7 +98,7 @@
     
     On
     
-    <b>{{ page.date | date_to_long_string }}</b> (Modified {% page.last_modified_at | date_to_long_string %})
+    <b>{{ page.date | date_to_long_string }}</b> (Modified {{ page.last_modified_at | date_to_long_string }})
     
     {% if page.category %}
         Filed In <a href="{{ site.production_url }}/categories/#{{ page.category }}-ref"><b>{{ page.category }}</b></a>

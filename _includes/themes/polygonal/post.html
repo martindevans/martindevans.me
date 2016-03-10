@@ -1,3 +1,79 @@
+<!-- breadcrumbs -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "{{ site.production_url }}/categories/",
+              "name": "Categories"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "{{ site.production_url }}/categories/#{{ page.category }}-ref",
+              "name": "{{ page.category }}"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "{{ site.production_url }}{{ page.url }}",
+              "name": "{{ page.title }}"
+            }
+        }
+    ]
+}
+</script>
+
+<!-- Blog Post Metadata -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "alternativeHeadline": "{{ page.tagline }}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.production_url }}{{ page.url }}"
+    },
+    "image": {
+        "@type": "ImageObject",
+        
+        {% if page.image %}
+            "url": "{{ site.production_url }}{{ page.image.url }}",
+            "width": {{ page.image.width }},
+            "height": {{ page.image.height }}
+        {% else %}
+            "url": "{{ site.production_url }}{{ site.default_article_image.url }}",
+            "width": {{ site.default_article_image.width }},
+            "height": {{ site.default_article_image.height }}
+        {% endif %}
+    },
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "author": {
+        "@type": "Person",
+        "name": "{% if page.author %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.publisher.name }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.production_url }}{{ site.publisher.image }}",
+            "width": 60,
+            "height": 60
+        }
+    }
+}
+</script>
+
 <div class="page-header">
   <h1>
     {{ page.title }} 
@@ -22,88 +98,14 @@
     
     On
     
-    <b>{{ page.date | date_to_long_string }}</b>
+    <b>{{ page.date | date_to_long_string }}</b> (Modified {% last_modified_at | date_to_long_string %})
     
     {% if page.category %}
         Filed In <a href="{{ site.production_url }}/categories/#{{ page.category }}-ref"><b>{{ page.category }}</b></a>
     {% endif %}
   </div>
   
-  <!-- breadcrumbs -->
-  <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                  "@id": "{{ site.production_url }}/categories/",
-                  "name": "Categories"
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                  "@id": "{{ site.production_url }}/categories/#{{ page.category }}-ref",
-                  "name": "{{ page.category }}"
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                  "@id": "{{ site.production_url }}{{ page.url }}",
-                  "name": "{{ page.title }}"
-                }
-            }
-        ]
-    }
-  </script>
   
-  <!-- Blog Post Metadata -->
-  <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "{{ page.title }}",
-        "alternativeHeadline": "{{ page.tagline }}",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "{{ site.production_url }}{{ page.url }}"
-        },
-        "image": {
-            "@type": "ImageObject",
-            
-            {% if page.image %}
-                "url": "{{ site.production_url }}{{ page.image.url }}",
-                "width": {{ page.image.width }},
-                "height": {{ page.image.height }}
-            {% else %}
-                "url": "{{ site.production_url }}{{ site.default_article_image.url }}",
-                "width": {{ site.default_article_image.width }},
-                "height": {{ site.default_article_image.height }}
-            {% endif %}
-        },
-        "datePublished": "{{ page.date | date_to_xmlschema }}",
-        "author": {
-            "@type": "Person",
-            "name": "{% if page.author %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "{{ site.publisher.name }}",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "{{ site.production_url }}{{ site.publisher.image }}",
-                "width": 60,
-                "height": 60
-            }
-        }
-    }
-  </script>
   
   <div>
     {% unless page.tags == empty %}

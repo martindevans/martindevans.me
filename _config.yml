@@ -7,9 +7,6 @@ highlighter: rouge
 lsi: false
 markdown: kramdown
 
-gems:
-  - jekyll-last-modified-at
-
 # RSS variables
 description: One Man And His Adventures In Game Development.
 

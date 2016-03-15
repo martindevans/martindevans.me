@@ -11,6 +11,18 @@ tagline : Praise Be To The Almighty Proof Reader
 
 Sometimes the best way to make something smaller is to throw half of it away.
 
+## Topics
+
+In this series I'm covering 5 topics:
+
+ - [Topology]({% post_url 2012-10-14-Topological-My-Dear-Watson %})
+ - [Session/Connection Initiation]({% post_url 2012-10-15-Get-Up-And-Initiate-That-Session %})
+ - [Delivery Guarantees]({% post_url 2012-10-17-Say-What %})
+ - [Named Data Pipes]({% post_url 2012-10-24-Wibbly-Wobbly-Pipey-Wipey %})
+ - [Packet Encoding (Architecture)]({% post_url 2012-11-07-Packet-Encoding %})
+ - Packet Encoding (Lossless Compression/Variable Length Encoding)
+ - [Packet Encoding (Lossy Compression)]({% post_url 2012-11-07-Packet-Encoding %})
+
 ## Don't Throw That Away!
 
 Last time I talked about the variable length encoding Heist uses for integers which are likely to be near zero. There were a few other lossless operations I listed which I should explain before moving on:

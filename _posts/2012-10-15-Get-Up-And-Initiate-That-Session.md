@@ -15,11 +15,13 @@ Part #2 in my series on how Heist does networking stuff. This time about setting
 
 In this series I'm covering 5 topics:
 
- - [Topology](/Heist/2012/10/14/Topological-My-Dear-Watson/)
+ - [Topology]({% post_url 2012-10-14-Topological-My-Dear-Watson %})
  - Session/Connection Initiation
- - [Delivery Guarantees](/Heist/2012/10/17/Say-What/)
- - [Named Data Pipes](/Heist/2012/10/24/Wibbly-Wobbly-Pipey-Wipey/)
- - [Packet Encoding In C#](/Heist/2012/11/07/Packet-Encoding/)
+ - [Delivery Guarantees]({% post_url 2012-10-17-Say-What %})
+ - [Named Data Pipes]({% post_url 2012-10-24-Wibbly-Wobbly-Pipey-Wipey %})
+ - [Packet Encoding (Architecture)]({% post_url 2012-11-07-Packet-Encoding %})
+ - [Packet Encoding (Lossless Compression/Variable Length Encoding)]({% post_url 2012-11-07-Packet-Encoding %})
+ - [Packet Encoding (Lossy Compression)]({% post_url 2012-11-07-Packet-Encoding %})
  
 ## Making The First Move
 

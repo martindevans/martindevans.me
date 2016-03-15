@@ -17,11 +17,11 @@ There was no changelog published on Sunday 13th July 2014 because I was on holid
 
 ## A History Lesson
 
-I've previously talked in some depth about different AI techniques and how they work in my [Artificial Stupidity](/heist-game/2013/04/08/Artificial-Stupidity-Series/) series. This series was just a discussion of how these technologies work without talking about if/how I will use them myself in Heist.
+I've previously talked in some depth about different AI techniques and how they work in my [Artificial Stupidity]({% post_url 2013-04-08-Artificial-Stupidity-Series %}) series. This series was just a discussion of how these technologies work without talking about if/how I will use them myself in Heist.
 
-I first worked on AI [way back](/Heist/2012/07/24/Artificial-Stupidity/) in 2012 when I spent some time researching AI for crowds and flocking behaviours. This kind of stuff is useful when you have a large crowd of fairly uniforms NPCs - for example the crowds in Assassins Creed. That was mostly just a research effort, although it did spawn [my fork](https://github.com/martindevans/SharpSteer2) of a C# port of [OpenSteer](http://opensteer.sourceforge.net/) which will come in handy soon.
+I first worked on AI [way back]({% post_url 2012-07-24-Artificial-Stupidity %})  in 2012 when I spent some time researching AI for crowds and flocking behaviours. This kind of stuff is useful when you have a large crowd of fairly uniforms NPCs - for example the crowds in Assassins Creed. That was mostly just a research effort, although it did spawn [my fork](https://github.com/martindevans/SharpSteer2) of a C# port of [OpenSteer](http://opensteer.sourceforge.net/) which will come in handy soon.
 
-I eventually came back to AI when I wrote my [Artificial Stupidity](/heist-game/2013/04/08/Artificial-Stupidity-Series/) series in which I investigated different techniques for AI and write about their advantages and disadvantages. When I blogged about these techniques I also tried implementing them so I had a good grasp on exactly how they work and their advantages and disadvantages.
+I eventually came back to AI when I wrote my [Artificial Stupidity]({% post_url 2013-04-08-Artificial-Stupidity-Series %}) series in which I investigated different techniques for AI and write about their advantages and disadvantages. When I blogged about these techniques I also tried implementing them so I had a good grasp on exactly how they work and their advantages and disadvantages.
 
 This resulted in me implementing:
 

@@ -15,7 +15,7 @@ I have a pretty fragile wrist (RSI problems) and it flared up very badly last we
 
 I really wanted to get a changelog out this week, I've been working on a project called [Base-ArtificialIntelligence](https://bitbucket.org/martindevans/base-artificialintelligence) which builds higher level AI abstractions over the very low level things offered directly in the scripting interface. Most of my work has been building a behaviour tree which, when given a target, will generate and follow a path to that target (including regenerating the path when the target moves etc). I'm really excited to get an AI video out because AI is so core to a stealth game - I'm *hoping* to get a basic AI running around shooting people in a deathmatch within a week or two.
 
-Unfortunately my wrist is in a [pretty fragile condition](http://martindevans.me/Heist/2012/09/24/Full-Steam-Ahead/) and it really flared up last week. I couldn't type by the end of the week and I spent most of Thursday and Friday watching anime, reading books and staring longingly at my computer wanting to work on AI!
+Unfortunately my wrist is in a [pretty fragile condition]({% post_url 2012-09-24-Full-Steam-Ahead %}) and it really flared up last week. I couldn't type by the end of the week and I spent most of Thursday and Friday watching anime, reading books and staring longingly at my computer wanting to work on AI!
 
 ## Not All Hope Is Lost
 

@@ -15,15 +15,17 @@ I have a pretty neat system based on C# generics and reflection for encoding of 
 
 In this series I'm covering 5 topics:
 
- - [Topology](/Heist/2012/10/14/Topological-My-Dear-Watson/)
- - [Session/Connection Initiation](/Heist/2012/10/15/Get-Up-And-Initiate-That-Session/)
- - [Delivery Guarantees](/Heist/2012/10/17/Say-What/)
- - [Named Data Pipes](/Heist/2012/10/24/Wibbly-Wobbly-Pipey-Wipey/)
- - Packet Encoding In C#
+ - [Topology]({% post_url 2012-10-14-Topological-My-Dear-Watson %})
+ - [Session/Connection Initiation]({% post_url 2012-10-15-Get-Up-And-Initiate-That-Session %})
+ - [Delivery Guarantees]({% post_url 2012-10-17-Say-What %})
+ - [Named Data Pipes]({% post_url 2012-10-24-Wibbly-Wobbly-Pipey-Wipey %})
+ - Packet Encoding (Architecture)
+ - [Packet Encoding (Lossless Compression/Variable Length Encoding)]({% post_url 2012-11-07-Packet-Encoding %})
+ - [Packet Encoding (Lossy Compression)]({% post_url 2012-11-07-Packet-Encoding %})
 
 ## The Question Remains
 
-[Last time](/Heist/2012/10/24/Wibbly-Wobbly-Pipey-Wipey/) I talked about *how* packets get routed to the right place through pipes, the question remains *what* exactly gets sent? The obvious solution is just to say that all pipes send and receive byte arrays. That's a pretty terrible solution though, it means that every sender and receiver needs a load of logic for translating binary blobs into some type of data. It's obviously going to be better in the long term to encapsulate the translation somewhere else, so that's what Heist does. A pipe directly sends and receives types (in C# parlance, pipes are _generically typed_), the pipe system finds a translator which knows how to turn Type(T) into a binary blob and then back again.
+[Last time]({% post_url 2012-10-24-Wibbly-Wobbly-Pipey-Wipey %}) I talked about *how* packets get routed to the right place through pipes, the question remains *what* exactly gets sent? The obvious solution is just to say that all pipes send and receive byte arrays. That's a pretty terrible solution though, it means that every sender and receiver needs a load of logic for translating binary blobs into some type of data. It's obviously going to be better in the long term to encapsulate the translation somewhere else, so that's what Heist does. A pipe directly sends and receives types (in C# parlance, pipes are _generically typed_), the pipe system finds a translator which knows how to turn Type(T) into a binary blob and then back again.
 
 Translators in Heist are just a class which extends the BasePipeTranslator&lt;T&gt; class, when the pipe system wants to find a translator it simply scans all of the loaded types available to it and finds the one where T is the type it wants. Of course, writing a translator is usually really trivial:
 

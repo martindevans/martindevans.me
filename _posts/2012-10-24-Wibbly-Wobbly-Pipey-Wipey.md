@@ -15,11 +15,13 @@ Network messages are sent in named pipes.
 
 In this series I'm covering 5 topics:
 
- - [Topology](/Heist/2012/10/14/Topological-My-Dear-Watson/)
- - [Session/Connection Initiation](/Heist/2012/10/15/Get-Up-And-Initiate-That-Session/)
- - [Delivery Guarantees](/Heist/2012/10/17/Say-What/)
+ - [Topology]({% post_url 2012-10-14-Topological-My-Dear-Watson %})
+ - [Session/Connection Initiation]({% post_url 2012-10-15-Get-Up-And-Initiate-That-Session %})
+ - [Delivery Guarantees]({% post_url 2012-10-17-Say-What %})
  - Named Data Pipes
- - [Packet Encoding In C#](/Heist/2012/11/07/Packet-Encoding/)
+ - [Packet Encoding (Architecture)]({% post_url 2012-11-07-Packet-Encoding %})
+ - [Packet Encoding (Lossless Compression/Variable Length Encoding)]({% post_url 2012-11-07-Packet-Encoding %})
+ - [Packet Encoding (Lossy Compression)]({% post_url 2012-11-07-Packet-Encoding %})
  
 ## My Worst Nightmare
 

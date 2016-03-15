@@ -11,6 +11,18 @@ tagline : In Which There is Much Talk Of Bytes And Bits
 
 Some things can be smaller than other things in some circumstances.
 
+## Topics
+
+In this series I'm covering 5 topics:
+
+ - [Topology]({% post_url 2012-10-14-Topological-My-Dear-Watson %})
+ - [Session/Connection Initiation]({% post_url 2012-10-15-Get-Up-And-Initiate-That-Session %})
+ - [Delivery Guarantees]({% post_url 2012-10-17-Say-What %})
+ - [Named Data Pipes]({% post_url 2012-10-24-Wibbly-Wobbly-Pipey-Wipey %})
+ - [Packet Encoding (Architecture)]({% post_url 2012-11-07-Packet-Encoding %})
+ - Packet Encoding (Lossless Compression/Variable Length Encoding)
+ - [Packet Encoding (Lossy Compression)]({% post_url 2012-11-07-Packet-Encoding %})
+
 ## Compression
 
 It's a basic fact of data compression that you can't compress everything, if you make one thing take less space then you *must* be making something else take more space to store. Given this fact how does anyone ever compress any data? Image compression, music compression and general compression (e.g. zip) all do a pretty good job of it. All data compression simply works in one of two ways.

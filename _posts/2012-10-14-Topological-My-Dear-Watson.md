@@ -20,10 +20,10 @@ Networking is a huge topic, and I'm going to be talking about a lot of technical
 There's a lot to talk about with networking, I'm going to try and cover all these topics:
 
  - Topology
- - [Session/Connection Initiation](/Heist/2012/10/15/Get-Up-And-Initiate-That-Session/)
- - [Delivery Guarantees](/Heist/2012/10/17/Say-What/)
- - [Named Data Pipes](/Heist/2012/10/24/Wibbly-Wobbly-Pipey-Wipey/)
- - [Packet Encoding In C#](/Heist/2012/11/07/Packet-Encoding/)
+ - [Session/Connection Initiation]({% post_url 2012-10-15-Get-Up-And-Initiate-That-Session %})
+ - [Delivery Guarantees](/heist-game/2012/10/17/Say-What/)
+ - [Named Data Pipes](/heist-game/2012/10/24/Wibbly-Wobbly-Pipey-Wipey/)
+ - [Packet Encoding In C#](/heist-game/2012/11/07/Packet-Encoding/)
  
 That's a lot of topics though, so I'm going to cover each one in a separate blog post rather than writing one colossal post right now!
  

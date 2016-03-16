@@ -127,6 +127,20 @@
                 document.body.clientHeight, document.documentElement.clientHeight
             );
         }
+        
+        //Only run a function once every *interval* ms at max.
+        function throttle(func, interval) {
+            var lastCall = -1;
+            return function () {
+                var args = arguments;
+                if (lastCall == -1) {
+                  lastCall = setTimeout(function () {
+                      func.apply(this, args);
+                      lastCall = -1;
+                  }, interval);
+                }
+            };
+        }
 
         var t = new Trianglify({
             noiseIntensity: 0
@@ -138,7 +152,7 @@
         }
         redraw();
 
-        window.onresize = function() { redraw(); };
+        window.onresize = throttle(function() { redraw(); }, 100);
     </script>
   </body>
 </html>

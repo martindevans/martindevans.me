@@ -1,6 +1,6 @@
 ---
 layout: post
-category : game-development
+category : Game-Development
 tags : [heist, game-development]
 tagline : In Which Sticky Walls Are Discussed
 ---

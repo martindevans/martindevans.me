@@ -1,6 +1,6 @@
 ---
 layout: post
-category : heist-game
+category : Heist-Game
 tags : [heist, artificial-intelligence]
 tagline : In Which Paths Are Walked Along
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-category : game-development
+category : Game-Development
 tags : [heist, game-development, general]
 tagline : In Which A Lot Happens
 ---

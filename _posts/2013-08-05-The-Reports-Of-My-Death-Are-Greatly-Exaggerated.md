@@ -1,7 +1,7 @@
 ---
 layout: post
-category : site-update
-tags : [generals]
+category : Site-Update
+tags : [general]
 tagline : In Which The Author Suddenly Remembers He Has A Blog
 ---
 {% include JB/setup %}

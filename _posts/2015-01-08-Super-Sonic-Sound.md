@@ -1,6 +1,6 @@
 ---
 layout: post
-category : game-development
+category : Game-Development
 tags : [open-source, programming]
 tagline : In Which An Open Source Project Is Born
 ---

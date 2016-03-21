@@ -1,6 +1,6 @@
 ---
 layout: post
-category : heist-game
+category : Heist-Game
 tags : [heist, procedural-generation]
 tagline : In Which Fantastic Facades Are Fabricated Fast
 ---

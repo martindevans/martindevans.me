@@ -1,6 +1,6 @@
 ---
 layout: post
-category : game-development
+category : Game-Development
 tags : [game-development, procedural-generation, procedural-generation-for-dummies]
 tagline : In Which Space Is Made
 title: "Procedural Generation For Dummies: Lot Subdivision"

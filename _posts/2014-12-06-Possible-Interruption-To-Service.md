@@ -1,6 +1,6 @@
 ---
 layout: post
-category : site-update
+category : Site-Update
 tags : [site-update]
 tagline : In Which The Blog May Disappear
 ---

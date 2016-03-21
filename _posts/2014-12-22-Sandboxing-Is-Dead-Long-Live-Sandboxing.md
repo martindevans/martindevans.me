@@ -1,6 +1,6 @@
 ---
 layout: post
-category : heist-game
+category : Heist-Game
 tags : [changelog, heist]
 tagline : In Which An Intense Dislike For Sand Is Revealed
 ---

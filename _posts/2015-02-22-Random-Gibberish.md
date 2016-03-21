@@ -1,6 +1,6 @@
 ---
 layout: post
-category : game-development
+category : Game-Development
 tags : [game-development]
 tagline : In Which Gibberish Pours Forth
 ---

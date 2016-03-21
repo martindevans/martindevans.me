@@ -1,6 +1,6 @@
 ---
 layout: post
-category : game-development
+category : Game-Development
 tags : [game-development]
 tagline : NO! THIS IS OPEN SOURCE!
 ---

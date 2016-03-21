@@ -1,6 +1,6 @@
 ---
 layout: post
-category : game-development
+category : Game-Development
 tags : [game-development, open-source]
 tagline : In Which An Intense Dislike For Graphics Is Revisted
 ---

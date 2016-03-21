@@ -1,6 +1,6 @@
 ---
 layout: post
-category : heist-game
+category : Heist-Game
 tags : [changelog, heist]
 tagline : In Which The Post Is Kept Short To Save My Wrist
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-category : heist-game
+category : Heist-Game
 tags : [heist, game-development, rest]
 tagline : In Which A 42.195 Kilometre Sprint Is Completed
 ---

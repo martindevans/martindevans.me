@@ -21,22 +21,14 @@
     <link rel="author" type="application/rdf+xml" title="FOAF" href="http://martindevans.me/foaf.rdf" />
 
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/themes/polygonal/css-social-buttons/css/zocial.stripped.css" />
-    <link href="/assets/themes/polygonal/css/pygments.css" rel="stylesheet" type="text/css" media="all">
 
-    <link href="/assets/themes/polygonal/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
+    <style>{% include /assets/themes/polygonal/css-social-buttons/css/zocial.stripped.css %}</style>
+    <style>{% include /assets/themes/polygonal/css/pygments.css %}</style>
+    <style>{% include /assets/themes/polygonal/css/style.css %}</style>
+    
     {% if site.JB.rss_path %}
     <link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="alternate" type="application/rss+xml" title="{{ site.title }}" />
     {% endif %}
-
-    <!-- fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
   </head>
 
   <body>

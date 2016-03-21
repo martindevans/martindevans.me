@@ -21,8 +21,8 @@
     <link rel="author" type="application/rdf+xml" title="FOAF" href="http://martindevans.me/foaf.rdf" />
 
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <style>{% include /themes/polygonal/css-social-buttons/css/zocial.stripped.css %}</style>
     <style>{% include /themes/polygonal/css/pygments.css %}</style>
     <style>{% include /themes/polygonal/css/style.css %}</style>
     
@@ -53,37 +53,37 @@
           <ul class="nav pull-right social">
               {% if site.JB.rss_path %}
                 <li>
-                  <a href="{{ site.production_url }}{{ site.JB.rss_path }}" class="zocial rss icon" target="_blank"></a>
+                  <a href="{{ site.production_url }}{{ site.JB.rss_path }}" target="_blank"><i class="fa fa-rss"></i></a>
                 </li>
               {% endif %}
               {% if site.author.github %}
                 <li>
-                  <a href="https://www.github.com/{{ site.author.github }}" class="zocial github icon" target="_blank"></a>
+                  <a href="https://www.github.com/{{ site.author.github }}" target="_blank"><i class="fa fa-github"></i></a>
                 </li>
               {% endif %}
               {% if site.author.googleplus %}
                 <li>
-                  <a href="https://profiles.google.com/{{ site.author.google }}" class="zocial googleplus icon" target="_blank"></a>
+                  <a href="https://profiles.google.com/{{ site.author.google }}" target="_blank"><i class="fa fa-google-plus"></i></a>
                 </li>
               {% endif %}
               {% if site.author.twitter %}
                 <li>
-                  <a href="http://www.twitter.com/{{ site.author.twitter }}" class="zocial twitter icon" target="_blank"></a>
+                  <a href="http://www.twitter.com/{{ site.author.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
                 </li>
               {% endif %}
               {% if site.author.facebook %}
                 <li>
-                  <a href="http://www.facebook.com/{{ site.author.facebook }}" class="zocial facebook icon" target="_blank"></a>
+                  <a href="http://www.facebook.com/{{ site.author.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
                 </li>
               {% endif %}
               {% if site.author.linkedin %}
                 <li>
-                  <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="zocial linkedin icon" target="_blank"></a>
+                  <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </li>
               {% endif %}
               {% if site.author.feedburner %}
                 <li>
-                  <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" class="zocial rss icon" target="_blank"></a>
+                  <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank"><i class="fa fa-rss"></i></a>
                 </li>
               {% endif %}
             </ul>

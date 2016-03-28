@@ -192,6 +192,8 @@ A few more of the queries which can be done easily in a half edge mesh:
  - Edges from vertex
  - Faces around vertex
  - Pathfinding (and other graph based algorithms)
+ 
+If you can't figure out how to implement some of these queries post a comment below and I'll do another post explaining them in more detail!
 
 ## How Does This Help?
 

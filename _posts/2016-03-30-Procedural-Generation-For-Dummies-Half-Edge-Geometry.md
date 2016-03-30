@@ -41,10 +41,10 @@ Computational geometry is an infamously tricky subject, so it's important to hav
 
 Most programmers who have worked with graphics will be familiar with an *indexed mesh*. This is a very simple structure:
 
- - List of vertices (positions)
- - List of ( List of indices (faces) )
- 
-If we want to specialise to purely graphical meshes then there is an easy optimisation to make here; since we know every face has three sides simply store the indices as one continuous list (with N, N+1 and N+2 as the three corners). However we want to be a little more general than that so in this system a face is any set with three *or more* vertices.
+ - List of vertices
+ - List of ( List of indices )
+
+We have a flat list of vertices (positions) in a completely arbitrary order. Each face is a list of *indices*, the indices of the vertices which make up this face. Our mesh is then a list of faces - a list of list of indices. If we want to specialise to purely graphical meshes then there is an easy optimisation to make here; since we know every face has three sides simply store the indices as one continuous list (with N, N+1 and N+2 as the three corners). However we want to be a little more general than that so in this system a face is any set with three *or more* vertices.
 
 Here's an example:
 

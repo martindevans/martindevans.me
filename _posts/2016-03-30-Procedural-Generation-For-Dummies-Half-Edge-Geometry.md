@@ -14,7 +14,7 @@ tagline : In Which A Datastructure Is Revealed
     {% endfor %}
 </ul>
 
-My game, Heist, is a cooperative stealth game set in a procedurally generated city. This series of blog posts is an introduction to my approach for rapidly generating entire cities. If you're interested in following the series as it's released you can follow me on [Twitter](https://twitter.com/), [Reddit](https://www.reddit.com/user/martindevans/) or Subscribe to my [RSS feed](http://martindevans.me/rss.xml)
+My game, Heist, is a cooperative stealth game set in a procedurally generated city. This series of blog posts is an introduction to my approach for rapidly generating entire cities. If you're interested in following the series as it's released you can follow me on [Twitter](https://twitter.com/martindevans), [Reddit](https://www.reddit.com/user/martindevans/) or Subscribe to my [RSS feed](http://martindevans.me/rss.xml)
 
 A lot of the code for my game is open source - the code applicable to this article can be found [here](https://bitbucket.org/martindevans/base-citygeneration/src/51e599fe4cb3579c83a5c949ea11c2afc5eea757/Base-CityGeneration/Datastructures/HalfEdge/?at=default). Unfortunately it has some closed source dependencies which means you won't be able to compile it (I hope to fix that soon) but at least you can read along (and criticise my code). I should point out that this code is in a bit of a state of flux at the moment - I've just recently started an overhaul of some of its core components - so some of it which is only half overhauled may read a little strangely right now!
 

@@ -21,7 +21,7 @@ A lot of the code for my game is open source - the code applicable to this artic
 
 ## Road Generation
 
-The majority of road generation systems I have looked at tend to be based on a *growth* system. The general algorithm (see [page 15, Section 3.2](http://gamesitb.com/SurveyProcedural.pdf) of this paper) for pretty much all of them is pretty simple.
+The majority of road generation systems I have looked at tend to be based on a *growth* system. The general algorithm (see [page 15, Section 3.2](http://www.citygen.net/files/Procedural_City_Generation_Survey.pdf) of this paper) for pretty much all of them is pretty simple.
 
  - Keep a priority queue of candidate road segments
    - Initialised with a single seed segment 

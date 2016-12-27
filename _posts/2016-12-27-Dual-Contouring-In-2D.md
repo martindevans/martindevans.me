@@ -54,7 +54,7 @@ We've established how shapes will be represented, but how does this actually hel
 <div id="image-container" align="center">
 <img src="/assets/Union2D.png" width="30%">
 <img src="/assets/Intersection2D.png" width="30%">
-<img src="/assets/Difference.png" width="30%">
+<img src="/assets/Difference2D.png" width="30%">
 </div>
 
 Implementing these operations with distance fields is trivial. To Union two shapes we just take the minimum value from two fields:

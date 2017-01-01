@@ -4,6 +4,7 @@ category : Game-Development
 tags : [game-development, procedural-generation, programming]
 tagline : In Which Meshes Are Generated
 ---
+{% include JB/setup %}
 
 ## TL;DR
 

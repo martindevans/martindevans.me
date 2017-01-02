@@ -73,6 +73,7 @@ I'm a massive fan of open source and try to release as much of my code as possib
 ## Interesting Stuff
 
 I love to learn new things, so every year I encounter a wide variety of interesting things. Here's a few random things I found interesting this year (in absolutely no order):
+
  - [Oculus Touch](https://www3.oculus.com/en-us/rift/)
  - [SpaceX](http://www.spacex.com/)
  - [Mars Colonisation](https://www.reddit.com/r/colonizemars)

@@ -38,11 +38,11 @@ An alternative way to achieve CSG is to use *volume data*. With volume data we d
 The way we represent the shapes is with a distance field - this is a field which can be sampled at any position to get back a number which represents the distance from the surface of the shape (a negative value indicating that this point is inside the shape). Of course this does not need to be stored as a big 2D array instead it can be generated on the fly to achieve effectively infinite accuracy with zero memory overhead. For example here's a circle:
 
     class Circle {
-      private readonly Vector2 \_center;
-      private readonly float \_radius;
+      private readonly Vector2 _center;
+      private readonly float _radius;
 
       float Sample(Vector2 position) {
-        return Vector2.Distance(\_center, position) - \_radius;
+        return Vector2.Distance(_center, position) - _radius;
       }
     }
 
@@ -170,10 +170,10 @@ The "MayContainIsosurface" method take a rectangle and returns a boolean which i
 
     public bool MayContainIsosurface(Rect rectangle)
     {
-        if (!\_circle.Overlaps(rectangle))
+        if (!_circle.Overlaps(rectangle))
             return false;
 
-        if (!\_circle.Contains(rectangle))
+        if (!_circle.Contains(rectangle))
             return false;
 
         return true;

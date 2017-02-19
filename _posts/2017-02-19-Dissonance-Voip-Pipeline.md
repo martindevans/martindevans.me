@@ -61,7 +61,7 @@ Ok now we have the glossary out of the way let's take a look at the complete pip
 
 <div id="image-container" align="center">
 <a href="dissonance-pipeline-diagram.svg">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="1008" height="1274" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Note over Mic Capture: Mic _clip.GetData
+<svg xmlns="http://www.w3.org/2000/svg" width="1008" height="1274" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Note over Mic Capture: Mic _clip.GetData
 Note over Mic Capture: Buffer into _rawMicSamples
 Note over Mic Capture: Read a complete frame
 Mic Capture->Encoding Thread: audio frame
@@ -97,7 +97,7 @@ Wow that's larger than I expected when I started making the diagram! First off l
 The sender side of the system is called the "capture" pipeline because it captures the audio from the user.
 
 <div id="image-container" align="center">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="510" height="716" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Note over Mic Capture: Mic _clip.GetData
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="716" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Note over Mic Capture: Mic _clip.GetData
 Note over Mic Capture: Buffer into _rawMicSamples
 Note over Mic Capture: Read a complete frame
 Mic Capture->Encoding Thread: audio frame
@@ -169,7 +169,7 @@ For this, Dissonance (and almost every other VoIP software) uses [Opus](https://
 Once the encoding side has produced a packet of encoded audio we need to send this across to the other people in the session so they can listen to it. Dissonance doesn't require any particular network architecture (there's a basic interface which you can implement to provide any network architecture you like). However, there's a default implementation of that interface for a basic client server architecture. Here's the pipeline for that architecture:
 
 <div id="image-container" align="center">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="681" height="353" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Encoding Thread->Server: Send packet
+<svg xmlns="http://www.w3.org/2000/svg" width="681" height="353" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Encoding Thread->Server: Send packet
 Server->Client: Send packet
 Note over Client: Copy packet
 Note over Client: Add to transfer buffer
@@ -183,7 +183,7 @@ When the client receives the packet we don't really know what thread we're on - 
 ## Playback Pipeline
 
 <div id="image-container" align="center">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="334" height="481" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Note over Playback: Add to jitter buffer
+<svg xmlns="http://www.w3.org/2000/svg" width="334" height="481" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Note over Playback: Add to jitter buffer
 Note over Playback: Decode
 Note over Playback: Apply volume ramping
 Note over Playback: Convert frames to samples

@@ -60,7 +60,7 @@ Ok now we have the glossary out of the way let's take a look at the complete pip
 </style>
 
 <div id="image-container" align="center">
-<a href="assets/dissonance-pipeline-diagram.svg">
+<a href="/assets/dissonance-pipeline-diagram.svg">
 <svg xmlns="http://www.w3.org/2000/svg" width="1008" height="1274" xmlns:xlink="http://www.w3.org/1999/xlink"><source><![CDATA[Note over Mic Capture: Mic _clip.GetData
 Note over Mic Capture: Buffer into _rawMicSamples
 Note over Mic Capture: Read a complete frame

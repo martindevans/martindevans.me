@@ -22,21 +22,21 @@ This has been completely unlike any software development work I've done before -
 
 I think the most interesting aspect is how this has influenced how I write code. New stuff that I write is a lot more robust and ready for release with extra things to help inevitable debugging e.g. live readouts in editor of as much as possible, logging _everything_ but hiding that behind a toggle to not annoy users, verifying as much about the runtime environment as possible (not trusting the user to set it up properly).
 
-#### Releasing on the asset store
+### Releasing on the asset store
 
 Releasing on a store implies a whole load of other associated work. Making branding images, keeping on top of reviews (making sure to respond to any review that isn't 5 stars) and collaborating with other developers to cross promote our products. The hardest thing, which I'm still not confident about, is making pricing decisions - in 2017 we raised the price twice as we released major new features or gained confidence about how stable/robust Dissonance is. We also participated in 2 store wide sales (at different discount levels) and were featured once in the 24 hours sale. Measuring the impact of all this and extrapolating it out to make future decisions about the price is very difficult!
 
-#### Compatibility with Android/Linux/iOS
+### Compatibility with Android/Linux/iOS
 
 I have learnt a _lot_ about compiling stuff for other platforms this year. I've done a tiny bit of work on a Linux server before (Javascript and Mono) and I've written an app for Android before (pure Java), but this was a whole different level. Over the year Dissonance has used 3 native plugins, (Opus, speexdsp and webRTC) and I've had to get those building for as many platforms as possible _and_ make sure that they are as backwards compatible with older versions of the platforms.
 
-#### Learning C++
+### Learning C++
 
 I've always hated [C++](http://uncyclopedia.wikia.com/wiki/C%2B%2B), it's such a huge and complex language seemingly packed with as many footguns as possible. With the arrival of Rust I thought there was a good chance I may avoid heaving to learn C++ altogether. Of course this was not to be - I could write all my new code in Rust but the world still runs on C++! I learnt a huge amount about C++ for Dissonance while working on changes to Opus (to make it easier to compile on iOS), reverse engineering how libspeexdsp works (attempting to get AEC to work) and extracting just the bits of webRTC that I need to make preprocessing/VAD/AEC to work.
 
 I must admit C++ isn't as bad as I thought, as long as you know what legacy parts of the language to avoid and you have decent tooling to back you up it's actually not a bad way to write relatively cross platform code.
 
-#### Collaborating With Other Developers
+### Collaborating With Other Developers
 
 A big feature of Dissonance is that it is specifically designed to abstract over the network layer - allowing us to use the same code for multiple different networking systems. We've already got seven network integrations (Forge Remastered, Forge classic, Photon Unity Networking, Photon Bolt, UNet HLAPI, UNet LLAPI and Steamworks p2p) and we plan to write even more. We've had a great response from other asset developers collaborating with us to help integrate the two assets together and then cross promoting our assets.
 

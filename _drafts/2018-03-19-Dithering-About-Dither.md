@@ -43,7 +43,7 @@ What's happening here is that the _quantization error_ is being _diffused_.
 
 **Diffusing** error simply means to spread it out. There are the same number of black pixels in both of the monochrome images above, however the dithered images _appears_ better because the error is spread out and so there is no hard boundary formed at the edge of one quantization level and the next.
 
-Anywhere that you suffer from limited precision (not just in images) dither can help you out - audio, sensor measurements, timing events or motor control signals. In all these cases dither spreads out errors, reducing the impact from one big error to many little ones.
+Anywhere that you suffer from limited precision (not just in images) dither can help you out - audio, sensor measurements, precision timing. In all these cases dither spreads out errors, reducing the impact from one very big error to many little ones.
 
 The applications _I'm_ particularly interested in are for realtime rendering for games. For example if colours are only stored with a low precision they will suffer from banding, dithering the colours will reduce the banding (as shown above). Even if the colours are represented perfectly it has to display to a monitor which is not perfectly accurate and will introduce banding - dithering the image before displaying it will reduce this.
 

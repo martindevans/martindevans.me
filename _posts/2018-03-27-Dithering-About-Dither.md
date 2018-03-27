@@ -9,6 +9,7 @@ tagline : In Which Some Noise Is Made
  .image-container img {
  	max-height: 235px;
  	width: auto;
+  max-width: 100%;
  }
 </style>
 

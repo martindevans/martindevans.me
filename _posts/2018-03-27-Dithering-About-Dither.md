@@ -180,7 +180,7 @@ Here are the frequency plots of some other colours of noise, courtesy of [wikipe
 
 Blue noise seems like it does what we want. Here's what that looks like (random grey values assigned to pixels according to blue noise):
 
-<div class="image-container" align="center">
+<div align="center">
   <img src="/assets/LDR_LLL1_1.png" />
 </div>
 

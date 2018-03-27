@@ -12,6 +12,15 @@ tagline : In Which Some Noise Is Made
  }
 </style>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var link = document.getElementById('play-white-noise');
+    link.addEventListener('click', function() {
+        document.getElementById('white-noise-audio').play()
+    });
+});
+</script>
+
 # TL;DR
 
 Dither can be helpful to make a thing appear more accurate than it really is.
@@ -140,7 +149,7 @@ Sequences of random numbers can be displayed as a simple line graph. Here's some
   <source src="/assets/WhiteNoise.wav" type="audio/wav">
 </audio>
 
-A simple 1D wave like this could also be though of as an audio signal. <button onclick="document.getElementById('white-noise-audio').play()">Click here</button> to listen to three seconds of the same white noise signal. Now the most important bit, here's the spectrum analysis which shows what _frequencies_ are in that signal:
+A simple 1D wave like this could also be though of as an audio signal. <a id="play-white-noise">Click here</a> to listen to three seconds of the same white noise signal. Now the most important bit, here's the spectrum analysis which shows what _frequencies_ are in that signal:
 
 <div class="image-container" align="center">
   <img src="/assets/WhiteNoiseSpectrum.png" />

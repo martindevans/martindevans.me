@@ -136,31 +136,25 @@ Sequences of random numbers can be displayed as a simple line graph. Here's some
   <img src="/assets/WhiteNoise.png" />
 </div>
 
-A simple 1D wave like this could also be though of as an audio signal. Here's three seconds of that signal for you to listen to:
-
-<audio>
+<audio id="white-noise-audio">
   <source src="/assets/WhiteNoise.wav" type="audio/wav">
 </audio>
 
-Finally here's the spectrum analysis which shows what _frequencies_ are in that signal:
+A simple 1D wave like this could also be though of as an audio signal. <button onclick="document.getElementById('white-noise-audio').play()">Click here</button> to listen to three seconds of the same white noise signal. Now the most important bit, here's the spectrum analysis which shows what _frequencies_ are in that signal:
 
 <div class="image-container" align="center">
   <img src="/assets/WhiteNoiseSpectrum.png" />
 </div>
 
-White noise is pretty much flat in the spectrum analysis, it has an equal amount of every frequency.
+The shape of this frequency distribution is the colour - this totally flat distribution is known as **White Noise**. 
 
-A low frequency signal doesn't change much from one value to the next, so if a signal is made up of mostly low frequency components it's not going to change much from one value to the next. This may not change the _shape_ of the noise (as shown above with those two dice roll sequences), but it does change the colour.
-
-So why would we care about the colour of noise? If there is a low frequency _component_ to the noise (mixed in with a load of high frequency components) that means that sometimes the low frequency will dominate (purely by chance) causing a run of similarly valued numbers. This is pure randomness but it doesn't _feel_ random to a person - no doubt you've played a board game and been incredulous at someone rolling "too many" sixes in a row.
-
-The same problem occurs when rendering with noise. Humans are _very_ good at detecting visual patterns even where they don't exist. Notice how this texture of uniform white noise looks "clumpy" in places:
+So why would we care about the colour of noise? Low frequency signals do not change much from one instant to the next, this means that if a random has a low frequency it will not change much from one value to the next. If a noise has a mix of frequencies (such as white noise) sometimes the low frequency component will become the domination one (purely by chance) causing a run of similarly valued numbers. This is pure randomness but it doesn't _feel_ random to a person - no doubt you've played a board game and been incredulous at someone rolling "too many" sixes in a row. The same problem occurs when rendering with noise. Humans are _very_ good at detecting visual patterns even where they don't exist. Notice how this texture of uniform white noise looks "clumpy" in places:
 
 <div class="image-container" align="center">
   <img src="/assets/WhiteNoiseTexture.png" />
 </div>
 
-That doesn't look nice, people will spot those clumps in the final render. We need something seemingly _more random_ than pure randomness! That's actually pretty easy, we just need to eliminate the low frequency component and it will look more random than white noise.
+That doesn't look nice, people will spot those clumps in the final render. We need something seemingly _more random_ than pure randomness! Now that we know about the colour it's pretty easy to understand what that means - we want to reduce or eliminate the low frequency components.
 
 Here are the frequency plots of some other colours of noise, courtesy of [wikipedia](https://en.wikipedia.org/wiki/Colors_of_noise). White, Pink, Brown (no, this doesn't have any special biological effects when listened to), Blue, Violet and grey:
 
@@ -178,7 +172,7 @@ Here are the frequency plots of some other colours of noise, courtesy of [wikipe
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Gray_noise_spectrum.svg/600px-Gray_noise_spectrum.svg.png" />
 </div>
 
-Blue noise seems like it does what we want. Here's what that looks like (random grey values assigned to pixels according to blue noise):
+Blue noise seems like it does what we want. Here's what that looks like:
 
 <div align="center">
   <img src="/assets/LDR_LLL1_1.png" />

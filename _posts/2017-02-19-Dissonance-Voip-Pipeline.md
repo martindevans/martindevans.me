@@ -10,6 +10,12 @@ tagline : In Which A Pipeline Is Dissected
 
 I've released a voice communications asset on the [Unity store](https://www.assetstore.unity3d.com/#!/content/70078?aid=1100lJ2J)!
 
+# A Warning To Readers
+
+This blog post was written in February of 2017, just a couple of week after the very first version of Dissonance released onto the asset store. I wrote it because I think it's a pretty fascinating topic with a lot of subtle complexity that's not initially apparent.
+
+**Almost everything about the pipeline has changed/improved since this was written**. If you're making modifications to Dissonance be cautious about using this post as a reference!
+
 # Placeholder Software
 
 In my 2016 retrospective I mentioned that I had started a company called Placeholder software and that we had released [Dissonance Voice Chat](https://www.assetstore.unity3d.com/#!/content/70078?aid=1100lJ2J) onto the Unity store. Dissonance has been available for a little over a month now and we've been working flat out fixing bugs, fulfilling feature requests, upgrading bits and pieces of the system, and providing support. It's a part of software development I've not done much of before and it's been a lot of fun!

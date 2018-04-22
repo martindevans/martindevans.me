@@ -158,7 +158,7 @@ A simple 1D wave like this could also be though of as an audio signal. <a id="pl
 
 The shape of this frequency distribution is the colour - this totally flat distribution is known as **White Noise**. 
 
-So why would we care about the colour of noise? Low frequency signals do not change much from one instant to the next, this means that if a random has a low frequency it will not change much from one value to the next. If a noise has a mix of frequencies (such as white noise) sometimes the low frequency component will become the domination one (purely by chance) causing a run of similarly valued numbers. This is pure randomness but it doesn't _feel_ random to a person - no doubt you've played a board game and been incredulous at someone rolling "too many" sixes in a row. The same problem occurs when rendering with noise. Humans are _very_ good at detecting visual patterns even where they don't exist. Notice how this texture of uniform white noise looks "clumpy" in places:
+So why would we care about the colour of noise? Low frequency signals do not change much from one instant to the next. If a random sequence has a mix of frequencies (such as white noise) sometimes the low frequency component will become the dominant one (purely by chance) causing a run of similarly valued numbers. This is pure randomness but it doesn't _feel_ random to a person - no doubt you've played a board game and been incredulous at someone rolling "too many" sixes in a row. The same problem occurs when rendering with noise. Humans are _very_ good at detecting visual patterns even where they don't exist. Notice how this texture of uniform white noise looks "clumpy" in places:
 
 <div class="image-container" align="center">
   <img src="/assets/WhiteNoiseTexture.png" />

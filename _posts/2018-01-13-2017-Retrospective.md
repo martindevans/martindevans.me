@@ -89,7 +89,7 @@ This has been useful for...
 
 #### [Rule Breaker](https://github.com/Unlimited-Development-Works/Rule-Breaker)
 
-This is a collaboration with my [Dan](https://github.com/datkinson) to design a [CoreXY](http://corexy.com/) printer from scratch. We're both into 3d printing but neither of us is a mechanical engineer so this is a pretty interesting learning experience!
+This is a collaboration with my friend [Dan Atkinson](https://github.com/datkinson) to design a [CoreXY](http://corexy.com/) printer from scratch. We're both into 3d printing but neither of us is a mechanical engineer so this is a pretty interesting learning experience!
 
 <div class="image-container" align="center">
   <img src="https://cloud.githubusercontent.com/assets/177519/26061958/52a4f312-3981-11e7-9c17-261c555954d8.gif" width="50%"/>

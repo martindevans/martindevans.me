@@ -28,7 +28,7 @@ My first work on floorplans was building a low level system for handling the rep
 </style>
 
 <div id="image-container" align="center">
-  <img src="assets/FloorPlanPrototype.png" width="40%">
+  <img src="/assets/FloorPlanPrototype.png" width="40%">
 </div>
 
 Once this sytem was complete (it took a while, making these kinds of generic data structures for accelerating computational geometry is devilishly complex) I moved onto experimenting with generating actual floor plans. My initial experiments focused on specifying constraints on rooms like min size, max size, must connect to X, at least N must exist etc, then a generic constraint solver ran over these constraints and placed the rooms into appropriate places. Rules were specified in order of importance so less important rules could be violated to satisfy more important ones - for example the bathroom often ends up being squashed below it's min size or into some awkward shape which is often true of real architecture! This system was *incredibly* cool and generated some very nice example layouts in my initial tests. Howevever this didn't scale at all, as soon as I started introducing odd building shapes (e.g. something as simple as a non convex building) the constraint solver would end up following dead ends and never find an appropriate solution (the algorithmic complexity is probably out of this world). This was a shame and I'd really love to pursue this line of research again in the future (maybe using a more powerful constraint solver, they get better all the time).
@@ -36,8 +36,8 @@ Once this sytem was complete (it took a while, making these kinds of generic dat
 I moved on to something much simpler. Rather than generating floorplans based off realistic constraints I would generate some acceptable rooms shapes and then tweak them into useful floor plans by merging together rooms which are too small, slightly moving border walls and then assign rooms functions to generated shapes *after* the fact. This iterative method is basically guatanteed to produce *something* since if it gets really confused it can just stop tweaking and use whatever it has. I generated my initial floor plans with a growth based system which seeded the outer walls at regular intervals, grew walls inwards and tended to split and merge walls with 90 degree corners. I did some additional work to trace corridors along rooms walls to get the floorplans into the game:
 
 <div id="image-container" align="center">
-  <img src="assets/floorplan-teaser.png" width="40%">
-  <img src="assets/floorplans-in-game.gif" width="40%">
+  <img src="/assets/floorplan-teaser.png" width="40%">
+  <img src="/assets/floorplans-in-game.gif" width="40%">
 </div>
 
 ## Placeholder Software

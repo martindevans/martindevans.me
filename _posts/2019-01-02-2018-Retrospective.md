@@ -8,7 +8,7 @@ tagline : In Which A Lot Happens
 
 # TL;DR
 
-I developed [Dissonance Voice Chat](https://www.assetstore.unity3d.com/#!/content/70078?aid=1100lJ2J) all year.
+I developed [Dissonance Voice Chat](https://www.assetstore.unity3d.com/#!/content/70078?aid=1100lJ2J), released [Wet Stuff](https://assetstore.unity.com/packages/tools/particles-effects/wet-stuff-118969?aid=1100lJ2J) and learned about Machine Learning.
 
 # What Did I Do In 2017?
 

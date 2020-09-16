@@ -14,7 +14,7 @@ tagline : In Which A Video Is Summarised
 
 **The Big Board** is a practical framework for holistic design iteration detailed by [Zak McClendon](https://twitter.com/zakmcc) in [this video](https://www.youtube.com/watch?v=PkZoGDKy_L4).
 
-In a highly creative project like a game the project will often start out with a poorly defined game concept and each member of the team will have different ideas about exactly what that concept means. Furthermore there will be a huge number of desirable features that are not _critical_ to the concept but are desirable. Resolving the inevitable creative conflicts between incompatible ideas and low priority ideas is critical to a well designed game. The Big Board is a _process_ to help with this - the most important part of it is not the final artifact (a board full of cards) but is instead the collaborative process of creating the board. The big board helps everyone on the team understand the creative tradeoffs being made, reduces the scope of creative differences and helps tackle scope creep.
+In a highly creative project like a game the project will often start out with a poorly defined game concept and each member of the team will have different ideas about exactly what that concept means. Furthermore there will be a huge number of desirable features that are not _critical_ to the concept but are desirable. Resolving the inevitable creative conflicts between incompatible ideas and low priority ideas is critical to a well designed game. The Big Board is a _process_ to help with this - the most important part of it is not the final artefact (a board full of cards) but is instead the collaborative process of creating the board. The big board helps everyone on the team understand the creative tradeoffs being made, reduces the scope of creative differences and helps tackle scope creep.
 
 # The Process
 
@@ -38,7 +38,7 @@ The Big Board process is a simple 6 step process. The steps aren't strictly orde
 Step 3 requires classifying cards into categories. The exact categories to use depends on the team and the type of game being made, the following are just examples and should probably be adapted before starting the process (or even after starting the process, if it becomes clear that one category is over or underused).
 
 ### Creative Promises
-These cards represents a promise from you to the audience about what they will experience in your game. These are the high level thigns that you would use to describe your game to a person. When you create a promise card you can probably generate a lot of other cards in other categories by thinking about what fulfilling this promise would require.
+These cards represents a promise from you to the audience about what they will experience in your game. These are the high level things that you would use to describe your game to a person. When you create a promise card you can probably generate a lot of other cards in other categories by thinking about what fulfilling this promise would require.
 
 Examples:
  - Bioshock2: You are a big daddy.
@@ -103,7 +103,7 @@ Vague ideas no one knows how to execute. Maybe a common vague notion that people
 
 This process and final board full of cards have a number of benefits. The board lives on the wall of the office, creating a visualisation of the scope of the entire project which is visible to everyone. The entire design is no longer living in the head of several designers.
 
-Because the board is created entirely by a collaborative process of collectively generating ideas and then ranking them no one feels left out. If an idea is rejected it was for clear reasons to do with prioiritising other things above it. Conversely because there is an easy way to downrank ideas without discarding them out of hand it is natural to drop features than are "nice to have" but aren't critical to the overall game concept.
+Because the board is created entirely by a collaborative process of collectively generating ideas and then ranking them no one feels left out. If an idea is rejected it was for clear reasons to do with prioritising other things above it. Conversely because there is an easy way to downrank ideas without discarding them out of hand it is natural to drop features than are "nice to have" but aren't critical to the overall game concept.
 
 # Taking It Further
 
@@ -111,7 +111,7 @@ The Big Board isn't a one off design meeting and shouldn't become some bits of c
 
 As the game is developed the board should also be frequently reviewed to check that what's being built is in line with what was expected. For example are creative promises being fulfilled? If not, why not? If the current game is fun without that promise can it be removed? if so, which other features should be removed?
 
-Another potential use of the big board is to generate new ideas by making hypothetical changes. For example if you take your _least_ important creative promoise and move it to the top what changes? During the process of investigating you may discover some interesting new things about the design space.
+Another potential use of the big board is to generate new ideas by making hypothetical changes. For example if you take your _least_ important creative promise and move it to the top what changes? During the process of investigating you may discover some interesting new things about the design space.
 
 # Common Conflicts
 

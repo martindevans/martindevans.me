@@ -10,7 +10,7 @@ tagline : In Which A Plague Occurs
 
 Overcrowded is nearly ready for release. COVID19 sucks.
 
-# What Did I Do In 2018?
+# What Did I Do In 2019?
 
 In my [last retrospective](https://martindevans.me/personal/2019/12/31/2019-Retrospective/) I talked about releasing [Fancy Folders](https://assetstore.unity.com/packages/tools/utilities/fancy-folders-143763?aid=1100lJ2J), beginning development on Overcrowded and getting into the [Starbase](https://www.frozenbyte.com/2019/05/starbase-a-new-sci-fi-mmo-game-by-frozenbyte-revealed/) community.
 
@@ -68,10 +68,10 @@ Unfortunately we could never agree on a good design and the project is mostly de
 Lockdown sucks and everyone needs a hobby to get through it. I've taken up PCB design and soldering of the completed boards (ordered from JLC) to pass the time. This is a really fun combination of browsing datasheets and electronics stores for interesting parts, learning enough about electronics to design the schematics and then routing the traces on the actual board. Here are a few boards I've designed this year:
 
 <div class="image-container" align="center">
-  <img src="/assets/pcb1.png" style="max-width:25%"/>
-  <img src="/assets/pcb2.png" style="max-width:25%" />
-  <img src="/assets/pcb3.png" style="max-width:25%" />
-  <img src="/assets/pcb4.png" style="max-width:25%" />
+  <img src="/assets/pcb1.png" style="max-width:20%"/>
+  <img src="/assets/pcb2.png" style="max-width:20%" />
+  <img src="/assets/pcb3.png" style="max-width:20%" />
+  <img src="/assets/pcb4.png" style="max-width:20%" />
 </div>
 
 I have a long term goal of designing something good enough to sell on [Tindie](https://www.tindie.com/). I don't really expect to sell very many, but it'd be cool to have something good enough to manufacture and sell in (very small) runs. Maybe some kind of hat for the Raspberry Pi400, if I can work out what functionality to put in it!

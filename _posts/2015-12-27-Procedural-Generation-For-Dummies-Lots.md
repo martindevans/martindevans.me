@@ -17,7 +17,7 @@ title: "Procedural Generation For Dummies: Lot Subdivision"
 
 My game, Heist, is a cooperative stealth game set in a procedurally generated city. This series of blog posts is an introduction to my approach for rapidly generating entire cities. If you're interested in following the series as it's released you can follow me on [Twitter](https://twitter.com/), [Reddit](https://www.reddit.com/user/martindevans/) or Subscribe to my [RSS feed](http://martindevans.me/rss.xml)
 
-A lot of the code for my game is open source - the code applicable to this article can be found [here](https://bitbucket.org/martindevans/base-citygeneration/src/a65800862b607215307e5053344090c9e07ae7b9/Base-CityGeneration/Parcels/Parcelling/?at=default). Unfortunately it has some closed source dependencies which means you won't be able to compile it (I hope to fix that soon) but at least you can read along (and criticise my code).
+A lot of the code for my game is open source - the code applicable to this article can be found [here](https://github.com/martindevans/Base-CityGeneration/tree/master/Base-CityGeneration/Parcels/Parcelling). Unfortunately it has some closed source dependencies which means you won't be able to compile it (I hope to fix that soon) but at least you can read along (and criticise my code).
 
 ## Lot Subdivision
 
@@ -52,22 +52,22 @@ OBB (Object Aligned Bounding Box) Parcelling is a method for recursively dividin
 The algorithm is quite simple:
 
 
-    function obb_subdivide( space ) {
+    function obb_subdivide(space) {
       
       // 1. Fit an Object Aligned Bounding Box around the space
       let obb = fit(space);
       
       // 2. Slice the space along the shorter axis of the OBB
-      let parts = slice( obb.shorterAxis, space );
+      let parts = slice(obb.shorterAxis, space);
       
       // 3. Check validity of all children, terminate if any are not valid
       // This is the base case
-      if ( parts.Any( IsNotValid ) )
+      if (parts.Any(IsNotValid))
         return space;
       
       // 4. Recursively apply this algorithm to all parts
       for (part in parts)
-        return obb_subdivide( part );
+        return obb_subdivide(part);
         
     }
 

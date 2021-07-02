@@ -24,7 +24,7 @@ You may wonder: "Why should I read this if I don't care about Yolol/Starbase"? T
 
 # An Overview Of Yolol
 
-Although Yolol is not the main focus of this series I'm going to start by explaining the basics of the language, just to establish a basic understanding of things.
+Although Yolol is not the main focus of this series I'm going to give a quick overview of the language, just to establish a basic understanding of things.
 
 A Yolol program is limited to 20 lines with just 70 characters per line. A line is executed every 0.2 seconds. Any errors in a line (e.g. divide by zero) simply cause execution to fall through to the next line, this means that the layout of code on lines and correct handling of error is critically important to the semantics of the program! Many commonly used tricks in Yolol programs are based around deliberately triggering errors to break out of a tight single-line loop.
 

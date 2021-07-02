@@ -17,7 +17,7 @@ title: "Procedural Generation For Dummies: Road Generation"
 
 My game, Heist, is a cooperative stealth game set in a procedurally generated city. This series of blog posts is an introduction to my approach for rapidly generating entire cities. If you're interested in following the series as it's released you can follow me on [Twitter](https://twitter.com/), [Reddit](https://www.reddit.com/user/martindevans/) or Subscribe to my [RSS feed](http://martindevans.me/rss.xml)
 
-A lot of the code for my game is open source - the code applicable to this article can be found [here](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/?at=default). Unfortunately it has some closed source dependencies which means you won't be able to compile it (I hope to fix that soon) but at least you can read along (and criticise my code).
+A lot of the code for my game is open source - the code applicable to this article can be found [here](https://github.com/martindevans/Base-CityGeneration/tree/master/Base-CityGeneration/Elements/Roads/Hyperstreamline). Unfortunately it has some closed source dependencies which means you won't be able to compile it (I hope to fix that soon) but at least you can read along (and criticise my code).
 
 ## Road Generation
 
@@ -131,7 +131,7 @@ You can clearly see the five different elements and how the roads smoothly trans
 
 ## Implementation Details
 
-As mentioned at the start of the article the source code for my implementation of this system is [here](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/?at=default). The specific code for tracing through tensor fields and building a road network is [here](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/Tracing/NetworkBuilder.cs?at=default&fileviewer=file-view-default).
+As mentioned at the start of the article the source code for my implementation of this system is [here](https://github.com/martindevans/Base-CityGeneration/tree/master/Base-CityGeneration/Elements/Roads/Hyperstreamline). The specific code for tracing through tensor fields and building a road network is [here](https://github.com/martindevans/Base-CityGeneration/blob/master/Base-CityGeneration/Elements/Roads/Hyperstreamline/Tracing/NetworkBuilder.cs).
 
 Before I dive into details I should say that this implementation is one of the parts of the city generation system I am most unhappy about. Tracing vectors is *extremely* sensitive to errors because the errors accumulate along the entire length of the streamline. Additionally the tracing can be quite slow, most of the example images in this post took 5-10 seconds to generate (which isn't unusably slow, as we only need to do this step once **per city**).
 
@@ -143,9 +143,9 @@ The first step is to build a tensor field. Right now I'm just doing this by hand
  - Place gridlines/radials at major population centres
  - Place a polyline along any major terrain features such as rivers or cliffs
 
-In my implementation I have a base interface for [tensor fields](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/Fields/Tensors/ITensorField.cs?at=default&fileviewer=file-view-default#ITensorField.cs-8) which can be sampled at any point. I then have [multiple concrete implementations](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627f/Base-CityGeneration/Elements/Roads/Hyperstreamline/Fields/Tensors/?at=default) for different tensor field types.
+In my implementation I have a base interface for [tensor fields](https://github.com/martindevans/Base-CityGeneration/blob/master/Base-CityGeneration/Elements/Roads/Hyperstreamline/Fields/Tensors/ITensorField.cs) which can be sampled at any point. I then have [multiple concrete implementations](https://github.com/martindevans/Base-CityGeneration/tree/master/Base-CityGeneration/Elements/Roads/Hyperstreamline/Fields/Tensors) for different tensor field types.
 
-Once the tensor field is created I have a single step which converts the tensor field into an [eigen field](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/Fields/Eigens/IEigenField.cs?at=default&fileviewer=file-view-default#IEigenField.cs-5). An eigen field is simply just a pair of [vector fields](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/Fields/Vectors/IVector2Field.cs?at=default&fileviewer=file-view-default#IVector2Field.cs-5) along the eigen vectors; one along the major eigens and one along the minor eigens. This conversion process samples the tensor field (which a fairly expensive process with a lot of mathematical operations) at set intervals and caches the value. This caching more than *tripled* the speed of the overall system!
+Once the tensor field is created I have a single step which converts the tensor field into an [eigen field](https://github.com/martindevans/Base-CityGeneration/blob/master/Base-CityGeneration/Elements/Roads/Hyperstreamline/Fields/Eigens/IEigenField.cs). An eigen field is simply just a pair of [vector fields](https://github.com/martindevans/Base-CityGeneration/blob/master/Base-CityGeneration/Elements/Roads/Hyperstreamline/Fields/Vectors/IVector2Field.cs) along the eigen vectors; one along the major eigens and one along the minor eigens. This conversion process samples the tensor field (which a fairly expensive process with a lot of mathematical operations) at set intervals and caches the value. This caching more than *tripled* the speed of the overall system!
 
 #### Trace Your Vectors
 
@@ -153,30 +153,30 @@ Now we have two vector fields, we need to trace a line *through* these fields, a
 
     let point = start
     until (some end condition)
-        let direction = sample_vector_field( point )  # replaced with rk4_sample_vector_field
+        let direction = sample_vector_field(point)
       point += direction
 
 However this turns out not to work very well. Because this only samples one single point from the field it is *extremely* sensitive to local noise and does not work at all when the field is highly curved (e.g. around a radial field). Instead I use an RK4 integrator to handle the higher curvature (see [this excellent article](http://gafferongames.com/game-physics/integration-basics/) for more details on integration):
 
-    function rk4_sample_vector_field ( point )
+    function rk4_sample_vector_field (point)
     
-        let k1 = sample_vector_field( point )             # replaced with corrected_sample_vector field
-        let k2 = sample_vector_field( point + k1 / 2f )   # replaced with corrected_sample_vector field
-        let k3 = sample_vector_field( point + k2 / 2f )   # replaced with corrected_sample_vector field
-        let k4 = sample_vector_field( point + k3f )       # replaced with corrected_sample_vector field
+        let k1 = sample_vector_field(point)
+        let k2 = sample_vector_field(point + k1 / 2f)
+        let k3 = sample_vector_field(point + k2 / 2f)
+        let k4 = sample_vector_field(point + k3f)
 
         return k1 / 6f + k2 / 3f + k3 / 3f + k4 / 6f
 
-Another problem to handle is that when we're tracing through the field we don't care about positive or negative direction - a gridline left to right is the same as a gridline right to left. I handle this by again modifying how I sample the vector field. When a sample is taken it compares the direction of the sample to the direction of the previous vector; if they differ by more than 90 degress the direction is reversed:
+Another problem to handle is that when we're tracing through the field we don't care about positive or negative direction - a gridline left to right is the same as a gridline right to left. I handle this by again modifying how I sample the vector field. When a sample is taken it compares the direction of the sample to the direction of the previous vector; if they differ by more than 90 degrees the direction is reversed:
 
-    function corrected_sample_vector ( point, previous_direction )
+    function corrected_sample_vector(point, previous_direction)
     
         # Sample the vector field, For real this time!
-        let sample = sample_vector_field ( point )
+        let sample = sample_vector_field(point)
   
         # If previous is zero that's a degenerate case, just bail out
         # Dot product >= zero indicates angle < 90
-        if (previous_direction == Vector2.Zero || Dot( previous_direction, sample) >= 0)
+        if (previous_direction == Vector2.Zero || Dot(previous_direction, sample) >= 0)
         return v;
     
         # Since we didn't return one of the cases above, reverse the direction
@@ -188,7 +188,7 @@ How does this all fit into the algorithm I outlined at the top? This vector trac
 
 How we handle the line segments traced through the vector field is our **Local Constraints** function.
 
-Rather than keeping a buffer of all the segments of a streamline and handling them one by one, an entire streamline is traced out and stops when a segment is rejected - this is just an optimisation to save a load of bookkeeping work. You can see the method which traces streamlines  [here](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/Tracing/NetworkBuilder.cs?fileviewer=file-view-default#NetworkBuilder.cs-266) and the method which creates each segment (and checks constraints) [here](https://bitbucket.org/martindevans/base-citygeneration/src/87878c33627ffc2478c05857936316c4baae6bbe/Base-CityGeneration/Elements/Roads/Hyperstreamline/Tracing/NetworkBuilder.cs?fileviewer=file-view-default#NetworkBuilder.cs-327).
+Rather than keeping a buffer of all the segments of a streamline and handling them one by one, an entire streamline is traced out and stops when a segment is rejected - this is just an optimisation to save a load of bookkeeping work. You can see the method which traces streamlines  [here](https://github.com/martindevans/Base-CityGeneration/blob/master/Base-CityGeneration/Elements/Roads/Hyperstreamline/Tracing/NetworkBuilder.cs#L285) and the method which creates each segment (and checks constraints) [here](https://github.com/martindevans/Base-CityGeneration/blob/master/Base-CityGeneration/Elements/Roads/Hyperstreamline/Tracing/NetworkBuilder.cs#L350).
 
 If any of these conditions is met the streamline is stopped:
 
@@ -208,7 +208,7 @@ So far I have described the process of tracing out one single streamline through
 
 As a streamline is being traced *seed points* are created and added to a priority queue. Each seed is associated with two pieces of information; the position and which field to trace the new streamline through. If we're currently tracing a major streamline then the new one will be minor and vice versa.
 
-When a streamline ends (due to one of the conditions laid out above) the highest priority seed is selected and becomes the start of a new streamline. Priority of the seed is simply sampled from a scalar field - probably a population density field so that there are more roads created in high population areas.
+When a streamline ends (due to one of the conditions laid out above) the highest priority seed is selected and becomes the start of a new streamline. Priority of the seed is simply sampled from a scalar field - this could be something like a population density field so that there are more roads created in high population areas.
 
 ## What's Next?
 

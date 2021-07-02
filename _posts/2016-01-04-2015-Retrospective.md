@@ -51,7 +51,6 @@ I love to learn new things, so every year I usually encounter a wide variety of 
  - [New Horizons](http://www.nasa.gov/mission_pages/newhorizons/main/index.html)
  - [Hibike! Euphonium](http://myanimelist.net/anime/27989/Hibike!_Euphonium)
  - [Knights Of Sidonia: Battle For Planet 9](http://myanimelist.net/anime/24893/Sidonia_no_Kishi:_Daikyuu_Wakusei_Seneki)
- - [Charlotte](http://myanimelist.net/anime/28999/Charlotte)
  - [Rust](https://www.rust-lang.org/)
  - [Home Automation](https://github.com/bastet)
  - [The Martian](http://www.amazon.co.uk/Martian-Andy-Weir/dp/1785031139/)
@@ -128,8 +127,8 @@ Epimetheus is my C# game engine which I am building alongside my game, Heist. Th
  - Made deleting the world and creating a new one much easier
  - Exposed configuration of world generator to ReST API
 - Added utilities for evaluating bezier/quadratic curves
-- Experimented with, and eventually gave up on, Fody
-- Replaced many plugin API return values with IReadonlyList&lt;T&gt; instead of T[]
+- Experimented with, and eventually gave up on, [Fody](https://github.com/Fody/Fody)
+- Replaced many plugin API return values with `IReadonlyList<T>` instead of `T[]`
 - Massive swapover from using XNA vectors to using System.Numerics vectors
  - Also upgrade to .net 4.6 at the same time
  - Verified *every single* usage of Matrices and Vectors in the entire engine

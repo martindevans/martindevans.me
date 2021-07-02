@@ -17,7 +17,7 @@ title: "Procedural Generation For Dummies: Building Footprints"
 
 My game, Heist, is a cooperative stealth game set in a procedurally generated city. This series of blog posts is an introduction to my approach for rapidly generating entire cities. If you're interested in following the series as it's released you can follow me on [Twitter](https://twitter.com/), [Reddit](https://www.reddit.com/user/martindevans/) or Subscribe to my [RSS feed](http://martindevans.me/rss.xml)
 
-A lot of the code for my game is open source - the code applicable to this article can be found [here](https://bitbucket.org/martindevans/base-citygeneration/src/8aa49400561f02ea812f61171c789b6981265412/Base-CityGeneration/Elements/Building/Design/?at=default). Unfortunately it has some closed source dependencies which means you won't be able to compile it (I hope to fix that soon) but at least you can read along (and criticise my code).
+A lot of the code for my game is open source - the code applicable to this article can be found [here](https://github.com/martindevans/Base-CityGeneration/tree/master/Base-CityGeneration/Elements/Building/Design). Unfortunately it has some closed source dependencies which means you won't be able to compile it (I hope to fix that soon) but at least you can read along (and criticise my code).
 
 ## Building Footprint Generation
 
@@ -70,7 +70,7 @@ From a technical perspective this is a *very* simple technique (simpler than the
 
 Becuase each function is simple it's quite simple to define new functions, which results in a very powerful system for defining new footprints.
 
-### Corners Cases
+### Corner Cases
 
 The immediately obvious problem with this system is *area*. Most of these functions remove some space from the shape which means that if we chain too many together we could end up with a tiny little footprint that can't have a reasonable floorplan. For this reason there are also conditional steps in the pipeline which perform an action, check if the condition is ok, and execute a fallback if not. For example we can define a part of the pipeline which says something like this:
 

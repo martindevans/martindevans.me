@@ -6,9 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-I'm a solo indie game developer working from Worcester, UK.  
-
-You can contact me at <a href="mailto:martin@placeholder-software.co.uk">martin@placeholder-software.co.uk</a>. Feel free to use [this](/729906C47F913D1A0EA7B0001642F34F0F6D3EBB.asc) PGP key if you have something private to say.
+I'm a game developer working from the UK. You can contact me at <a href="mailto:martin@placeholder-software.co.uk">martin@placeholder-software.co.uk</a>.
 
 ## Bio
 
@@ -16,21 +14,20 @@ Games have been part of my life for as long as I can remember - my Dad was intro
 
 I went on to do a Computer Science degree at the [University Of Birmingham](https://www.cs.bham.ac.uk/) and learnt about the abstract mathematical fundamentals of computing theory as well as more practical software engineering principles. In the second year my team for the group programming course built a [2D multiplayer action/platformer](http://static.placeholder-software.co.uk/TwilightNightmare.rar) (requires Java) called *Twilight Nightmare* which won the students choice award for best game. I spent my spare time building larger, much more ambitious 3D games using [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language\)) and [XNA](https://en.wikipedia.org/wiki/Microsoft_XNA) which are what I still use to makes games today.
 
-After graduating in 2011 I decided to become a full time indie developer. I started working with a team of 3 other people on a action platformer inspired by *Twilight Nightmare* (but with much more developed mechanics) and professional art. Unfortunately this fell through as other people on the team found full time jobs and couldn't find enough time to work on the game. My current projects are [**Heist**](http://placeholder-software.co.uk/) - a cooperative multiplayer bank heist game with procedurally generated banks and explorable cities - and _Epimetheus_ - a scriptable and moddable game engine which supports procedurally generated worlds and is the game engine for Heist.
+After graduating in 2011 I decided to become a full time indie developer. I started working with a team of 3 other people on a action platformer inspired by *Twilight Nightmare* (but with much more developed mechanics) and professional art. Unfortunately this fell through as other people on the team found full time jobs and couldn't find enough time to work on the game.
+
+After this I spent 5 years working on a cooperative multiplayer bank heist game (**Heist**) built in my own scriptable and moddable game engine designed from the ground up for procedurally generated worlds (**Epimetheus**). Although progress was good it became clear that this was far too much for one person to build in a reasonable amount of time!
+
+In 2016 I co-founded [Placeholder Software](https://placeholder-software.co.uk/) with my long time friend [Tom Gillen](https://github.com/TomGillen). We have developed assets for Unity such as [Dissonance Voice Chat](https://www.assetstore.unity3d.com/#!/content/70078?aid=1100lJ2J) and [Wet Stuff](https://assetstore.unity.com/packages/tools/particles-effects/wet-stuff-118969?aid=1100lJ2J).
 
 ## Open Source
 
-I'm a huge believer in [Open Source](https://en.wikipedia.org/wiki/Open_source) and I try to open source everything I work on that isn't something I plan to sell, like Epimetheus and Heist (and I might even open these up someday). Most of my open source projects are hosted over at [Github](https://github.com/martindevans?tab=repositories). Some of the most interesting ones are:
+I'm a huge believer in [Open Source](https://en.wikipedia.org/wiki/Open_source) and I try to open source everything I work on that isn't something I plan to sell. Most of my open source projects are hosted over at [Github](https://github.com/martindevans?tab=repositories). Some of the most interesting ones are:
 
- - [Myre](https://github.com/martindevans/Myre) - an XNA game engine/framework which Epimetheus is built on top of.
  - [martindevans.github.com](https://github.com/martindevans/martindevans.github.com) - The source code of this blog!
- - [HandyCollections](https://github.com/martindevans/HandyCollections) - A set of useful collections which I use in many of my projects
+ - [Yolol.IL](https://github.com/martindevans/Yolol.IL) a compiler for the Yolol language into dotnet bytecode.
+ - [PicoToast](https://github.com/martindevans/PicoToast) a port of my most famous VB game, Toast, to run on a Raspberry Pi Pico.
+ - [VBToast](https://github.com/martindevans/VBToast) the original source code of Toast, written in VB6 many years ago!
+ - [Myre](https://github.com/martindevans/Myre) - an XNA game engine/framework which Epimetheus is built on top of.
  - [MumbleSharp](https://github.com/martindevans/MumbleSharp) - A partial implementation of the [Mumble](http://mumble.sourceforge.net/) protocol in C# (everything except voice)
- - [NockFSharp](https://github.com/martindevans/NockFSharp) - An implementation of the homoiconic combinator algebra [Nock](http://urbit.org/) in F#
  - [Supersonic Sound](https://github.com/martindevans/SupersonicSound) - A C# wrapper around FMOD Studio
- 
-Epimetheus is my game engine and it is totally closed source (at the moment). However *plugins* to Epimetheus are a different matter entirely, My [profile at Bitbucket](https://bitbucket.org/martindevans) is entirely scripts which make the Epimetheus engine stop being an engine and start being a game:
-
- - [Deathmatch](https://bitbucket.org/martindevans/deathmatch-gamemode)
- - [Basic Procedural City Generation](https://bitbucket.org/martindevans/base-citygeneration)
- - [HLSL Shaders](https://bitbucket.org/martindevans/default-shaders)

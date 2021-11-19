@@ -10,7 +10,7 @@ tagline: I make games.
             <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
             <div id="date">published {{ first_post.date | date_to_string }}</div>
             {{ first_post.content }}
-            <a id="more" href="{{ first_post.url }}#disqus_thread">Comments &raquo;</a>
+            <a id="more" href="{{ first_post.url }}#comments-thread">Comments &raquo;</a>
         </div>
     </div>
 </div>

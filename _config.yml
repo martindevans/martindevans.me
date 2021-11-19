@@ -93,8 +93,6 @@ JB :
   #
   comments :
     provider : false
-    disqus :
-      short_name : martindevans
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.

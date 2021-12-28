@@ -83,7 +83,7 @@ The immediately obvious problem with this system is *area*. Most of these functi
 }
 ```
 
-Here we're saying try to shrink the footprint by 10 meters (the *Action*), if that results in an area < 100 then instead bevel the corners by 1m (the *Fallback*). This example leads on to another interesting case to consider: sometimes the action you want to take might depend upon the action the previous generator took, this is handled by metadata.
+Here we're saying try to shrink the footprint by 10 meters (the *Action*), if that results in an `area < 100` then instead bevel the corners by 1m (the *Fallback*). This example leads on to another interesting case to consider: sometimes the action you want to take might depend upon the action the previous generator took, this is handled by metadata.
 
 Every generator has a metadata container passed into it which is just a simple in memory key/value store for arbitrary values. Using this you could setup two generators to collaborate. Let's modify the example above so that it sets a flag indicating which choice it took:
 

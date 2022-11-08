@@ -125,4 +125,4 @@ JB :
 collections:
   ephemeris:
     output: true
-    permalink: /:path/
+    permalink: /:collection/:path/

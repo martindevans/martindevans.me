@@ -1,5 +1,6 @@
 ---
 title: Ephemeris
+layout: post
 ---
 
 ## Ephemeris

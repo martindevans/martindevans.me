@@ -1,3 +1,0 @@
-## Ephemeris
-
-Root page

@@ -1,5 +1,6 @@
 ---
 title: CoaDE
+layout: post
 ---
 
 ## CoaDE

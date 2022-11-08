@@ -1,3 +1,5 @@
 ## Ephemeris
 
-Test Page Please Ignore
+{% for page in site.pages.ephemeris %}            
+    {{ page.url | split:'/' | join:'+'}}
+{% endfor %}

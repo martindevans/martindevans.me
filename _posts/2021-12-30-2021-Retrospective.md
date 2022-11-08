@@ -65,9 +65,9 @@ Blazor is a really impressive project which removes a lot of the pain of buildin
 
 ## Raspberry Pi Pico
 
-Early in 2021 the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) was released. Unlike all other raspberry Pi boards this is not a Linux computers running on a broadcom SoC - instead it's a custom designed chip (RP2040) and it's a microcontroller. This is the first time RPi have designed their own chip and I'm very excited to see where they go in the future with this - my expectation is that the RPi5 will be based on a custom SoC.
+Early in 2021 the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) was released. Unlike all other raspberry Pi boards this is not a Linux computer running on a broadcom SoC - instead it's a custom designed chip (RP2040) and it's a microcontroller. This is the first time RPi have designed their own chip and I'm very excited to see where they go in the future with this - my expectation is that the RPi5 will be based on a custom SoC.
 
-The Pico particularly caught my imagination because although it's intended as a microcontroller it has similar power to early games consoles. The Pico can overclock to 250MHz and has 264KB of RAM with 16MB of flash storage, for comparison the Sega Saturn (released 1994) has a 28.6MHz CPU and 2MB of RAM. Now of course this isn't a direct comparison - the games consoles usually had custom chips to accelerate graphics and the Pico does not. Nonetheless the similar power really caught my imagination and I started some game development work on the Pico, eventually completing a port of one of my earliest VB6 games (Toast): [PicoToast](https://github.com/martindevans/PicoToast).
+The Pico particularly caught my imagination because although it's intended as a microcontroller it has similar power to early games consoles. The Pico can overclock to 250MHz and has 264KB of RAM with 16MB of flash storage, for comparison the Sega Saturn (released 1994) has a 28.6MHz CPU (10x slower) and 2MB of RAM (10x more). Now of course this isn't a direct comparison - the games consoles usually had custom chips to accelerate graphics and the Pico does not. Nonetheless the similar power really caught my imagination and I started some game development work on the Pico, eventually completing a port of one of my earliest VB6 games (Toast): [PicoToast](https://github.com/martindevans/PicoToast).
 
 I plan to develop more games for the Pico. I have a vague plan of specifying a "console" assembled out of specific parts with free 3D printable housings available which other people can develop for. A bit like a fantasy console (e.g. Pico8) but with some actual hardware!
 
@@ -75,7 +75,7 @@ I plan to develop more games for the Pico. I have a vague plan of specifying a "
 
 Way back in 2018 I developed Toast in Visual Basic 6 - this was one of my earliest games which was genuinely fun and had other people playing it. For years I thought I had lost the source code when the hard drive in our family PC died but earlier this year I found a copy of it on an ancient backup drive! To ensure it never gets lost again, the source code is now [on GitHub](https://github.com/martindevans/VBToast) along with a [downloadable binary](https://github.com/martindevans/VBToast/releases/tag/1.0.0).
 
-I found this immediately after finishing PicoToast, so the similar floaty movement in PicoToast is entirely from reverse engineering the precompiled VBToast version I still had a copy of.
+I found this immediately after finishing PicoToast, so the similar floaty movement in PicoToast is entirely from reverse engineering the compiled VBToast version I still had a copy of.
 
 ## Saturn's Envy
 

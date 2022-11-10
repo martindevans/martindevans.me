@@ -4,12 +4,10 @@ layout: post
 permalink: /ephemeris/index.html
 ---
 
-## Ephemeris
-
 <ul>
-  {% for page in site.ephemeris %}
+  {% for page in site.ephemeris | sort: "url" %}
     <li>
-      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      <a href="{{ page.url }}">{{ page.title }}</a>
     </li>
   {% endfor %}
 </ul>

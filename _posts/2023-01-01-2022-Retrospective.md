@@ -70,8 +70,12 @@ I worked on one version of the project on and off throughout the year, using an 
 <div class="image-container" align="center">
   <img src="/assets/2022/Unity_2022-01-02_01-58-38.png" style="max-width:20%"/>
   <img src="/assets/2022/Unity_2022-09-22_03-19-32.png" style="max-width:20%" />
-  <video controls muted src="/assets/2022/Unity_2022-01-09_02-18-44.webm" style="max-width:20%" />
-  <video controls muted img src="/assets/2022/Unity_2022-04-13_02-32-22.webm" style="max-width:20%" />
+  <video controls muted style="max-width:20%">
+    <source src="/assets/2022/Unity_2022-01-09_02-18-44.webm" type="video/webm">
+  </video>
+  <video controls muted style="max-width:20%">
+    <source src="/assets/2022/Unity_2022-04-13_02-32-22.webm" type="video/webm">
+  </video>
 </div>
 
 This was as much a research/learning project as much as it was a serious attempt to make a game. One of the things I learned it that while Gravity Engine is pretty good it really doesn't fit with how I want things to work - I really want a fully deterministic simulation which runs in the Unity ECS for maximum performance.

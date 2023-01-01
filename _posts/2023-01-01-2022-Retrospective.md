@@ -70,10 +70,10 @@ I worked on one version of the project on and off throughout the year, using an 
 <div class="image-container" align="center">
   <img src="/assets/2022/Unity_2022-01-02_01-58-38.png" style="max-width:20%"/>
   <img src="/assets/2022/Unity_2022-09-22_03-19-32.png" style="max-width:20%" />
-  <video controls muted style="max-width:20%">
+  <video controls muted style="max-width:20%; vertical-align:middle">
     <source src="/assets/2022/Unity_2022-01-09_02-18-44.webm" type="video/webm">
   </video>
-  <video controls muted style="max-width:20%">
+  <video controls muted style="max-width:20%; vertical-align:middle">
     <source src="/assets/2022/Unity_2022-04-13_02-32-22.webm" type="video/webm">
   </video>
 </div>

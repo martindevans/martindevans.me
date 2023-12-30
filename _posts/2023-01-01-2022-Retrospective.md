@@ -55,7 +55,7 @@ We _may_ revisit the project next year, possibly releasing something _much_ smal
 
 ## WasmBox
 
-Our next project after Ephemeris is a total change of direction: we're developing a WebAssembly (WASM) integration for Unity. This is based on [wasmtime-dotnet](https://github.com/bytecodealliance/wasmtime-dotnet) and extends it with a number of features such as safe job system support, precompiling WASM at build time etc. We'll be releasing this very soon, feel free to contact me (martin@placeholder-software.co.uk) if this is something you'd be interested in testing out.
+Our next project after Overcrowded is a total change of direction: we're developing a WebAssembly (WASM) integration for Unity. This is based on [wasmtime-dotnet](https://github.com/bytecodealliance/wasmtime-dotnet) and extends it with a number of features such as safe job system support, precompiling WASM at build time etc. We'll be releasing this very soon, feel free to contact me (martin@placeholder-software.co.uk) if this is something you'd be interested in testing out.
 
 # Blogging
 
@@ -104,9 +104,9 @@ This year we ran another [Cylon](https://discord.gg/Dcn7BG4) community gamejam. 
 
 This year I decided to do a very weird project that I didn't really expect to work very well as a game. For me that's the great thing about a gamejam - I can build something weird and wonderful to explore a new bit of game design without having to commit to it or really have any expectations of it.
 
-The game is called "Save The Spire". You discover a huge magical (1) structure floating through the sky (3) which appears to be some kind of arcane (1) factory (2). There are some units standing on the structure which you cannot directly control (4), instead you can place down new walkways (which the units will walk over to and build). There are various clues hidden around the factory as to how it works and it's your job to piece them together (5 ish) and restore the factory to working order.
+The game is called "Save The Spire". You discover a huge magical (1) structure floating through the sky (3) which appears to be some kind of arcane (1) factory (2). There are some units standing on the structure which you cannot directly control (4), instead you can place down new walkways (which the units will walk over to and build). There are various clues hidden around the factory as to how it works and it's your job to piece them together and restore the factory to working order.
 
-**[You can download it to try it out here](https://static.placeholder-software.co.uk/.private-shares/.1450b36d-af82-4adb-8c97-1a1be186989c-CYLON/SaveTheSpire.zip)**.
+**[You can download it to try it out here](https://github.com/martindevans/martindevans.me/releases/download/0.0.1/SaveTheSpire.zip)**.
 
 As a game this didn't really work (and that's fine!). I think with some more careful game design and art direction it could maybe be made to work. There were a few common complaints from all the players:
  1. The start of the game gives no direction at all. The game is _meant_ be to mysterious and encourage you to explore, but it's a bit _too_ mysterious at the moment.
@@ -126,11 +126,11 @@ This is a **3D** game for the [PicoSystem](https://shop.pimoroni.com/products/pi
 
 This year we had a solar system installed (panels and battery). The inverter is obviously a computer system capable of monitoring the system, recording statistics, reporting them back to the manufacturer etc but we're completely locked out of it! Instead the only way we can monitor the system is to use the app which is provided - that can't be used on PC, has no option to export the data and is generally quite rubbish.
 
-Fortunately someone has built a project called [lxp bridge](https://github.com/celsworth/lxp-bridge) which interprets the inverter messages and logs them to an MQTT endpoint in a useful format. I've used this to build [SolarBlaze](https://github.com/martindevans/SolarBlaze), which is a Blazor based front end to monitor the data. It's quite rough at the moment, but once the sun is shining again I'll get back to working on this and will consider publishing it as a project anyone can use (with proper setup instructions etc).
+Fortunately someone has built a project called [LXP bridge](https://github.com/celsworth/lxp-bridge) which interprets the inverter messages and logs them to an MQTT endpoint in a useful format. I've used this to build [SolarBlaze](https://github.com/martindevans/SolarBlaze), which is a Blazor based front end to monitor the data. It's quite rough at the moment, but once the sun is shining again I'll get back to working on this and will consider publishing it as a project anyone can use (with proper setup instructions etc).
 
 # Interesting Stuff
 
-Some other interesting things that I encountered in 2021 in no particular order:
+Some other interesting things that I encountered in 2022 in no particular order:
 
  - [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor)
  - [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/)

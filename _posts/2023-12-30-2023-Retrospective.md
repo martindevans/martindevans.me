@@ -24,7 +24,7 @@ After that I started working on... drawing lines! This might sound trivial, but 
   </video>
 
   <video controls muted style="width:48%; vertical-align:middle">
-    <source src="EphemerisJupiterTimelapse.webm" type="video/webm" />
+    <source src="assets/2023/EphemerisJupiterTimelapse.webm" type="video/webm" />
   </video>
 </div>
 
@@ -49,7 +49,7 @@ The game is a twin stick, top down, co-operative, dungeon crawler. The twist on 
 A game like this requires a huge amount of work creating the animation state machine, controlling movement (walk, run, dodge roll, dash), attacks (sword slash, big sword slash, sword jab, fire bow, spear jab etc), defence (shield block) and reactions (hit, big hit, stunned, death) and all of the various transitions between these states. Here's that in action:
 
 <div class="image-container" align="center">
-  <video controls muted style="max-width:80%; vertical-align:middle">
+  <video controls muted style="max-width:50%; vertical-align:middle">
     <source src="assets/2023/UnityAnimationStateMachineZegg.webm" type="video/webm" />
   </video>
 </div>

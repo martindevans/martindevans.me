@@ -27,15 +27,7 @@ I've played games all my life, I remember my Dad loading typing tutor games from
 # 2006: Visual Basic 5/6
 Back in college when I was first learning to program we had VB5 and home and VB6 at college. I built all my games by moving elements around on Windows forms!
 
-Around this time I made a _lot_ of games, about one every week or two for the entire 2 years of college. Two of the best games were Asteroids II and Toast. Unfortunately although I have the VB6 source code for many of these games, I don't have any way to build it!
-
-## Asteroids
-
-This is a remake of asteroids, using only lines drawn from point to point (like an old vector graphics display). You can download it to try [here](/assets/2024/Asteroids2/AsteroidsII.zip).
-
-<video src="/assets/2024/Asteroids2/Asteroids_II_2024-02-13_15-33-04.webm" controls="true"></video>
-
-> Note: You'll need to acquire mscomctl.ocx for this to run. See [this StackOverflow question](https://stackoverflow.com/questions/39251880/mscomctl-ocx-missing-windows-10). Note the comment with advice if the installation fails.
+Around this time I made a _lot_ of games, about one every week or two for the entire 2 years of college. Unfortunately although I have the VB6 source code for many of these games, I don't have any way to build them. The only two I still have binaries for are Asteroids and Toast.
 
 ## Toast
 
@@ -44,6 +36,14 @@ This is a game about a slice of ninja toast, collecting melons to extend his lif
 You can download it to try [here](/assets/2024/Toast/Platformer.zip). There's even a map maker which you can download [here](/assets/2024/Toast/ToastMapMaker.zip).
 
 <video src="/assets/2024/Toast/T_2024-02-13_15-51-33.webm" controls="true"></video>
+
+## Asteroids
+
+This is a remake of asteroids, using only lines drawn from point to point (like an old vector graphics display). This was an experiment to move away from the square/boxy sprite style graphics you're forced to use if you only draw with Windows form elements! You can download it to try [here](/assets/2024/Asteroids2/AsteroidsII.zip).
+
+<video src="/assets/2024/Asteroids2/Asteroids_II_2024-02-13_15-33-04.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
+
+**Note**: You'll need to acquire mscomctl.ocx for this to run. See [this StackOverflow question](https://stackoverflow.com/questions/39251880/mscomctl-ocx-missing-windows-10). Note the comment with advice if the installation fails.
 
 # 2007: XNA
 Around this time I started learning C# and [XNA](https://en.wikipedia.org/wiki/Microsoft_XNA). XNA was a really amazing toolkit built by Microsoft, which was basically a lightweight C# wrapper around DirectX. Games built using XNA could even be deployed to Xbox360, which at the time was absolutely mind blowing - console games were only for big studios with very very expensive devkit hardware! This is actually the reason that I ended up buying the only console I have ever owned - an Xbox360.
@@ -59,8 +59,8 @@ This was a just a simple pong game for local multiplayer. What makes it special 
 This was a 4 person group project in the first year of University (2008). We had to build a media project of some kind, naturally my group built a game using XNA. We were pretty proud of the project (although, with hindsight, it's not a very fun game) as it was the first big game project that we were showing off for a few other people to play. I don't have a build of the game, but here are some prototype pictures:
 
 <div class="image-container" align="center">
-  <img src="/assets/2024/DandMproject/unnamed.png" style="width:49%"/>
-  <img src="/assets/2024/DandMproject/unnamed2.png" style="width:49%"/>
+  <img src="/assets/2024/DandMproject/unnamed.png" style="width:40%"/>
+  <img src="/assets/2024/DandMproject/unnamed2.png" style="width:40%"/>
 </div>
 
 # 2009: Java
@@ -71,7 +71,7 @@ Our University course taught Java as the main language, so I developed one game 
 
 In the second year of University there was another 4 person project. This time the brief was to build a game with a multiplayer component. My team developed a platformer game called **Twilight Nightmare**, the twist of the game is zones where the laws of physics are slightly different. In the end we only implemented two zones: one zone where gravity is in another direction, and another where time runs at a different speed.
 
-<video src="/assets/2024/TwilightNightmare/javaw_2024-02-13_18-58-38.webm" controls="true"></video>
+<video src="/assets/2024/TwilightNightmare/javaw_2024-02-13_18-58-38.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
 
 Unfortunately the game doesn't seem to handle modern high resolution monitors (maybe an issue with scaling), so the video looks a bit weird, but you get the idea!
 
@@ -102,7 +102,7 @@ Development of Heist involved:
 
 Although Heist never became a playable game I learned a huge amount working on it. Not just because worked on every part of a game engine, and learned a bit about everything involved in making a game. But also because I had specific things I needed to achieve (e.g. I need to play some sound effects for this) and had to learn how to build things without overengineering them, and how to build things in a maintainable way so that I could come back to it a year later when I'd forgotten all the details!
 
-Over the years I wrote many blog posts about the development of Heist:
+Over the years I wrote many _many_ blog posts about the development of Heist:
 
 <ul>
     {% for page in site.tags.heist %}
@@ -113,19 +113,19 @@ Over the years I wrote many blog posts about the development of Heist:
 With many many images in all those blog posts:
 
 <div class="image-container" align="center">
-  <img src="/assets/ZoeBones.png" style="width:19%"/>
-  <img src="/assets/Torchlight.png" style="width:20%"/>
-  <img src="/assets/voxel-smiley.png" style="width:20%"/>
-  <img src="/assets/TensorRoadsImg1.png" style="width:20%"/>
-  <img src="/assets/ParcelledFloorplan.png" style="width:19%"/>
+  <img src="/assets/ZoeBones.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/Torchlight.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/voxel-smiley.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/TensorRoadsImg1.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/ParcelledFloorplan.png" style="max-width:20%; height: 200px"/>
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/gbuffer_normals.png" style="width:19%"/>
-  <img src="/assets/floorplan-teaser.png" style="width:20%"/>
-  <img src="/assets/CircularCity.png" style="width:20%"/>
-  <img src="/assets/character.png" style="width:20%"/>
-  <img src="/assets/abstract-pathfinding.png" style="width:19%"/>
+  <img src="/assets/gbuffer_normals.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/floorplan-teaser.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/CircularCity.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/character.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/abstract-pathfinding.png" style="max-width:20%; height: 200px"/>
 </div>
 
 # 2016: Unity
@@ -142,7 +142,7 @@ Also not a game, but still a cool project. Wet Stuff is a Unity asset which make
 
 As part of development of Wet Stuff I spent almost three months putting together a "demo reel" for the asset. After all this time this is the first really artistic project that I ever released to the public!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-9zrrXtgD0M?si=oeP0nQa0XGP2vFvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="margin-left: 25%; width: 50%; min-heigh:315px" src="https://www.youtube.com/embed/-9zrrXtgD0M?si=oeP0nQa0XGP2vFvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Parsec
 
@@ -150,19 +150,14 @@ Around 2018 Tom and I decided to experiment with building a game instead of asse
 
 Parsec was intended to be a space colony sim, something like Rimworld crossed with Oxygen not included, but onboard a spaceship which you slowly expand over time. Rather than starting at basics and working your way up the tech tree (which is a bit of a tired trope at this point) you would start with a small ship (e.g. an escape pod) and build it up using salvage from other destroyed ships. Each new area you entered (e.g. not sure how it'd work, but it could be when you "jump" from one system to another) would have a certain amount of wrecks, some more dangerously unstable than others, and it's up to you which you enter. Exploring wrecks and working out how to safely/quickly take them apart would be an important part of the game alongside putting the bits back together on your ship!
 
-Here are some random images taken from PRs in the project. A tile system, automatically selecting the right tile to complete the pattern based on adjacency:
+Here are some random images taken from PRs in the project. First is a tile system, automatically selecting the correct tile based on adjacency. Second is a power system, built out of tiles with various adjacency rules.
 
 <div class="image-container" align="center">
-  <img src="/assets/2024/Parsec/wq221n9w.bmp" style="width:50%"/>
-</div>
-
-A power system, built using mouse picking in the tile system. There are various adjacency rules here, testing out aspects of the underlying sim:
-
-<div class="image-container" align="center">
+  <img src="/assets/2024/Parsec/wq221n9w.bmp" style="width:49%"/>
   <img src="/assets/2024/Parsec/ty4qikcs.bmp" style="width:50%"/>
 </div>
 
-Finally an experiment with realtime fluid sim. We had some ideas like fluid sloshing in tanks causing hull stress. Or even atmosphere sloshing around the ship, e.g. causing low O2 because the heavier CO2 has displaced it.
+Finally an experiment with realtime fluid sim. We had some ideas like fluid sloshing in tanks causing hull stress. Or even atmosphere sloshing around the ship, e.g. heavier gasses like CO2 displacing air when accelerating.
 
 <div class="image-container" align="center">
   <img src="/assets/2024/Parsec/screenshot.gif" style="width:50%"/>
@@ -230,11 +225,15 @@ With all of my previous games I have tried to build something I was confident wo
 
 Save the spire had a tower floating in space, with various bit of machinery attached to it. You could build platforms to connect together bits of machinery. Magical golems would walk around your platforms operating the machinery, eventually bringing the tower back to life. It wasn't really a very fun game, the camera controls are terrible and the best strategy is just to connect everything to everything else and the golems will sort it out automatically.
 
-<video src="/assets/2024/SaveTheSpire/Unity_2024-02-14_15-22-19.webm controls="true"></video>
+<video src="/assets/2024/SaveTheSpire/Unity_2024-02-14_15-22-19.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
+
+Available for download [here](https://github.com/martindevans/martindevans.me/releases/download/0.0.1/SaveTheSpire.zip). Not open source, due to assets used.
 
 ## Zegg
 
 todo
+
+Available for download [here](https://github.com/martindevans/martindevans.me/releases/download/0.0.2/Zegg-Final.zip). Not open source, due to assets used.
 
 ## Ephemeris
 

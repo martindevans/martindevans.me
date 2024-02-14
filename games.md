@@ -36,6 +36,7 @@ This is a game about a slice of ninja toast, collecting melons to extend his lif
 You can download it to try [here](/assets/2024/Toast/Platformer.zip). There's even a map maker which you can download [here](/assets/2024/Toast/ToastMapMaker.zip).
 
 <video src="/assets/2024/Toast/T_2024-02-13_15-51-33.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
+<br />
 
 ## Asteroids
 
@@ -62,6 +63,7 @@ This was a 4 person group project in the first year of University (2008). We had
   <img src="/assets/2024/DandMproject/unnamed.png" style="width:40%; height: 350px"/>
   <img src="/assets/2024/DandMproject/unnamed2.png" style="width:40%; height: 350px"/>
 </div>
+<br />
 
 # 2009: Java
 
@@ -126,6 +128,7 @@ With many many images in all those blog posts:
   <img src="/assets/CircularCity.png" style="max-width:22%; height: 200px"/>
   <img src="/assets/character.png" style="max-width:22%; height: 200px"/>
 </div>
+<br />
 
 # 2016: Unity
 
@@ -155,12 +158,14 @@ Here are some random images taken from PRs in the project. First is a tile syste
   <img src="/assets/2024/Parsec/wq221n9w.bmp" style="max-width:49%; height: 250px"/>
   <img src="/assets/2024/Parsec/ty4qikcs.bmp" style="max-width:49%; height: 250px"/>
 </div>
+<br />
 
 Finally an experiment with realtime fluid sim. We had some ideas like fluid sloshing in tanks causing hull stress. Or even atmosphere sloshing around the ship, e.g. heavier gasses like CO2 displacing air when accelerating.
 
 <div class="image-container" align="center">
   <img src="/assets/2024/Parsec/screenshot.gif" style="width:50%"/>
 </div>
+<br />
 
 Eventually we killed the project because Unity ECS was absolutely the wrong technology choice to use in 2018. It was incredibly new and unstable, the API kept radically changing and we had to keep making changes to the game to adapt. Eventually there was a change that would have required too much rewriting and that was the final straw.
 
@@ -203,12 +208,18 @@ This is the only screenshot of the game I can find anywhere:
 <div class="image-container" align="center">
   <img src="/assets/2024/BoundedPlanet/94496898-8d093580-01ed-11eb-802f-0ce2a23b37a3.png" style="width:50%"/>
 </div>
+<br />
 
 ## 2021: Saturn's Envy
 
-In 2021 we decided to run a Cylon gamejam, the theme (appropriately enough) was "space & programming". I decided to create a game based on my Yolol.IL engine (a Yolol->IL compiler). Players could write Yolol code to control spaceships, then submit that code to a Discord bot which would run battles and maintain a leaderboard. Replays could be watched [online here](https://referee.cylon.xyz/fleets/player/).
+In 2021 we decided to run a Cylon gamejam, the theme (appropriately enough) was "space & programming". I decided to create a game based on my Yolol.IL engine (a Yolol to dotnet IL compiler). Players could write Yolol code to control spaceships, then submit that code to a Discord bot which would run battles and maintain a leaderboard. Replays can be watched [online here](https://referee.cylon.xyz/fleets/player/).
 
 This game is split into two parts, the "simulator" (which runs battles) and the "player" (which displays the replay files). The simulator is [open source](https://github.com/martindevans/Yolol-SpaceShipCombatSimulator) but the player is not (due to all the assets which I don't have permission to redistribute).
+
+<div class="image-container" align="center">
+  <img src="/assets/2024/SaturnsEnvy/firefox_2024-02-14_20-11-48.jpg" style="width:50%"/>
+</div>
+<br />
 
 ## 2022: Save The Spire
 
@@ -238,6 +249,10 @@ Available for download [here](https://github.com/martindevans/martindevans.me/re
 
 todo
 
+notes: https://martindevans.github.io/EphemerisNotes/
+
 ## PROTOLOGIC
 
 todo
+
+org: https://github.com/Protologic

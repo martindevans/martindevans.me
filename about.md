@@ -24,10 +24,11 @@ In 2016 I co-founded [Placeholder Software](https://placeholder-software.co.uk/)
 
 I'm a huge believer in [Open Source](https://en.wikipedia.org/wiki/Open_source) and I try to open source everything I work on that isn't something I plan to sell. Most of my open source projects are hosted over at [Github](https://github.com/martindevans?tab=repositories). Some of the most interesting ones are:
 
- - [martindevans.github.com](https://github.com/martindevans/martindevans.github.com) - The source code of this blog!
+ - [martindevans.github.com](https://github.com/martindevans/martindevans.github.com) - This blog!
  - [Yolol.IL](https://github.com/martindevans/Yolol.IL) a compiler for the Yolol language into dotnet bytecode.
  - [PicoToast](https://github.com/martindevans/PicoToast) a port of my most famous VB game, Toast, to run on a Raspberry Pi Pico.
  - [VBToast](https://github.com/martindevans/VBToast) the original source code of Toast, written in VB6 many years ago!
  - [Myre](https://github.com/martindevans/Myre) - an XNA game engine/framework which Epimetheus is built on top of.
  - [MumbleSharp](https://github.com/martindevans/MumbleSharp) - A partial implementation of the [Mumble](http://mumble.sourceforge.net/) protocol in C# (everything except voice)
  - [Supersonic Sound](https://github.com/martindevans/SupersonicSound) - A C# wrapper around FMOD Studio
+ - [LLamaSharp](https://github.com/SciSharp/LLamaSharp) - A C# wrapper around llama.cpp, which I am a major contributor to.

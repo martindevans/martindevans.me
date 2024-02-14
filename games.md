@@ -17,9 +17,9 @@ I've played games all my life, I remember my Dad loading typing tutor games from
  - [Parsec (Unity)](#parsec)
  = [Yolol Code Golf (C#)](#2020-yolol-code-golf)
  - [Bounded Planet (Bevy)](#2020-bounded-planet-rustbevy)
- - [Saturn's Envy (C#, Unity)](#saturns-envy)
- - [Save The Spire (Unity)](#save-the-spire)
- - [Zegg (Unity)](#zegg)
+ - [Saturn's Envy (C#, Unity)](#2021-saturns-envy)
+ - [Save The Spire (Unity)](#2022-save-the-spire)
+ - [Zegg (Unity)](#2023-zegg)
  - [Ephemeris (Unity)](#ephemeris)
  - [PROTOLOGIC (C#, Unity)](#protologic)
  - Future...
@@ -35,7 +35,7 @@ This is a game about a slice of ninja toast, collecting melons to extend his lif
 
 You can download it to try [here](/assets/2024/Toast/Platformer.zip). There's even a map maker which you can download [here](/assets/2024/Toast/ToastMapMaker.zip).
 
-<video src="/assets/2024/Toast/T_2024-02-13_15-51-33.webm" controls="true"></video>
+<video src="/assets/2024/Toast/T_2024-02-13_15-51-33.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
 
 ## Asteroids
 
@@ -59,8 +59,8 @@ This was a just a simple pong game for local multiplayer. What makes it special 
 This was a 4 person group project in the first year of University (2008). We had to build a media project of some kind, naturally my group built a game using XNA. We were pretty proud of the project (although, with hindsight, it's not a very fun game) as it was the first big game project that we were showing off for a few other people to play. I don't have a build of the game, but here are some prototype pictures:
 
 <div class="image-container" align="center">
-  <img src="/assets/2024/DandMproject/unnamed.png" style="width:40%"/>
-  <img src="/assets/2024/DandMproject/unnamed2.png" style="width:40%"/>
+  <img src="/assets/2024/DandMproject/unnamed.png" style="width:40%; height: 350px"/>
+  <img src="/assets/2024/DandMproject/unnamed2.png" style="width:40%; height: 350px"/>
 </div>
 
 # 2009: Java
@@ -141,7 +141,7 @@ Also not a game, but still a cool project. Wet Stuff is a Unity asset which make
 
 As part of development of Wet Stuff I spent almost three months putting together a "demo reel" for the asset. After all this time this is the first really artistic project that I ever released to the public!
 
-<iframe style="margin-left: 25%; width: 50%; min-heigh:315px" src="https://www.youtube.com/embed/-9zrrXtgD0M?si=oeP0nQa0XGP2vFvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="margin-left: 25%; width: 50%; min-height:315px" src="https://www.youtube.com/embed/-9zrrXtgD0M?si=oeP0nQa0XGP2vFvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Parsec
 
@@ -210,7 +210,7 @@ In 2021 we decided to run a Cylon gamejam, the theme (appropriately enough) was 
 
 This game is split into two parts, the "simulator" (which runs battles) and the "player" (which displays the replay files). The simulator is [open source](https://github.com/martindevans/Yolol-SpaceShipCombatSimulator) but the player is not (due to all the assets which I don't have permission to redistribute).
 
-## Save The Spire
+## 2022: Save The Spire
 
 In 2022 we did another Cylon gamejam. This time there were a lot of themes, we voted in order to rank them, everyone could pick as many or as few themes from the list as they wanted:
 1. Magic
@@ -228,7 +228,7 @@ Save the spire had a tower floating in space, with various bit of machinery atta
 
 Available for download [here](https://github.com/martindevans/martindevans.me/releases/download/0.0.1/SaveTheSpire.zip). Not open source, due to assets used.
 
-## Zegg
+## 2023: Zegg
 
 todo
 

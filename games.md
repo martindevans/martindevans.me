@@ -268,9 +268,34 @@ Available for download [here](https://github.com/martindevans/martindevans.me/re
 
 ## Ephemeris
 
-todo
+Ephemeris is a game concept I started working on around 2022, and I'm still working on it now (early 2024). The idea is to build a realistic simulator of true orbital space combat. e.g. Children of a Dead Earth, but multiplayer and more accessible.
 
-notes: https://martindevans.github.io/EphemerisNotes/
+I worked on some early prototypes in 2022, mostly messing with rendering very large scale scenes in Unity:
+
+<div class="image-container" align="center">
+  <img src="/assets/2022/Unity_2022-01-02_01-58-38.png" style="max-width:24%"/>
+  <img src="/assets/2022/Unity_2022-09-22_03-19-32.png" style="max-width:24%" />
+  <video controls muted style="max-width:24%; vertical-align:middle">
+    <source src="/assets/2022/Unity_2022-01-09_02-18-44.webm" type="video/webm">
+  </video>
+  <video controls muted style="max-width:24%; vertical-align:middle">
+    <source src="/assets/2022/Unity_2022-04-13_02-32-22.webm" type="video/webm">
+  </video>
+</div>
+
+In 2023 I worked on the simulation side of things, building an N-Body integrator using the Unity ECS. I also worked on the UI side of things, diving deep into a rabbit hole drawing perfect lines on the GPU:
+
+<div class="image-container" align="center">
+  <img src="/assets/2023/EphemerisLineWithMarker.png" style="width:32%; height: 250px"/>
+  <img src="/assets/2023/EphemerisLineWithMarkerCloseup.png" style="width:32%; height: 250px"/>
+  <img src="/assets/2023/EphemerisBezierArc.png" style="width:32%; height: 250px" />  
+
+  <video controls muted style="width:60%; vertical-align:middle">
+    <source src="assets/2023/EphemerisJupiterTimelapse.webm" type="video/webm" />
+  </video>
+</div>
+
+I've started up another page dedicated to the game, called [`Ephemeris Notes`](https://martindevans.github.io/EphemerisNotes). This site has all kinds of things related to the game; [useful websites](https://martindevans.github.io/EphemerisNotes/category/web-pages/), other related [media](https://martindevans.github.io/EphemerisNotes/category/media/) and all kinds of [implementation details](https://martindevans.github.io/EphemerisNotes/category/implementation-details/).
 
 ## PROTOLOGIC
 

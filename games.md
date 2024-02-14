@@ -243,7 +243,28 @@ Available for download [here](https://github.com/martindevans/martindevans.me/re
 
 ## 2023: Zegg
 
-todo
+In 2023 we did another Cylon gamejam. This time everyone had to build a game based on the theme of **Exploration** with at least one other theme from:
+ - Time
+ - Sacrifice
+ - Once more, with feeling
+ - Navigation
+ - Unlikely Combinations
+ - Computers/Circuitry
+ - Don't Stop Moving
+ - Musical
+
+I added a couple of extra personal goals:
+1. Saturn's Envy was _playable_ but not terribly popular because Yolol is an awful language. This time I wanted a game everyone could enjoy.
+2. Saturn's Envy & Save The Spire both camera systems that everyone hated. This time I wanted a camera system that at least no on would complain about.
+3. Multiplayer.
+
+Zegg is a top-down, roguelike, multiplayer, dungeon crawler with a twist. When you die your replay the map from the start again, but with copies of yourself doing exactly what you did on all your previous runs! The map is designed so that some puzzles are _impossible_ to solve alone and you have to co-operate with previous versions of yourself.
+
+here you can see that I need to get two previous copies of myself onto the switches (lighting up the green lines), so that the third copy can go through the gate.
+
+<video src="/assets/2024/Zegg/Zegg_2024-02-14_22-43-28.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
+
+Zegg was a big hit in the game jam demos, everyone enjoyed playing. There were even groups of players trying to speed run the game!
 
 Available for download [here](https://github.com/martindevans/martindevans.me/releases/download/0.0.2/Zegg-Final.zip). Not open source, due to assets used.
 

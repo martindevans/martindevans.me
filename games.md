@@ -113,24 +113,23 @@ Over the years I wrote many _many_ blog posts about the development of Heist:
 With many many images in all those blog posts:
 
 <div class="image-container" align="center">
-  <img src="/assets/ZoeBones.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/ZoeBones.png" style="max-width:19%; height: 200px"/>
   <img src="/assets/Torchlight.png" style="max-width:20%; height: 200px"/>
   <img src="/assets/voxel-smiley.png" style="max-width:20%; height: 200px"/>
   <img src="/assets/TensorRoadsImg1.png" style="max-width:20%; height: 200px"/>
-  <img src="/assets/ParcelledFloorplan.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/ParcelledFloorplan.png" style="max-width:19%; height: 200px"/>
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/gbuffer_normals.png" style="max-width:20%; height: 200px"/>
-  <img src="/assets/floorplan-teaser.png" style="max-width:20%; height: 200px"/>
-  <img src="/assets/CircularCity.png" style="max-width:20%; height: 200px"/>
-  <img src="/assets/character.png" style="max-width:20%; height: 200px"/>
-  <img src="/assets/abstract-pathfinding.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/gbuffer_normals.png" style="max-width:22%; height: 200px"/>
+  <img src="/assets/floorplan-teaser.png" style="max-width:30%; height: 200px"/>
+  <img src="/assets/CircularCity.png" style="max-width:22%; height: 200px"/>
+  <img src="/assets/character.png" style="max-width:22%; height: 200px"/>
 </div>
 
 # 2016: Unity
 
-When I started Heist I looked at the game engine market and decided to make my own, built on XNA. At the time Unity would have only been on version 3.0! By 2016 Unity was up to version 5.0, I hadn't used it at all but Tom was starting to use it at his job.
+When I started Heist I looked at the game engine market and decided to make my own engine with XNA. At the time Unity would have only been on version 3.0! However, by 2016 Unity was up to version 5.0 and was much more widely used.
 
 ## Dissonance Voice Chat
 
@@ -153,8 +152,8 @@ Parsec was intended to be a space colony sim, something like Rimworld crossed wi
 Here are some random images taken from PRs in the project. First is a tile system, automatically selecting the correct tile based on adjacency. Second is a power system, built out of tiles with various adjacency rules.
 
 <div class="image-container" align="center">
-  <img src="/assets/2024/Parsec/wq221n9w.bmp" style="width:49%"/>
-  <img src="/assets/2024/Parsec/ty4qikcs.bmp" style="width:50%"/>
+  <img src="/assets/2024/Parsec/wq221n9w.bmp" style="max-width:49%; height: 250px"/>
+  <img src="/assets/2024/Parsec/ty4qikcs.bmp" style="max-width:49%; height: 250px"/>
 </div>
 
 Finally an experiment with realtime fluid sim. We had some ideas like fluid sloshing in tanks causing hull stress. Or even atmosphere sloshing around the ship, e.g. heavier gasses like CO2 displacing air when accelerating.

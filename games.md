@@ -79,6 +79,8 @@ Unfortunately the game doesn't seem to handle modern high resolution monitors (m
 
 This was a really cool game, _way_ beyond anything any other team made! During demo day we had a constant crowd of people waiting to play and in the end we won the prize for the best game. This was the first game where it was really successful, genuinely fun and was played by large crowds of people. Very exciting!
 
+Available for download [here](/assets/2024/TwilightNightmare/Product.zip). Should work for LAN play right away, Internet play requires opening port 45563 on the host.
+
 # 2010: XNA
 
 After graduating from University I decided to pursue independent game development. This was around the time when "indie development" was becoming big (from my perspective at least) - Xbox Live Indie Games had been a decent success, more small developers were releasing games on Steam, Greenlight came onto the scene in 2012 and reinforced that trend.

@@ -142,7 +142,7 @@ In 2016 Tom quit his job and I stopped development on Heist, together we formed 
 
 ## Wet Stuff
 
-Also not a game, but still a cool project. Wet Stuff is a Unity asset which makes any surface appear wet. It does this with some clever trickery in the GBuffer, so unfortunately it only works for the old "built in renderer" which Unity are phasing out. We've never worked out how to port it to the newer pipelines (URP/HDRP).
+Not a game, but still a cool project. Wet Stuff is a Unity asset which makes any surface appear wet. It does this with some clever trickery in the GBuffer, so unfortunately it only works for the old "built in renderer" which Unity are phasing out. We've never worked out how to port it to the newer pipelines (URP/HDRP).
 
 As part of development of Wet Stuff I spent almost three months putting together a "demo reel" for the asset. After all this time this is the first really artistic project that I ever released to the public!
 
@@ -254,17 +254,15 @@ In 2023 we did another Cylon gamejam. This time everyone had to build a game bas
  - Musical
 
 I added a couple of extra personal goals:
-1. Saturn's Envy was _playable_ but not terribly popular because Yolol is an awful language. This time I wanted a game everyone could enjoy.
-2. Saturn's Envy & Save The Spire both camera systems that everyone hated. This time I wanted a camera system that at least no on would complain about.
+1. A game everyone could enjoy right away (Saturn's Envy was _playable_ but Yolol is awful, Save The Spire was weird and experimental).
+2. A camera system that players wouldn't hate (Saturn's Envy and Save The Spire both had awful cameras).
 3. Multiplayer.
 
-Zegg is a top-down, roguelike, multiplayer, dungeon crawler with a twist. When you die your replay the map from the start again, but with copies of yourself doing exactly what you did on all your previous runs! The map is designed so that some puzzles are _impossible_ to solve alone and you have to co-operate with previous versions of yourself.
-
-here you can see that I need to get two previous copies of myself onto the switches (lighting up the green lines), so that the third copy can go through the gate.
+Zegg is a top-down, roguelike, multiplayer, dungeon crawler with a twist. When you die your replay the map from the start again, but with copies of yourself doing exactly what you did on all your previous runs! The map is designed so that some puzzles are _impossible_ to solve alone and you have to co-operate with previous versions of yourself. In this video you can see that I need to get two previous copies of myself onto the switches (lighting up the green lines), so that the third copy can go through the gate:
 
 <video src="/assets/2024/Zegg/Zegg_2024-02-14_22-43-28.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
 
-Zegg was a big hit in the game jam demos, everyone enjoyed playing. There were even groups of players trying to speed run the game!
+Zegg was a big hit in the game jam demos, everyone enjoyed playing. There were even players trying to speed run the game!
 
 Available for download [here](https://github.com/martindevans/martindevans.me/releases/download/0.0.2/Zegg-Final.zip). Not open source, due to assets used.
 

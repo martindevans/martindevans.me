@@ -73,7 +73,7 @@ Our University course taught Java as the main language, so I developed one game 
 
 In the second year of University there was another 4 person project. This time the brief was to build a game with a multiplayer component. My team developed a platformer game called **Twilight Nightmare**, the twist of the game is zones where the laws of physics are slightly different. In the end we only implemented two zones: one zone where gravity is in another direction, and another where time runs at a different speed.
 
-<video src="/assets/2024/TwilightNightmare/javaw_2024-02-13_18-58-38.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
+<video src="/assets/2024/TwilightNightmare/javaw_2024-02-13_18-58-38.webm" style="margin-left: 25%; width: 50%" controls muted></video>
 
 Unfortunately the game doesn't seem to handle modern high resolution monitors (maybe an issue with scaling), so the video looks a bit weird, but you get the idea!
 
@@ -144,9 +144,7 @@ In 2016 Tom quit his job and I stopped development on Heist, together we formed 
 
 Not a game, but still a cool project. Wet Stuff is a Unity asset which makes any surface appear wet. It does this with some clever trickery in the GBuffer, so unfortunately it only works for the old "built in renderer" which Unity are phasing out. We've never worked out how to port it to the newer pipelines (URP/HDRP).
 
-As part of development of Wet Stuff I spent almost three months putting together a "demo reel" for the asset. After all this time this is the first really artistic project that I ever released to the public!
-
-<iframe style="margin-left: 25%; width: 50%; min-height:315px" src="https://www.youtube.com/embed/-9zrrXtgD0M?si=oeP0nQa0XGP2vFvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+As part of development of Wet Stuff I spent almost three months putting together a "demo reel" for the asset. After all this time this is the first really artistic project that I ever released to the public! See the video on YouTube [here](https://www.youtube.com/embed/-9zrrXtgD0M?si=oeP0nQa0XGP2vFvu).
 
 ## Parsec
 

@@ -277,12 +277,12 @@ The only realistic ones I know of are [Children of a Dead Earth](https://store.s
 I worked on some early prototypes in 2022, mostly messing with rendering very large scale scenes in Unity:
 
 <div class="image-container" align="center">
-  <img src="/assets/2022/Unity_2022-01-02_01-58-38.png" style="max-width:24%"/>
-  <img src="/assets/2022/Unity_2022-09-22_03-19-32.png" style="max-width:24%" />
-  <video controls muted style="max-width:24%; vertical-align:middle">
+  <img src="/assets/2022/Unity_2022-01-02_01-58-38.png" style="max-width:24%; height: 250px"/>
+  <img src="/assets/2022/Unity_2022-09-22_03-19-32.png" style="max-width:24%; height: 250px" />
+  <video controls muted style="max-width:24%; vertical-align:middle; height: 250px">
     <source src="/assets/2022/Unity_2022-01-09_02-18-44.webm" type="video/webm">
   </video>
-  <video controls muted style="max-width:24%; vertical-align:middle">
+  <video controls muted style="max-width:24%; vertical-align:middle; height: 250px">
     <source src="/assets/2022/Unity_2022-04-13_02-32-22.webm" type="video/webm">
   </video>
 </div>
@@ -294,8 +294,8 @@ In 2023 I worked on the simulation side of things, building an N-Body integrator
   <img src="/assets/2023/EphemerisLineWithMarkerCloseup.png" style="width:32%; height: 250px"/>
   <img src="/assets/2023/EphemerisBezierArc.png" style="width:32%; height: 250px" />  
 
-  <video controls muted style="width:60%; vertical-align:middle">
-    <source src="assets/2023/EphemerisJupiterTimelapse.webm" type="video/webm" />
+  <video controls muted style="width:60%; vertical-align:middle; height: 250px">
+    <source src="/assets/2023/EphemerisJupiterTimelapse.webm" type="video/webm" />
   </video>
 </div>
 

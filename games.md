@@ -301,6 +301,8 @@ In 2023 I worked on the simulation side of things, building an N-Body integrator
 
 I've started up another page dedicated to the game, called [`Ephemeris Notes`](https://martindevans.github.io/EphemerisNotes). This site has all kinds of things related to the game; [useful websites](https://martindevans.github.io/EphemerisNotes/category/web-pages/), other related [media](https://martindevans.github.io/EphemerisNotes/category/media/) and all kinds of [implementation details](https://martindevans.github.io/EphemerisNotes/category/implementation-details/).
 
+Unfortunately in 2023 Unity announced **the runtime fee** and shot themselves in the foot with a thermonuclear shotgun, just as I was ramping up the time I spent on Ephemeris. I decided to put Ephemeris on hold, until it was clear what engine I should use.
+
 ## PROTOLOGIC
 
 todo

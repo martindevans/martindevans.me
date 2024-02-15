@@ -258,7 +258,7 @@ I added a couple of extra personal goals:
 2. A camera system that players wouldn't hate (Saturn's Envy and Save The Spire both had awful cameras).
 3. Multiplayer.
 
-Zegg is a top-down, roguelike, multiplayer, dungeon crawler with a twist. When you die your replay the map from the start again, but with copies of yourself doing exactly what you did on all your previous runs! The map is designed so that some puzzles are _impossible_ to solve alone and you have to co-operate with previous versions of yourself. In this video you can see that I need to get two previous copies of myself onto the switches (lighting up the green lines), so that the third copy can go through the gate:
+Zegg is a top-down, roguelike, multiplayer, dungeon crawler with a twist. When you die you replay the map from the start again, but with copies of yourself doing exactly what you did on all your previous runs! The map is designed so that some puzzles are _impossible_ to solve alone and you have to co-operate with previous versions of yourself. In this video you can see that I need to get two previous copies of myself onto the switches (lighting up the green lines), so that the third copy can go through the gate:
 
 <video src="/assets/2024/Zegg/Zegg_2024-02-14_22-43-28.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
 
@@ -268,7 +268,11 @@ Available for download [here](https://github.com/martindevans/martindevans.me/re
 
 ## Ephemeris
 
-Ephemeris is a game concept I started working on around 2022, and I'm still working on it now (early 2024). The idea is to build a realistic simulator of true orbital space combat. e.g. Children of a Dead Earth, but multiplayer and more accessible.
+Ephemeris is a game concept I started working on around 2022, and I'm still working on it now (early 2024). The idea is to build a completely realistic simulator of orbital space combat. e.g. Children of a Dead Earth, but multiplayer and more accessible.
+
+There are many _unrealistic_ space combat games out there, such as Homeworld (naval carrier based combat in space), Nebulous: Fleet Command (naval battle ship combat in space) or Infinity (fighter aircraft combat in space). The problem with all these games is they simply take an existing kind of combat and drop it into space, without really thinking about what would make space combat completely unique.
+
+The only realistic ones I know of are [Children of a Dead Earth](https://store.steampowered.com/app/476530/Children_of_a_Dead_Earth/) or [Kerbal Space Program](https://store.steampowered.com/app/220200/Kerbal_Space_Program/) with appropriate mods.
 
 I worked on some early prototypes in 2022, mostly messing with rendering very large scale scenes in Unity:
 

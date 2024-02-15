@@ -53,7 +53,7 @@ Unfortunately I can't get any of the games from this period running. I think the
 
 ## Explosion Pong
 
-This was a just a simple pong game for local multiplayer. What makes it special is this was my first game which I built out to a completely playable game on Xbox360. I took it around to a friend's house one afternoon and played a few rounds with a group of friends, and it was "just like a real game"!
+This was a just a simple pong game for local multiplayer. What makes it special is this was my first game which I built out to a completely playable game on Xbox360. I took it around to a friend's house one afternoon and played a few rounds with a group of friends, "just like a real game"!
 
 ## Velocity (Design & Media)
 
@@ -236,6 +236,7 @@ With all of my previous games I have tried to build something I was confident wo
 Save the spire had a tower floating in space, with various bit of machinery attached to it. You could build platforms to connect together bits of machinery. Magical golems would walk around your platforms operating the machinery, eventually bringing the tower back to life. It wasn't really a very fun game, the camera controls are terrible and the best strategy is just to connect everything to everything else and the golems will sort it out automatically.
 
 <video src="/assets/2024/SaveTheSpire/Unity_2024-02-14_15-22-19.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
+<br />
 
 Available for download [here](https://github.com/martindevans/martindevans.me/releases/download/0.0.1/SaveTheSpire.zip). Not open source, due to assets used.
 
@@ -259,6 +260,7 @@ I added a couple of extra personal goals:
 Zegg is a top-down, roguelike, multiplayer, dungeon crawler with a twist. When you die you replay the map from the start again, but with copies of yourself doing exactly what you did on all your previous runs! The map is designed so that some puzzles are _impossible_ to solve alone and you have to co-operate with previous versions of yourself. In this video you can see that I need to get two previous copies of myself onto the switches (lighting up the green lines), so that the third copy can go through the gate:
 
 <video src="/assets/2024/Zegg/Zegg_2024-02-14_22-43-28.webm" style="margin-left: 25%; width: 50%" controls="true"></video>
+<br />
 
 Zegg was a big hit in the game jam demos, everyone enjoyed playing. There were even players trying to speed run the game!
 
@@ -284,6 +286,7 @@ I worked on some early prototypes in 2022, mostly messing with rendering very la
     <source src="/assets/2022/Unity_2022-04-13_02-32-22.webm" type="video/webm">
   </video>
 </div>
+<br />
 
 In 2023 I worked on the simulation side of things, building an N-Body integrator using the Unity ECS. I also worked on the UI side of things, diving deep into a rabbit hole drawing perfect lines on the GPU:
 
@@ -296,6 +299,7 @@ In 2023 I worked on the simulation side of things, building an N-Body integrator
     <source src="/assets/2023/EphemerisJupiterTimelapse.webm" type="video/webm" />
   </video>
 </div>
+<br />
 
 I've started up another page dedicated to the game, called [`Ephemeris Notes`](https://martindevans.github.io/EphemerisNotes). This site has all kinds of things related to the game; [useful websites](https://martindevans.github.io/EphemerisNotes/category/web-pages/), other related [media](https://martindevans.github.io/EphemerisNotes/category/media/) and all kinds of [implementation details](https://martindevans.github.io/EphemerisNotes/category/implementation-details/).
 
@@ -312,3 +316,8 @@ Protologic is a game I started in direct response to the Unity runtime fee situa
 **WebAssembly**. I think there's a lot of potential for modding games using WebAssembly, the secure/sandboxed nature of WASM means mods could be passed between clients without requiring trust. For example it would be safe to join a totally random game server and download all of the mods off the host!
 
 Battles can be watched online [here](https://referee.cylon.xyz/protologic/player/), and if you want to join in and play you can join [Cylon](https://discord.gg/WaCmEQJzkE) and submit to the *Protologic bot. The latest version of the sim/player for offline use are currently available [here](https://github.com/Protologic/Release).
+
+<div class="image-container" align="center">
+  <img src="/assets/2024/Protologic/firefox_2024-02-15_16-33-33.jpg" style="width:50%"/>
+</div>
+<br />

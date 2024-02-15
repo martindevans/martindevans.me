@@ -6,7 +6,7 @@ tagline: All My Games
 {% include JB/setup %}
 {% include lightbox/setup.html %}
 
-I've played games all my life, I remember my Dad loading typing tutor games from tapes onto our PC before I even went to school! I've been _making_ games for as long as I could program.
+This list is by no means _all_ of the games I have created. I've made hundreds and hundreds of other games/prototypes. This is just the projects that I consider to be "important" somehow.
 
 # Major Games
  - [Asteroids II (VB)](#asteroids)
@@ -15,7 +15,7 @@ I've played games all my life, I remember my Dad loading typing tutor games from
  - [Myriad (XNA)](#myriad)
  - [Heist (XNA)](#heist)
  - [Parsec (Unity)](#parsec)
- = [Yolol Code Golf (C#)](#2020-yolol-code-golf)
+ - [Yolol Code Golf (C#)](#2020-yolol-code-golf)
  - [Bounded Planet (Bevy)](#2020-bounded-planet-rustbevy)
  - [Saturn's Envy (C#, Unity)](#2021-saturns-envy)
  - [Save The Spire (Unity)](#2022-save-the-spire)

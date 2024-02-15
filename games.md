@@ -25,7 +25,7 @@ This list is by no means _all_ of the games I have created. I've made hundreds a
  - Future...
 
 # 2006: Visual Basic 5/6
-Back in college when I was first learning to program we had VB5 and home and VB6 at college. I built all my games by moving elements around on Windows forms!
+Back in college, when I was first learning to program, I used VB5 and VB6. I built all my games by moving elements around on Windows forms!
 
 Around this time I made a _lot_ of games, about one every week or two for the entire 2 years of college. Unfortunately although I have the VB6 source code for many of these games, I don't have any way to build them. The only two I still have binaries for are Asteroids and Toast.
 

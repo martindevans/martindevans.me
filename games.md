@@ -294,17 +294,23 @@ In 2023 I worked on the simulation side of things, building an N-Body integrator
   <img src="/assets/2023/EphemerisLineWithMarkerCloseup.png" style="width:32%; height: 250px"/>
   <img src="/assets/2023/EphemerisBezierArc.png" style="width:32%; height: 250px" />  
 
-  <video controls muted style="width:60%; vertical-align:middle; height: 250px">
+  <video controls muted style="width:60%; vertical-align:middle; height: 350px">
     <source src="/assets/2023/EphemerisJupiterTimelapse.webm" type="video/webm" />
   </video>
 </div>
 
 I've started up another page dedicated to the game, called [`Ephemeris Notes`](https://martindevans.github.io/EphemerisNotes). This site has all kinds of things related to the game; [useful websites](https://martindevans.github.io/EphemerisNotes/category/web-pages/), other related [media](https://martindevans.github.io/EphemerisNotes/category/media/) and all kinds of [implementation details](https://martindevans.github.io/EphemerisNotes/category/implementation-details/).
 
-Unfortunately in 2023 Unity announced **the runtime fee** and shot themselves in the foot with a thermonuclear shotgun, just as I was ramping up the time I spent on Ephemeris. I decided to put Ephemeris on hold, until it was clear what engine I should use.
+Unfortunately in 2023 Unity announced **the runtime fee** and shot themselves in the foot with a thermonuclear shotgun, just as I was ramping up the time I spent on Ephemeris. I decided to put Ephemeris on hold until it was clear what engine I should use.
 
 ## PROTOLOGIC
 
-todo
+Protologic is a game I started in direct response to the Unity runtime fee situation. It's an adaptation of the old [Saturn's Envy](#2021-saturns-envy) idea, but ships are programmed with WebAssembly instead of Yolol. This is a useful project because it lets me experiment with a few different technologies:
 
-org: https://github.com/Protologic
+**Non Unity ECS sim**. For example using [Arch](https://github.com/genaray/Arch) to run a high performance simulation, totally disconnected from all the Unity ECS weirdness. This is useful even if I decide to use Unity, I can use Arch as an alternative to the Unity ECS even inside Unity.
+
+**Non Unity Player**. Saturn's Envy/Protologic work by running the simulation as fast as possible to generate a "replay" file which is displayed in a separate application. This allows me to build the player in multiple different engines ([Unity](https://unity.com/), [Godot](https://godotengine.org/), [Stride](https://www.stride3d.net/) etc), which is much simpler than porting the entire game between engines!
+
+**WebAssembly**. I think there's a lot of potential for modding games using WebAssembly, the secure/sandboxed nature of WASM means mods could be passed between clients without requiring trust. For example it would be safe to join a totally random game server and download all of the mods off the host!
+
+Battles can be watched online [here](https://referee.cylon.xyz/protologic/player/), and if you want to join in and play you can join [Cylon](https://discord.gg/WaCmEQJzkE) and submit to the *Protologic bot. The latest version of the sim/player for offline use are currently available [here](https://github.com/Protologic/Release).

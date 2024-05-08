@@ -28,7 +28,7 @@ The magic number ensures that if a non-Dissonance packet ends up getting given t
 
 # Protocol Compatibility
 
-The most important lesson I have learned when working on Dissonance is about compatibility - early versions of Dissonance did not provide any guarantees about protocol compatibility and we frequently broke compatibility to add new features or fix small bugs. With hindsight this was a huge mistake, once an application id deployed across a network is becomes very difficult to coordinate upgrading all of the servers and clients at the same time! There are three aspects of compatibility to keep in mind when designing a protocol:
+The most important lesson I have learned when working on Dissonance is about compatibility - early versions of Dissonance did not provide any guarantees about protocol compatibility and we frequently broke compatibility to add new features or fix small bugs. With hindsight this was a huge mistake, once an application is deployed across a network is becomes very difficult to coordinate upgrading all of the servers and clients at the same time! There are three aspects of compatibility to keep in mind when designing a protocol:
 
 ### Version Identifiers
 
@@ -36,7 +36,7 @@ Sometimes it's necessary to make a change which breaks compatibility. In these c
 
 ### Backward Compatibility
 
-Backward Compatibility is when a change to a new version is made in such a way that older versions of the protocol can still udnerstand it. Often this can simply be done by supporting both the old and the new version of the protocol available for communication - when you first establish a new connection you can work out which protocol version to use either by inspecting the version identifier or by explicitly performing some kind of handshake where the two clients exchange a set of things they understand and then they can both use the best one.
+Backward Compatibility is when a change to a new version is made in such a way that older versions of the protocol can still understand it. Often this can simply be done by supporting both the old and the new version of the protocol at the same time - when you first establish a new connection you can work out which protocol version to use either by inspecting the version identifier or by performing some kind of negotiation.
 
 ### Forward Compatibility
 

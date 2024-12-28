@@ -2,7 +2,7 @@
 layout: post
 category : Personal
 tags : [general]
-tagline : In A Betrayal Occurs
+tagline : In Which A Betrayal Occurs
 ---
 {% include JB/setup %}
 
@@ -20,11 +20,11 @@ After that I started working on... drawing lines! This might sound trivial, but 
   <img src="/assets/2023/EphemerisBezierArc.png" style="width:32%" />  
 
   <video controls muted style="width:48%; vertical-align:middle">
-    <source src="assets/2023/UnityAnimationStateMachineZegg.webm" type="video/webm" />
+    <source src="/assets/2023/UnityAnimationStateMachineZegg.webm" type="video/webm" />
   </video>
 
   <video controls muted style="width:48%; vertical-align:middle">
-    <source src="assets/2023/EphemerisJupiterTimelapse.webm" type="video/webm" />
+    <source src="/assets/2023/EphemerisJupiterTimelapse.webm" type="video/webm" />
   </video>
 </div>
 

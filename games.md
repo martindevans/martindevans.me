@@ -321,3 +321,21 @@ Battles can be watched online [here](https://referee.cylon.xyz/protologic/player
   <img src="/assets/2024/Protologic/firefox_2024-02-15_16-33-33.jpg" style="width:50%"/>
 </div>
 <br />
+
+## ECOM
+
+In 2024 we have another Cylon game jam entry! The theme this year was `Running Out Of Space`. I really wanted to make an RTS in the old Command & Conquer style, so I decided to make a battle royale RTS! Players drop in around the map, grab resources, build temporary bases and an army, then fight for the ever shrinking map space until only one is left. I think it's actually a pretty cool twist on both genres and we ended up playing quite a few rounds during the gamejam demos. I don't have any footage from multiplayer games, but here are some development screenshots I found, and a sped up video of me in a single player game:
+
+<div class="image-container" align="center">
+  <img src="/assets/ECOM/Map.webm" style="max-width:19%; height: 200px"/>
+  <img src="/assets/ECOM/Menu.png" style="max-width:20%; height: 200px"/>
+  <img src="/assets/ECOM/Menu.webm" style="max-width:20%; height: 200px"/>
+  <img src="/assets/ECOM/MapFlyover.webm" style="max-width:20%; height: 200px"/>
+</div>
+
+<div class="image-container" align="center">
+  <img src="/assets/ECOM/SoloMatchDemo.webm.png" style="max-width:99%; height: 400px"/>
+</div>
+<br />
+
+This was a huge challenge to develop in just three weeks! RTS games need a good mix of units to even be playable, and lots of complex controls every expects to be there (control groups, double click to select all of the same type etc). Every time I did a playtest I had to add a new control scheme someone wanted, rebalance a load of units, and tweak parts of the map.

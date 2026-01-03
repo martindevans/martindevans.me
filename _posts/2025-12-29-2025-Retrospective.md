@@ -106,14 +106,19 @@ In mid 2024 I started learning Blender, and in 2025 it's become a really major t
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/2025/Blender/BannerInterior1.png" style="width:24%"/>
-  <img src="/assets/2025/Blender/BannerLandingShip1.png" style="width:25%"/>
-  <img src="/assets/2025/Blender/BannerLandingShip2.jpg" style="width:25%"/>
+  <img src="/assets/2025/Blender/BannerInterior1.png" style="width:33%"/>
+  <img src="/assets/2025/Blender/BannerLandingShip1.png" style="width:33%"/>
+  <img src="/assets/2025/Blender/BannerLandingShip2.jpg" style="width:33%"/>
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/2025/Blender/NotConcorde1.png" style="width:49%"/>
   <img src="/assets/2025/Blender/BeamSaber1.png" style="width:49%"/>
+  <img src="/assets/2025/Blender/SparrowDagger1.png" style="width:49%"/>
+</div>
+
+<div class="image-container" align="center">
+  <img src="/assets/2025/Blender/SparrowDagger2.jpg" style="width:49%"/>
+  <img src="/assets/2025/Blender/NotConcorde1.png" style="width:49%"/>
 </div>
 
 <div class="image-container" align="center">
@@ -122,13 +127,8 @@ In mid 2024 I started learning Blender, and in 2025 it's become a really major t
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/2025/Blender/SparrowDagger1.png" style="width:49%"/>
-  <img src="/assets/2025/Blender/SparrowDagger2.jpg" style="width:49%"/>
-</div>
-
-<div class="image-container" align="center">
-  <img src="/assets/2025/Blender/BigSearchRadar1.png" style="width:33%"/>
-  <img src="/assets/2025/Blender/OrbitalAttackShip1.jpg" style="width:33%"/>
+  <img src="/assets/2025/Blender/BigSearchRadar1.png" style="width:49%"/>
+  <img src="/assets/2025/Blender/OrbitalAttackShip1.jpg" style="width:49%"/>
 </div>
 
 <div class="image-container" align="center">

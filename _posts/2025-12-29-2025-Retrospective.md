@@ -96,26 +96,29 @@ In mid 2024 I started learning Blender, and in 2025 it's become a really major t
 
 <div class="image-container" align="center">
   <img src="/assets/2025/Blender/ClothesCharacter1.png" style="width:33%"/>
-  <img src="/assets/2025/Blender/ClothesCharacter2.png" style="width:33%"/>
+  <img src="/assets/2025/Blender/ClothesCharacter4.png" style="width:33%"/>
   <img src="/assets/2025/Blender/ClothesCharacter3.png" style="width:33%"/>
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/2025/Blender/ClothesCharacter4.png" style="width:49%"/>
+  <img src="/assets/2025/Blender/ClothesCharacter2.png" style="width:49%"/>
   <img src="/assets/2025/Blender/ClothesCharacter5.png" style="width:49%"/>
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/2025/Blender/BannerInterior1.png" style="width:25%"/>
+  <img src="/assets/2025/Blender/BannerInterior1.png" style="width:24%"/>
   <img src="/assets/2025/Blender/BannerLandingShip1.png" style="width:25%"/>
   <img src="/assets/2025/Blender/BannerLandingShip2.jpg" style="width:25%"/>
-  <img src="/assets/2025/Blender/NotConcorde1.png" style="width:25%"/>
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/2025/Blender/BeamSaber1.png" style="width:33%"/>
-  <img src="/assets/2025/Blender/HarperDagger1.png" style="width:33%"/>
-  <img src="/assets/2025/Blender/HarperDagger2.png" style="width:33%"/>
+  <img src="/assets/2025/Blender/NotConcorde1.png" style="width:49%"/>
+  <img src="/assets/2025/Blender/BeamSaber1.png" style="width:49%"/>
+</div>
+
+<div class="image-container" align="center">
+  <img src="/assets/2025/Blender/HarperDagger1.png" style="width:49%"/>
+  <img src="/assets/2025/Blender/HarperDagger2.png" style="width:49%"/>
 </div>
 
 <div class="image-container" align="center">
@@ -126,14 +129,12 @@ In mid 2024 I started learning Blender, and in 2025 it's become a really major t
 <div class="image-container" align="center">
   <img src="/assets/2025/Blender/BigSearchRadar1.png" style="width:33%"/>
   <img src="/assets/2025/Blender/OrbitalAttackShip1.jpg" style="width:33%"/>
-  <img src="/assets/2025/Blender/VashGun1.jpg" style="width:33%"/>
 </div>
 
 <div class="image-container" align="center">
-  <img src="/assets/2025/Blender/BuildingCube1.png" style="width:24%"/>
-  <img src="/assets/2025/Blender/BuildingSteps1.png" style="width:25%"/>
-  <img src="/assets/2025/Blender/Konbini1.png" style="width:25%"/>
-  <img src="/assets/2025/Blender/BeamSaber1.png" style="width:25%"/>
+  <img src="/assets/2025/Blender/BuildingCube1.png" style="width:33%"/>
+  <img src="/assets/2025/Blender/BuildingSteps1.png" style="width:33%"/>
+  <img src="/assets/2025/Blender/Konbini1.png" style="width:33%"/>
 </div>
 
 # Open Source Software
@@ -189,15 +190,15 @@ Some other interesting things that I encountered in 2025 in no particular order:
  - [VRChat](https://hello.vrchat.com/)
  - [Bigscreen Beyond 2](https://store.bigscreenvr.com/en-gb/products/bigscreen-beyond-2)
  - [Banner of the Stars](https://en.wikipedia.org/wiki/Banner_of_the_Stars)
-  - I've seen it before, but I rewatched the anime and reread all of the Manga this year. A couple of my Blender projects have been BotS ships.
+   - I've seen it before, but I rewatched the anime and reread all of the Manga this year. A couple of my Blender projects have been BotS ships.
  - [Anime Cels for sale](https://www.animanga.com/db/cels/)
  - [Realsense D421](https://www.realsenseai.com/products/stereo-depth-camera-module-d421/)
-  - Traditionally 3D cameras are very expensive, but this one is just £75!
+   - Traditionally 3D cameras are very expensive, but this one is just £75!
  - VTubers
-  - While watching tutorial videos on Blender for how to build a VRChat avatar I came across [this video](https://www.youtube.com/watch?v=VmwW47UWO60). That sucked me into the world of VTubers!
-  - Some favourites:
-   - [Smellizabeth](https://www.twitch.tv/smellizabeth), currently rebranding to [Aeri Andromeda](https://www.twitch.tv/aeriandromeda). Gaming, Blender, art.
-   - [Pikat](https://www.twitch.tv/pikat). Art, gaming.
-   - [Ellie_Minibot](https://www.twitch.tv/ellie_minibot). Robotics engineer with an interest in AI.
-   - [Vedal987](https://www.twitch.tv/vedal987). Develops the AI Vtuber Neuro-sama, fascinating AI project!
-   - [Ironmouse](https://www.twitch.tv/ironmouse). Obviously.
+   - While watching tutorial videos on Blender for how to build a VRChat avatar I came across [this video](https://www.youtube.com/watch?v=VmwW47UWO60). That sucked me into the world of VTubers!
+   - Some favourites:
+     - [Smellizabeth](https://www.twitch.tv/smellizabeth), currently rebranding to [Aeri Andromeda](https://www.twitch.tv/aeriandromeda). Gaming, Blender, art.
+     - [Pikat](https://www.twitch.tv/pikat). Art, gaming.
+     - [Ellie_Minibot](https://www.twitch.tv/ellie_minibot). Robotics engineer with an interest in AI.
+     - [Vedal987](https://www.twitch.tv/vedal987). Develops the AI Vtuber Neuro-sama, fascinating AI project!
+     - [Ironmouse](https://www.twitch.tv/ironmouse). Obviously.

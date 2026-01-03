@@ -266,9 +266,9 @@ Zegg was a big hit in the game jam demos, everyone enjoyed playing. There were e
 
 Available for download [here](https://github.com/martindevans/martindevans.me/releases/download/0.0.2/Zegg-Final.zip). Not open source, due to assets used.
 
-## Ephemeris
+## Ephemeris/Kessler
 
-Ephemeris is a game concept I started working on around 2022, and I'm still working on it now (early 2024). The idea is to build a completely realistic simulator of orbital space combat. e.g. Children of a Dead Earth, but multiplayer and more accessible.
+Ephemeris (since renamed to Kessler) is a game concept I started working on around 2022, and I'm still working on it now (early 2026). The idea is to build a completely realistic simulator of orbital space combat. e.g. Children of a Dead Earth, but multiplayer and more accessible.
 
 There are many _unrealistic_ space combat games out there, such as Homeworld (naval carrier based combat in space), Nebulous: Fleet Command (naval battle ship combat in space) or Infinity (fighter aircraft combat in space). The problem with all these games is they simply take an existing kind of combat and drop it into space, without really thinking about what would make space combat completely unique.
 
@@ -339,3 +339,17 @@ In 2024 we have another Cylon game jam entry! The theme this year was `Running O
 <br />
 
 This was a huge challenge to develop in just three weeks! RTS games need a good mix of units to even be playable, and lots of complex controls every expects to be there (control groups, double click to select all of the same type etc). Every time I did a playtest I had to add a new control scheme someone wanted, rebalance a load of units, and tweak parts of the map.
+
+## IMPACT
+
+**IMPACT** (**I**mpact **M**odelling **P**rogram for **A**rmor **C**onfiguration **T**esting) is a spacecraft armour design and test program, styled as an alt-history 1970's joint DoD/NASA program to develop armour for orbital warships. the game is available to [download for free here](https://github.com/martindevans/IMPACT). Join us on [Discord](https://discord.gg/nnY3tPwpuV) to show off your designs!
+
+This is based on the research I did into the physics of hypervelocity impacts in September 2025 and uses the damage model I have developed for Kessler.
+
+<div class="image-container" align="center">
+  <img src="/assets/2025/IMPACT/IMPACT1.jpg" style="width:49%"/>
+  <img src="/assets/2025/IMPACT/IMPACT2.jpg" style="width:49%"/>
+
+  <img src="/assets/2025/IMPACT/IMPACT3.jpg" style="width:49%"/>
+  <img src="/assets/2025/IMPACT/IMPACT4.jpg" style="width:49%"/>
+</div>

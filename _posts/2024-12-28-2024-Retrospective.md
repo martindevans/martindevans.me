@@ -8,7 +8,7 @@ tagline : In Which Games Are Built
 
 # Sticking With Unity
 
-In my [last retrospective](https://martindevans.me/personal/2023/12/30/2023-Retrospective/) I talked about the big Unity backstab and how I was considering moving away from Unity as my primary game engine. Fortunately Unity recovered form this pretty rapidly and they seem to be on a much better course now, so I have decided to stick with Unity.
+In my [last retrospective](https://martindevans.me/personal/2023/12/30/2023-Retrospective/) I talked about the big Unity backstab and how I was considering moving away from Unity as my primary game engine. Fortunately Unity recovered from this pretty rapidly and they seem to be on a much better course now, so I have decided to stick with Unity.
 
 # Ephemeris
 
@@ -60,7 +60,7 @@ I started another prototype for multiplayer, this time using [Mirror](https://mi
 
 ### The Future
 
-In 2035 I'll continue working on Ephemeris, with the aim of getting an early-access prototype out to some players. If you're interested in that, join us on [Discord](https://discord.gg/nnY3tPwpuV)!
+In 2025 I'll continue working on Ephemeris, with the aim of getting an early-access prototype out to some players. If you're interested in that, join us on [Discord](https://discord.gg/nnY3tPwpuV)!
 
 # Cylon Game Jam
 
@@ -127,9 +127,9 @@ One of the problems I have always had with my games is art. I'm capable of build
 
 # Neptune's Pride (Collective Game)
 
-At the start of the year I played a game of [Neptune's Pride](https://np.ironhelmet.com/#landing) with a group of 11 players. NP is a fantastic strategy game - the mechanics are simple enough that no one is going to lose a game due to not understanding the mechanics, but deep enough to be interesting. Instead winning or losing a game of Neptune's pride depends almost entirely on your ability to conduct diplomacy and organise true alliances.
+At the start of the year I played a game of [Neptune's Pride](https://np.ironhelmet.com/#landing) with a group of 11 players. NP is a fantastic strategy game - the mechanics are simple enough that no one is going to lose a game due to not understanding the mechanics, but deep enough to be interesting. Winning or losing a game of Neptune's pride ultimately depends almost entirely on your ability to conduct diplomacy, organise alliances (and maybe backstab at just the right moment).
 
-In this game I spawned right in the middle of the map, which is a very difficult starting position. I had to ensure I had good diplomatic relations with most of the players in the game at all times! My empire was very long and thin so was very exposed to invasion everywhere - there was no "front line" I could defend.
+In this game I spawned right in the middle of the map, which is a very difficult starting position. I had to ensure I had good diplomatic relations with almost all of the players in the game at all times! My empire was very long and thin so was very exposed to invasion everywhere - there was no single "front line" I could defend.
 
 The following video is the entire game from my point of view (it may skip some ticks if I forgot to record the game at that tick).
 
@@ -149,7 +149,7 @@ The following video is the entire game from my point of view (it may skip some t
 - 1m 45s: Ally with green squares
 - 2m 30s: At some point I discovered that blue squares had betrayed me (he was offering other players money and tech to attack me). Begin a coordinated invasion with my allies: orange circles, green squares and blue circles.
 - 3m 31s: While everyone else is cleaning up the last of blue squares I begin a lightning invasion of red circles.
-- 3m 57s: Tensions with blue circles were high, as a "warning shot" I destroy the last dark blue circle "haven" system. This triggers was with light blue circles.
+- 3m 57s: Tensions with blue circles were high, as a "warning shot" I destroy the last dark blue circle "haven" system. This triggers war with light blue circles.
 - 4m 45s: green squares invades dark blue squares, I use this as leverage to ally with dark blue squares.
 - 5m 10s: I finally manage to persuade dark blue squares to backstab his ally light blue circles. This breaks the organised resistance and allows orange circle and myself to start making real progress in the north east.
 - There are now 2 major alliances. Both alliances are in the process of invading smaller empires, it becomes a long stalemate at this point.
